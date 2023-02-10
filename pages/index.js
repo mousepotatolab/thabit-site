@@ -94,7 +94,7 @@ export default function Home() {
                   </p>
                 </div>
                 <motion.div
-                  initial={{ opacity: 0, x: 80, y: 80 }}
+                  initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
@@ -231,7 +231,7 @@ export default function Home() {
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
               <div className="flex justify-between">
                 <motion.div
-                  initial={{ opacity: 0, x: -80, y: 80 }}
+                  initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
@@ -286,7 +286,7 @@ export default function Home() {
                   </div>
                 </div>
                 <motion.div
-                  initial={{ opacity: 0, x: 80, y: 80 }}
+                  initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
@@ -339,7 +339,7 @@ export default function Home() {
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
               <div className="flex justify-between">
                 <motion.div
-                  initial={{ opacity: 0, x: -80, y: 80 }}
+                  initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
@@ -580,7 +580,7 @@ export default function Home() {
                   </div>
                 </div>
                 <motion.div
-                  initial={{ opacity: 0, x: 80, y: 80 }}
+                  initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}

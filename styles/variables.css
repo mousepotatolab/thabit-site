@@ -12,6 +12,8 @@
   --color-bg-button: #1a1a1a;
   --color-bg-white: #ffffff;
   --color-text-white: #ffffff;
+  --color-text-black: #1a1a1a;
+  --color-bg-light-grey: #ededed;
 }
 [data-theme="dark"] {
   --color-text-primary: #ffffff;
@@ -25,4 +27,6 @@
   --color-red: #e97777;
   --color-bg-white: #ffffff;
   --color-text-white: #ffffff;
+  --color-text-black: #1a1a1a;
+  --color-bg-light-grey: #ededed;
 }
