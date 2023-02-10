@@ -1,5 +1,3 @@
-import { Fade } from "react-reveal";
-
 import { interpolate } from "flubber";
 
 import Image from "next/image";
@@ -7,6 +5,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { getIndex, useFlubber } from "./useFlubber.js";
 
 import night from "../public/icon-night.svg";
@@ -64,7 +63,12 @@ export default function ThemeToggle() {
   }, [activeTheme]);
 
   return (
-    <Fade>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="" onClick={() => switchTheme()}>
         <svg width="24" height="24">
           <g transform=" scale(0.5)">
@@ -72,6 +76,6 @@ export default function ThemeToggle() {
           </g>
         </svg>
       </div>
-    </Fade>
+    </motion.div>
   );
 }
