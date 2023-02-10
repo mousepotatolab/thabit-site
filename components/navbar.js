@@ -51,7 +51,7 @@ export default function Navbar() {
             <Link href="/contact">
               <li className="uppercase mr-30 font-regular">Contact</li>
             </Link>
-            {/* <ThemeToggle /> */}
+            <ThemeToggle />
           </ul>
         </nav>
       </motion.div>
