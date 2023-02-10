@@ -12,6 +12,8 @@ export default function App({ Component, pageProps }) {
         strategy="lazyOnload"
       /> */}
       <Script
+        id="google-maps"
+        src="https://maps.googleapis.com/maps/api/js"
         onReady={() => {
           (function (w, d, v3) {
             w.chaportConfig = {
