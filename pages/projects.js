@@ -38,7 +38,7 @@ export default function Projects() {
           }}
         />
       </Head>
-      <main className={styles.main}>
+      <main className="container">
         <h1>Projects</h1>
       </main>
     </>
