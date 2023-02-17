@@ -192,6 +192,11 @@ strong {
   bottom: 0;
 }
 
+.m-minus {
+  position: relative;
+  top: -160px;
+}
+
 .m-auto {
   margin: 0 auto;
 }
@@ -258,6 +263,10 @@ strong {
 
 .max-h-500 {
   max-height: 500px;
+}
+
+.min-h-500 {
+  min-height: 500px;
 }
 
 /* Max Widths End */
