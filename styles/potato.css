@@ -52,6 +52,10 @@ strong {
   background-color: var(--color-bg-light-grey);
 }
 
+.bg-dark-grey {
+  background-color: var(--color-bg-secondary-dark);
+}
+
 /* Backgrounds End */
 
 /* Colors */
@@ -200,6 +204,10 @@ strong {
   width: 100%;
 }
 
+.w-half {
+  width: 50%;
+}
+
 .h-full {
   height: 100%;
 }
@@ -232,8 +240,20 @@ strong {
 
 /* Max Widths */
 
+.max-420 {
+  max-width: 420px;
+}
+
+.max-450 {
+  max-width: 450px;
+}
+
 .max-500 {
   max-width: 500px;
+}
+
+.max-660 {
+  max-width: 660px;
 }
 
 .max-h-500 {
@@ -247,6 +267,11 @@ strong {
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.mx-15 {
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
 }
 
 .mb-0 {
@@ -294,6 +319,10 @@ strong {
   margin-top: 2.5rem;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -314,6 +343,10 @@ strong {
   margin-left: 1.5rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .mr-10 {
   margin-right: 2.5rem;
 }
@@ -331,6 +364,10 @@ strong {
 
 .p-0 {
   padding: 0;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-10 {
@@ -462,7 +499,82 @@ strong {
 .br-2 {
   border-radius: 0.5rem;
 }
+
+.nav-item-active {
+  color: var(--color-red);
+}
+
 /* Custom End */
+
+/* Contact Form Classes */
+
+#mpContactHidden {
+  display: none;
+}
+
+form {
+  margin: 40px 0 0;
+  width: 100%;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  padding-bottom: 16px;
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+  letter-spacing: 0;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(172, 180, 184, 0.2);
+}
+form input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-text-primary);
+  transition: 0.3s;
+}
+form input::placeholder {
+  color: #bdbdbd;
+}
+
+form textarea {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  padding-bottom: 16px;
+  height: 150px;
+  font-size: 1.125rem;
+  color: var(--color-text-primary);
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(172, 180, 184, 0.2);
+  font-family: Ubuntu;
+}
+
+form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-text-primary);
+  transition: 0.3s;
+}
+
+form textarea::placeholder {
+  color: #bdbdbd;
+}
+
+form p button {
+  margin-bottom: 0;
+}
+
+/* Contact Form Classes END */
 
 /* Button Classes */
 
@@ -475,6 +587,7 @@ strong {
   font-size: 1rem;
   line-height: 1.5rem;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .button-primary:hover {
@@ -485,6 +598,7 @@ strong {
   height: 72px;
   font-size: 1rem;
   line-height: 1.5rem;
+  cursor: pointer;
 }
 
 .button-resources {
@@ -496,6 +610,7 @@ strong {
   font-size: 1rem;
   line-height: 1.5rem;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .button-resources:hover {
@@ -506,6 +621,7 @@ strong {
   height: 56px;
   font-size: 1rem;
   line-height: 1.5rem;
+  cursor: pointer;
 }
 
 .button-resources-white {
@@ -517,6 +633,7 @@ strong {
   font-size: 1rem;
   line-height: 1.5rem;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .button-resources-white:hover {
@@ -527,6 +644,7 @@ strong {
   height: 56px;
   font-size: 1rem;
   line-height: 1.5rem;
+  cursor: pointer;
 }
 
 .button-subscribe {
@@ -538,6 +656,7 @@ strong {
   font-size: 1rem;
   line-height: 1.5rem;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .button-subscribe:hover {
@@ -548,6 +667,78 @@ strong {
   height: 56px;
   font-size: 1rem;
   line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.button-contact {
+  background-color: var(--color-bg-button);
+  color: var(--color-text-button);
+  border: none;
+  width: 175px;
+  height: 56px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.button-contact:hover {
+  background-color: var(--color-red);
+  color: var(--color-text-button);
+  border: none;
+  width: 175px;
+  height: 56px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.button-submit {
+  background-color: var(--color-bg-button);
+  color: var(--color-text-button);
+  border: none;
+  width: 148px;
+  height: 56px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: var(--color-red);
+  color: var(--color-text-button);
+  border: none;
+  width: 148px;
+  height: 56px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.button-learn {
+  position: absolute;
+  bottom: 2.5rem;
+  background-color: var(--color-bg-button);
+  color: var(--color-text-button);
+  border: none;
+  width: 177px;
+  height: 56px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.button-learn:hover {
+  background-color: var(--color-red);
+  color: var(--color-text-button);
+  border: none;
+  width: 177px;
+  height: 56px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
 }
 
 /* Button Classes End */

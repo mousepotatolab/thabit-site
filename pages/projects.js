@@ -1,8 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import { useEffect } from "react";
+
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
+import { useSelector, useDispatch } from "react-redux";
+import { setActivePage } from "../src/features/activePageSlice";
 
 //images
 import arrowRight from "../public/arrowRight.svg";
@@ -23,6 +28,13 @@ const cloudflareLoader = ({ src, width, quality }) => {
 };
 
 export default function Projects() {
+  const dispatch = useDispatch();
+
+  let activePage = useSelector((state) => state.activePage.value);
+
+  useEffect(() => {
+    dispatch(setActivePage("projects"));
+  });
   return (
     <>
       <Head>

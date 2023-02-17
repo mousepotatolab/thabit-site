@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Mouse Potato Lab | App Design And Development Studio</title>
+        <title>Mouse Potato Lab | App Design and Development Studio</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
@@ -39,7 +39,10 @@ export default function Home() {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-ZB4BX6WH03"
         />
-        <meta property="og:title" content="Mouse Potato Lab | Case Studies" />
+        <meta
+          property="og:title"
+          content="Mouse Potato Lab | App Design and Development Studio"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"

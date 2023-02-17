@@ -1,8 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import { useEffect } from "react";
+
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
+import { useSelector, useDispatch } from "react-redux";
+import { setActivePage } from "../src/features/activePageSlice";
 
 //Images
 import third from "../public/third.svg";
@@ -10,6 +15,14 @@ import third from "../public/third.svg";
 import resourceOne from "../public/resource-1.png";
 
 export default function Resources() {
+  const dispatch = useDispatch();
+
+  let activePage = useSelector((state) => state.activePage.value);
+
+  useEffect(() => {
+    dispatch(setActivePage("resources"));
+  });
+
   return (
     <>
       <Head>
