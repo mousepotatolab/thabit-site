@@ -90,15 +90,24 @@ export default function Contact() {
                   We'd love to know <br /> about your projects
                 </h3>
                 <form
-                  data-netlify-honeypot="bot-field"
-                  method="post"
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
                   autoComplete="off"
                   name="mpContact"
                   id="mpContact"
                   data-netlify="true"
-                  action="/success"
+                  //   action="/success"
                 >
-                  <input type="hidden" name="form-name" value="mpContact" />
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="b017b888-4c49-4480-9be7-74b53a11c614"
+                  />
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://mp-site.vercel.app/success"
+                  />
 
                   <p>
                     <label>

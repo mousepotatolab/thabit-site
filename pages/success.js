@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 export default function Success() {
   const router = useRouter();
   useEffect(() => {
-    setTimeout(() => router.push("/"), 333500);
+    setTimeout(() => router.push("/"), 3500);
   });
 
   return (
