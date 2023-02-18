@@ -105,10 +105,14 @@ export default function Contact() {
                   />
                   <input
                     type="hidden"
+                    name="subject"
+                    value="Mouse Potato Lab"
+                  ></input>
+                  <input
+                    type="hidden"
                     name="redirect"
                     value="https://mp-site.vercel.app/success"
                   />
-
                   <p>
                     <label>
                       Full Name *
