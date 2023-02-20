@@ -176,6 +176,14 @@ strong {
 
 /* Layouts */
 
+.none {
+  display: none;
+}
+
+.hidden {
+  display: hidden;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -259,6 +267,10 @@ strong {
 
 .max-660 {
   max-width: 660px;
+}
+
+.max-h-420 {
+  max-height: 420px;
 }
 
 .max-h-500 {

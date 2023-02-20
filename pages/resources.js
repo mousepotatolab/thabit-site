@@ -234,9 +234,63 @@ export default function Resources() {
                 <h3 className="text-2xl mb-2 font-light text-primary mb-2">
                   Join our newsletter if you are curious to learn more{" "}
                 </h3>
-                <button className="button-subscribe pointer">
-                  subscribe to our newsletter
-                </button>
+                <div id="mc_embed_signup">
+                  <form
+                    action="https://mousepotato.us6.list-manage.com/subscribe/post?u=5658bed379656cda9cebc8c01&amp;id=f557a3b3ec&amp;f_id=0042a3e2f0"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate"
+                    target="_self"
+                  >
+                    <div id="mc_embed_signup_scroll">
+                      <div className="mc-field-group">
+                        <label for="mce-EMAIL" className="text-md">
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          name="EMAIL"
+                          // placeholder="e.g. dwight@dundermifflin.com"
+                          className="required email w-full"
+                          id="mce-EMAIL"
+                          required
+                        ></input>
+                        <span
+                          id="mce-EMAIL-HELPERTEXT"
+                          className="helper_text"
+                        ></span>
+                      </div>
+                      <div id="mce-responses" class="clear foot">
+                        <div className="response" id="mce-error-response"></div>
+                        <div
+                          className="response"
+                          id="mce-success-response"
+                        ></div>
+                      </div>
+                      <div aria-hidden="true" className="none">
+                        <input
+                          type="text"
+                          name="b_5658bed379656cda9cebc8c01_f557a3b3ec"
+                          tabindex="-1"
+                          value=""
+                        ></input>
+                      </div>
+                      <div class="optionalParent">
+                        <div className="clear foot button-subscribe">
+                          <input
+                            type="submit"
+                            value="subscribe to our newsletter"
+                            name="subscribe"
+                            id="mc-embedded-subscribe"
+                            className="button w-full text-secondary text-md"
+                          ></input>
+                          subscribe to our newsletter
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
