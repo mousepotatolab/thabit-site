@@ -6,6 +6,10 @@ import fifth from "../public/fifth.svg";
 
 import { useAnimation, motion } from "framer-motion";
 
+import SuccessLayout from "@/components/successLayout";
+
+import ThemeToggle from "@/components/themeToggle";
+
 import { useRouter } from "next/router";
 
 export default function Newsletter() {
@@ -21,7 +25,8 @@ export default function Newsletter() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <div className="w-full m-minus flex items-center col justify-center container m-auto">
+      <ThemeToggle></ThemeToggle>
+      <div className="w-full mt-10 flex items-center col justify-center container m-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -38,9 +43,13 @@ export default function Newsletter() {
         </motion.div>
         <h1 className="text-xl mb-30 max-660">
           Thank you for joining our newsletter! Something special will arrive in
-          your inbox every Friday. You can unsusbscribe any
+          your inbox every Friday. You can unsusbscribe any time
         </h1>
       </div>
     </motion.div>
   );
 }
+
+Newsletter.getLayout = function getLayout(page) {
+  return <SuccessLayout>{page}</SuccessLayout>;
+};

@@ -4,6 +4,10 @@ import Image from "next/image";
 
 import aliens from "../public/aliens.svg";
 
+import SuccessLayout from "@/components/projectLayout";
+
+import ThemeToggle from "@/components/themeToggle";
+
 import { useAnimation, motion } from "framer-motion";
 
 import { useRouter } from "next/router";
@@ -21,7 +25,8 @@ export default function Success() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <div className="w-full m-minus flex items-center col justify-center container m-auto">
+      <ThemeToggle></ThemeToggle>
+      <div className="w-full mt-10 flex items-center col justify-center container m-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -40,3 +45,6 @@ export default function Success() {
     </motion.div>
   );
 }
+Success.getLayout = function getLayout(page) {
+  return <SuccessLayout>{page}</SuccessLayout>;
+};
