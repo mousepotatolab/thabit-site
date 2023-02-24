@@ -12,7 +12,7 @@ import { useAnimation, motion } from "framer-motion";
 
 import { useRouter } from "next/router";
 
-export default function PageNotFound() {
+export default function InternalError() {
   const router = useRouter();
   useEffect(() => {
     setTimeout(() => router.push("/"), 3500);
@@ -38,15 +38,14 @@ export default function PageNotFound() {
           <Image src={lab} alt="illustration of a scientist"></Image>
         </motion.div>
         <h1 className="text-xl mb-30 max-660">
-          404
+          500
           <br />
-          You have reached a page that does not exist. Check the url for issues.
-          Maybe we are in the lab working on this page
+          Internal server error
         </h1>
       </div>
     </motion.div>
   );
 }
-PageNotFound.getLayout = function getLayout(page) {
+InternalError.getLayout = function getLayout(page) {
   return <SuccessLayout>{page}</SuccessLayout>;
 };
