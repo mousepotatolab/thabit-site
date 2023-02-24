@@ -8,8 +8,8 @@ import twitter from "../public/twitterSocial.svg";
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="w-full mobile-wrap flex justify-between container m-auto border-bottom-grey pb-10 mb-6">
+    <footer className="bg-projects">
+      <div className="w-full mobile-wrap flex justify-between container m-auto border-bottom-grey pb-10 mb-6 ">
         <div className="left-footer flex col">
           <Image
             src={bit}
@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full mb-11">
+      <div className="w-full pb-11">
         <h5 className="text-sm font-regular uppercase text-center">
           COPYRIGHT © 2023 BY MOUSE POTATO LAB, CALIFORNIA
         </h5>

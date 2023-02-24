@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import Layout from "@/components/layout";
+
 import { useEffect } from "react";
 
 import { useAnimation, motion } from "framer-motion";
@@ -11,6 +13,7 @@ import { setActivePage } from "../src/features/activePageSlice";
 
 //images
 import arrowRight from "../public/arrowRight.svg";
+import Link from "next/link";
 
 const normalizeSrc = (src) => {
   return src.startsWith("/") ? src.slice(1) : src;
@@ -89,9 +92,9 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-full bg-secondary pt-12 pl-20 mb-30 max-h-500">
-            <div className="flex justify-between">
-              <div className="max-500 relative">
+          <div className="w-full bg-secondary pt-12 mobile-p-8 pl-20 mb-30 max-h-500">
+            <div className="flex justify-between mobile-wrap">
+              <div className="max-500 relative mobile-mb-20">
                 <h6 className="text-md font-regular text-primary uppercase mb-2">
                   Web App
                 </h6>
@@ -100,14 +103,14 @@ export default function Projects() {
                   AIXR is a thriving membership community for VR/AR, Realtime &
                   Web3 businesses internationally
                 </p>
-                <ul className="flex">
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                <ul className="flex mobile-block mobile-mb-20">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UX Research
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UI Design
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Web App Development
                   </li>
                 </ul>
@@ -127,13 +130,13 @@ export default function Projects() {
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
+                className="relative aixr"
                 // animate={{ x: 100, y: -100 }}
               >
                 <Image
                   loader={cloudflareLoader}
                   src="/ddfcc0bb-3d87-43f6-4e9b-991e83773900"
-                  width={519}
-                  height={454}
+                  fill
                 ></Image>
               </motion.div>
             </div>
@@ -145,23 +148,24 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-full bg-secondary pt-12 pl-6 pr-20 mb-30 max-h-500">
-            <div className="flex justify-between">
+          <div className="w-full bg-secondary pt-12 pl-6 mobile-p-8 pr-20 mb-30 max-h-500">
+            <div className="flex justify-between mobile-justify-end mobile-wrap-reverse">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 // animate={{ x: 100, y: -100 }}
+                className="relative club"
               >
                 <Image
                   loader={cloudflareLoader}
                   src="/c4984668-29ce-4037-d750-a49aa95ad400"
-                  width={465}
-                  height={454}
+                  fill
+                  className="club"
                 ></Image>
               </motion.div>
-              <div className="max-500 relative">
+              <div className="max-500 relative mobile-mb-20">
                 <h6 className="text-md font-regular text-primary uppercase mb-2">
                   Mobile App
                 </h6>
@@ -169,17 +173,17 @@ export default function Projects() {
                 <p className="text-lg font-light mb-6">
                   Powering payments between brands, sports clubs and athletes
                 </p>
-                <ul className="flex">
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                <ul className="flex mobile-block mobile-mb-20">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Branding
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UX Research
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Ui Design
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Website Development
                   </li>
                 </ul>
@@ -203,9 +207,9 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-full bg-secondary  pl-20 mb-30 max-h-500">
-            <div className="flex justify-between">
-              <div className="max-500 relative pt-12">
+          <div className="w-full bg-secondary  pl-20 mobile-p-8 mb-30 max-h-500">
+            <div className="flex justify-between mobile-wrap">
+              <div className="max-500 relative pt-12 mobile-pt-0 mobile-mb-20">
                 <h6 className="text-md font-regular text-primary uppercase mb-2">
                   Mobile App
                 </h6>
@@ -213,27 +217,29 @@ export default function Projects() {
                 <p className="text-lg font-light mb-6">
                   Capture and preserve the memory of our loved ones
                 </p>
-                <ul className="flex">
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                <ul className="flex mobile-block mobile-mb-20">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UX Research
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UI Design
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Landing Page Development
                   </li>
                 </ul>
-                <div className="flex absolute y-0 hover-transX pointer mb-10">
-                  <h5 className="uppercase text-md font-bold mr-2">
-                    Learn More
-                  </h5>
-                  <Image
-                    src={arrowRight}
-                    alt="illustration of woman with puzzle pieces"
-                    className="arrow"
-                  ></Image>
-                </div>
+                <Link href="/projects/lalo">
+                  <div className="flex absolute y-0 hover-transX pointer mb-10">
+                    <h5 className="uppercase text-md font-bold mr-2">
+                      Learn More
+                    </h5>
+                    <Image
+                      src={arrowRight}
+                      alt="illustration of woman with puzzle pieces"
+                      className="arrow"
+                    ></Image>
+                  </div>
+                </Link>
               </div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -241,12 +247,12 @@ export default function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 // animate={{ x: 100, y: -100 }}
+                className="relative lalo"
               >
                 <Image
                   loader={cloudflareLoader}
                   src="/6d56a03c-6fe2-4a17-709f-ec2f22bcc500"
-                  width={540}
-                  height={500}
+                  fill
                 ></Image>
               </motion.div>
             </div>
@@ -258,23 +264,23 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-full bg-secondary pt-12 pl-6 pr-20 mb-30 max-h-500">
-            <div className="flex justify-between">
+          <div className="w-full bg-secondary pt-12 pl-6 mobile-p-8 pr-20 mb-30 max-h-500">
+            <div className="flex justify-between  mobile-justify-end mobile-wrap-reverse">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 // animate={{ x: 100, y: -100 }}
+                className="relative risen"
               >
                 <Image
                   loader={cloudflareLoader}
                   src="/27415cef-b642-4297-8e04-faf660f07d00"
-                  width={465}
-                  height={454}
+                  fill
                 ></Image>
               </motion.div>
-              <div className="max-500 relative">
+              <div className="max-500 relative mobile-mb-20">
                 <h6 className="text-md font-regular text-primary uppercase mb-2">
                   Web App
                 </h6>
@@ -282,30 +288,32 @@ export default function Projects() {
                 <p className="text-lg font-light mb-6">
                   Get proper help in an emergency medical situation{" "}
                 </p>
-                <ul className="flex">
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                <ul className="flex mobile-block mobile-mb-20">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Branding
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UX Research
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Ui Design
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Web App Development
                   </li>
                 </ul>
-                <div className="flex absolute y-0 hover-transX pointer mb-10">
-                  <h5 className="uppercase text-md font-bold mr-2">
-                    Learn More
-                  </h5>
-                  <Image
-                    src={arrowRight}
-                    alt="illustration of woman with puzzle pieces"
-                    className="arrow"
-                  ></Image>
-                </div>
+                <Link href="/projects/risen">
+                  <div className="flex absolute y-0 hover-transX pointer mb-10">
+                    <h5 className="uppercase text-md font-bold mr-2">
+                      Learn More
+                    </h5>
+                    <Image
+                      src={arrowRight}
+                      alt="illustration of woman with puzzle pieces"
+                      className="arrow"
+                    ></Image>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -316,9 +324,9 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-full bg-secondary  pl-20 mb-30 max-h-500">
-            <div className="flex justify-between">
-              <div className="max-500 relative pt-12">
+          <div className="w-full bg-secondary  pl-20 mobile-p-8 mb-30 max-h-500">
+            <div className="flex justify-between mobile-wrap">
+              <div className="max-500 relative pt-12 mobile-pt-0 mobile-mb-20">
                 <h6 className="text-md font-regular text-primary uppercase mb-2">
                   Mobile App
                 </h6>
@@ -328,24 +336,26 @@ export default function Projects() {
                 <p className="text-lg font-light mb-6">
                   Experience augmented reality using Verizon 5G
                 </p>
-                <ul className="flex">
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                <ul className="flex mobile-block mobile-mb-20">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UX Research
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UI Design
                   </li>
                 </ul>
-                <div className="flex absolute y-0 hover-transX pointer mb-10">
-                  <h5 className="uppercase text-md font-bold mr-2">
-                    Learn More
-                  </h5>
-                  <Image
-                    src={arrowRight}
-                    alt="illustration of woman with puzzle pieces"
-                    className="arrow"
-                  ></Image>
-                </div>
+                <Link href="/projects/verizon">
+                  <div className="flex absolute y-0 hover-transX pointer mb-10">
+                    <h5 className="uppercase text-md font-bold mr-2">
+                      Learn More
+                    </h5>
+                    <Image
+                      src={arrowRight}
+                      alt="illustration of woman with puzzle pieces"
+                      className="arrow"
+                    ></Image>
+                  </div>
+                </Link>
               </div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -353,12 +363,12 @@ export default function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 // animate={{ x: 100, y: -100 }}
+                className="relative verizon"
               >
                 <Image
                   loader={cloudflareLoader}
                   src="/30506a19-689e-421b-ce24-a26c4157bd00"
-                  width={540}
-                  height={500}
+                  fill
                 ></Image>
               </motion.div>
             </div>
@@ -368,3 +378,7 @@ export default function Projects() {
     </>
   );
 }
+
+Projects.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

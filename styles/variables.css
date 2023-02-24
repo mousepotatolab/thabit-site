@@ -14,6 +14,7 @@
   --color-text-white: #ffffff;
   --color-text-black: #1a1a1a;
   --color-bg-light-grey: #ededed;
+  --color-bg-projects: #fbfbfb;
 }
 [data-theme="dark"] {
   --color-text-primary: #ffffff;
@@ -29,4 +30,5 @@
   --color-text-white: #ffffff;
   --color-text-black: #1a1a1a;
   --color-bg-light-grey: #ededed;
+  --color-bg-projects: #1a1a1a;
 }

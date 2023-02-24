@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+import Layout from "@/components/layout";
+
 import Head from "next/head";
 import Image from "next/image";
 
@@ -83,9 +85,9 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-full bg-secondary pt-12 px-20 mb-20">
-              <div className="flex justify-between">
-                <div className="max-500 relative mb-10">
+            <div className="w-full bg-secondary pt-12 mobile-p-8 px-20 mb-20">
+              <div className="flex justify-between mobile-wrap">
+                <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
                     Ready to talk to us?
                     <br /> process?
@@ -141,8 +143,8 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-full bg-secondary pt-12 px-20 mb-20">
-              <div className="flex justify-between">
+            <div className="w-full bg-secondary pt-12 px-20 mobile-p-8 mb-20">
+              <div className="flex justify-between mobile-wrap">
                 <div className="max-500 relative mb-10">
                   <h3 className="text-2xl font-light mb-6">
                     Save at least <br /> $100,000 a year!
@@ -175,7 +177,7 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex w-full justify-between mb-20">
+            <div className="flex w-full justify-between mb-20 mobile-wrap">
               <div className="bg-secondary p-10 w-full">
                 <h5 className="text-lg font-bold text-primary mb-2">
                   Yearly Contract
@@ -222,7 +224,7 @@ export default function Services() {
                 </p>
                 <button className="button-contact">contact us</button>
               </div>
-              <div className="bg-secondary p-10 w-full mx-15">
+              <div className="bg-secondary p-10 w-full mx-15 mobile-m-0 mobile-my-4">
                 <h5 className="text-lg font-bold text-primary mb-2">
                   Six Month Contract
                 </h5>
@@ -325,7 +327,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between">
+              <div className="flex justify-between mobile-wrap-reverse">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -338,7 +340,7 @@ export default function Services() {
                     alt="illustration of scientist with beakers"
                   ></Image>
                 </motion.div>
-                <div className="max-500 relative mb-10">
+                <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
                     Ready to talk <br /> to us?
                   </h3>
@@ -366,3 +368,7 @@ export default function Services() {
     </>
   );
 }
+
+Services.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

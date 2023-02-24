@@ -24,13 +24,8 @@ export default function Navbar() {
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
         >
-          <div className="logo-main mb-20">
-            <Image
-              src={logo}
-              alt="Mouse Potato Lab Logo"
-              width={150}
-              height={150}
-            ></Image>
+          <div className="logo-main mb-20 relative">
+            <Image src={logo} alt="Mouse Potato Lab Logo" fill></Image>
           </div>
         </motion.div>
       </Link>

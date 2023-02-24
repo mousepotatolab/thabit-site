@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import Layout from "@/components/layout";
+
 import React from "react";
 
 import { useEffect } from "react";
@@ -77,8 +79,8 @@ export default function Contact() {
           </h1>
         </motion.div>
         <section className="resources-section mb-30">
-          <div className="w-full flex">
-            <div className="left-resources w-full flex">
+          <div className="w-full flex ">
+            <div className="left-resources w-full flex mobile-wrap">
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -157,13 +159,13 @@ export default function Contact() {
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="w-full bg-dark-grey p-10 mb-10 ml-10 relative"
+                className="w-full bg-dark-grey p-10 mb-10 ml-10 mobile-m-0 relative"
               >
                 <h3 className="text-3xl mb-2 font-light text-primary mb-10 max-420">
                   Hire us as your <strong> team </strong> and save at least
                   <strong> $100,000 </strong>a year!
                 </h3>
-                <p className="text-xl font-light max-420">
+                <p className="text-xl font-light max-420 mobile-mb-30">
                   One <strong>senior designer </strong> and one
                   <strong> senior engineer </strong> will cost you over
                   <strong> $250,000</strong> a year plus benefits, if you can
@@ -245,3 +247,7 @@ export default function Contact() {
     </>
   );
 }
+
+Contact.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

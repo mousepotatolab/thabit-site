@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import Layout from "@/components/layout";
+
 import { useEffect } from "react";
 
 import { useAnimation, motion } from "framer-motion";
@@ -144,14 +146,14 @@ export default function Calendar() {
                   academy offers professional development, valuable connections,
                   and influence.
                 </p>
-                <ul className="flex">
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                <ul className="flex mobile-block">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UX Research
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UI Design
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Landing Page Design
                   </li>
                 </ul>
@@ -190,14 +192,14 @@ export default function Calendar() {
                   academy offers professional development, valuable connections,
                   and influence.
                 </p>
-                <ul className="flex">
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                <ul className="flex mobile-block">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UX Research
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     UI Design
                   </li>
-                  <li className="text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
+                  <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Web App Development
                   </li>
                 </ul>
@@ -222,7 +224,7 @@ export default function Calendar() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between">
+              <div className="flex justify-between mobile-wrap-reverse">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -235,7 +237,7 @@ export default function Calendar() {
                     alt="illustration of scientist with beakers"
                   ></Image>
                 </motion.div>
-                <div className="max-500 relative mb-10">
+                <div className="max-500 mobile-mb-20 relative mb-10">
                   <h3 className="text-2xl font-light mb-6">
                     Ready to talk <br /> to us?
                   </h3>
@@ -263,3 +265,7 @@ export default function Calendar() {
     </>
   );
 }
+
+Calendar.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

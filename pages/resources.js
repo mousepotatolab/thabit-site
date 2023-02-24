@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import Layout from "@/components/layout";
+
 import { useEffect } from "react";
 
 import { useAnimation, motion } from "framer-motion";
@@ -89,8 +91,8 @@ export default function Resources() {
           </h3>
         </motion.div>
         <section className="resources-section mb-30">
-          <div className="w-full flex">
-            <div className="left-resources w-full flex col pr-5">
+          <div className="w-full flex mobile-wrap-reverse">
+            <div className="left-resources w-full flex col pr-5 mobile-p-0">
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -218,7 +220,7 @@ export default function Resources() {
                 <button className="button-resources pointer">read more</button>
               </motion.div>
             </div>
-            <div className="right-resources w-full pl flex col pl-5">
+            <div className="right-resources w-full pl flex col pl-5 mobile-p-0">
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -372,3 +374,7 @@ export default function Resources() {
     </>
   );
 }
+
+Resources.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

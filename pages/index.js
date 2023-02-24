@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+import Layout from "../components/layout";
+
 import Head from "next/head";
 import Image from "next/image";
 // import styles from "@/styles/Home.module.css";
@@ -85,7 +87,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between">
+              <div className="flex justify-between mobile-wrap">
                 <div className="max-500">
                   <h3 className="text-2xl font-light mb-6">
                     What is Mouse <br /> Potato Lab?
@@ -124,7 +126,7 @@ export default function Home() {
               How Have We Helped Our Clients
             </h2>
           </motion.div>
-          <div className="w-full flex mb-30">
+          <div className="w-full flex mb-30 mobile-wrap">
             <motion.div
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -141,7 +143,7 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-tertiary text-secondary w-full p-10 mx-6 flex items-end"
+              className="bg-tertiary text-secondary w-full p-10 mx-6 mobile-m-0 flex items-end"
             >
               <h3 className="text-2xl font-light mb-8">
                 Interview with VCs like Y-Combinator, though they said try again
@@ -178,46 +180,46 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="w-full bg-secondary flex justify-between items-center px-13 py-20 mb-30"
+            className="w-full bg-secondary flex mobile-wrap justify-between mobile-justify-center items-center px-13 py-20 mb-30"
           >
             <Image
-              className="opacity-60 hover-opacity-100 t-3"
+              className="opacity-60 hover-opacity-100 t-3 mobile-w-full mobile-mb-4"
               src={verizon}
               alt="verizon logo"
               width={90}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up"
+              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
               src={chain}
               alt="chainsmokers logo"
               width={132}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up"
+              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
               src={aixr}
               alt="AIXR logo"
               width={74}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up"
+              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
               src={globle}
               alt="Globle logo"
               width={74}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up"
+              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
               src={lalo}
               alt="Lalo logo"
               width={65}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up"
+              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
               src={club}
               alt="clubfunders logo"
               width={152}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up"
+              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full"
               src={risen}
               alt="risen logo"
               width={102}
@@ -232,7 +234,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between">
+              <div className="flex justify-between mobile-wrap-reverse">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -245,7 +247,7 @@ export default function Home() {
                     alt="illustration of person with a globe"
                   ></Image>
                 </motion.div>
-                <div className="max-500">
+                <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
                     What do we <br /> do actually?
                   </h3>
@@ -255,6 +257,18 @@ export default function Home() {
                     <strong>develop mobile apps, web apps, </strong> websites
                     and landing pages!{" "}
                   </p>
+                  <Link href="/contact">
+                    <div className="flex absolute y-0 hover-transX pointer">
+                      <h5 className="uppercase text-md font-bold mr-2">
+                        I have an idea to share
+                      </h5>
+                      <Image
+                        src={arrowRight}
+                        alt="illustration of woman with puzzle pieces"
+                        className="arrow"
+                      ></Image>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -266,8 +280,8 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between">
-                <div className="max-500 relative mb-10">
+              <div className="flex justify-between mobile-wrap">
+                <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
                     What is our work
                     <br /> process?
@@ -277,16 +291,18 @@ export default function Home() {
                     <strong> design thinking </strong> process to come up with a
                     design solution
                   </p>
-                  <div className="flex absolute y-0 hover-transX pointer">
-                    <h5 className="uppercase text-md font-bold mr-2">
-                      Detailed Work Process
-                    </h5>
-                    <Image
-                      src={arrowRight}
-                      alt="illustration of woman with puzzle pieces"
-                      className="arrow"
-                    ></Image>
-                  </div>
+                  <Link href="/contact">
+                    <div className="flex absolute y-0 hover-transX pointer">
+                      <h5 className="uppercase text-md font-bold mr-2">
+                        I want to learn more
+                      </h5>
+                      <Image
+                        src={arrowRight}
+                        alt="illustration of woman with puzzle pieces"
+                        className="arrow"
+                      ></Image>
+                    </div>
+                  </Link>
                 </div>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -340,7 +356,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between">
+              <div className="flex justify-between mobile-wrap-reverse">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -353,7 +369,7 @@ export default function Home() {
                     alt="illustration of scientist with beakers"
                   ></Image>
                 </motion.div>
-                <div className="max-500 relative mb-10">
+                <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
                     What have we done?
                     <br /> process?
@@ -364,16 +380,18 @@ export default function Home() {
                     <strong> apps </strong> that helped solve{" "}
                     <strong>complex problems, </strong> and improved lives!
                   </p>
-                  <div className="flex absolute y-0 hover-transX pointer">
-                    <h5 className="uppercase text-md font-bold mr-2">
-                      Our Projects
-                    </h5>
-                    <Image
-                      src={arrowRight}
-                      alt="illustration of woman with puzzle pieces"
-                      className="arrow"
-                    ></Image>
-                  </div>
+                  <Link href="/projects">
+                    <div className="flex absolute y-0 hover-transX pointer">
+                      <h5 className="uppercase text-md font-bold mr-2">
+                        Our Projects
+                      </h5>
+                      <Image
+                        src={arrowRight}
+                        alt="illustration of woman with puzzle pieces"
+                        className="arrow"
+                      ></Image>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -391,7 +409,7 @@ export default function Home() {
               What our clients say about us
             </h2>
           </motion.div>
-          <div className="w-full flex mb-30 relative">
+          <div className="w-full flex mb-30 relative mobile-wrap">
             <div className="relative flex w-full hover-revealTest">
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
@@ -436,7 +454,7 @@ export default function Home() {
                 </h6>
               </motion.div>
             </div>
-            <div className="relative flex w-full hover-revealTest mx-6">
+            <div className="relative flex w-full hover-revealTest mx-6 mobile-m-0">
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -449,10 +467,10 @@ export default function Home() {
                   and amazing to work with. They were pivotal when it came to
                   launching my business."
                 </p>
-                <h5 className="text-lg font-regular text-primary mb-2">
+                <h5 className="text-lg font-regular text-secondary mb-2">
                   Mallory Delabar
                 </h5>
-                <h6 className="text-md font-light text-primary">
+                <h6 className="text-md font-light text-secondary">
                   Founder @ Risen Devices
                 </h6>
               </motion.div>
@@ -546,11 +564,11 @@ export default function Home() {
               <strong>save over $100,000 </strong>. A team of 7 <br />
               designers and developers will work on your project!
             </p>
-            {/* <Link> */}
-            <button className="button-primary pointer">
-              how am i saving $100,000?
-            </button>
-            {/* </Link> */}
+            <Link href="/services#your-team">
+              <button className="button-primary pointer">
+                how am i saving $100,000?
+              </button>
+            </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -559,8 +577,8 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between">
-                <div className="max-500 relative mb-10">
+              <div className="flex justify-between mobile-wrap">
+                <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
                     Ready to talk to us?
                     <br /> process?
@@ -571,16 +589,18 @@ export default function Home() {
                     <strong> problem </strong> you want to solve or the
                     <strong> project </strong> that you are working on?
                   </p>
-                  <div className="flex absolute y-0 hover-transX pointer">
-                    <h5 className="uppercase text-md font-bold mr-2">
-                      I want to connect
-                    </h5>
-                    <Image
-                      src={arrowRight}
-                      alt="illustration of woman with puzzle pieces"
-                      className="arrow"
-                    ></Image>
-                  </div>
+                  <Link href="/contact">
+                    <div className="flex absolute y-0 hover-transX pointer">
+                      <h5 className="uppercase text-md font-bold mr-2">
+                        I want to connect
+                      </h5>
+                      <Image
+                        src={arrowRight}
+                        alt="illustration of woman with puzzle pieces"
+                        className="arrow"
+                      ></Image>
+                    </div>
+                  </Link>
                 </div>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -622,11 +642,11 @@ export default function Home() {
               <strong>save over $100,000 </strong>. A team of 7 <br />
               designers and developers will work on your project!
             </p>
-            {/* <Link> */}
-            <button className="button-primary pointer">
-              now ready to connect?
-            </button>
-            {/* </Link> */}
+            <Link href="/contact">
+              <button className="button-primary pointer">
+                now ready to connect?
+              </button>
+            </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -657,3 +677,7 @@ export default function Home() {
     </>
   );
 }
+
+Home.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
