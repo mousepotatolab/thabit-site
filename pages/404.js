@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import Image from "next/image";
 
-import aliens from "../public/aliens.svg";
+import lab from "../public/sixth.svg";
 
 import SuccessLayout from "@/components/successLayout";
 
@@ -35,11 +35,13 @@ export default function Success() {
           className="mb-20"
           // animate={{ x: 100, y: -100 }}
         >
-          <Image src={aliens} alt="illustration alien spaceships"></Image>
+          <Image src={lab} alt="illustration of a scientist"></Image>
         </motion.div>
         <h1 className="text-xl mb-30 max-660">
-          Your message was submitted successfully! One of our team members will
-          get back to you soon.
+          404
+          <br />
+          You have reached a page that does not exist. Check the url for issues.
+          Maybe we are in the lab working on this page
         </h1>
       </div>
     </motion.div>
