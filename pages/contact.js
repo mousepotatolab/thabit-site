@@ -29,7 +29,6 @@ export default function Contact() {
     dispatch(setActivePage("contact"));
   });
 
-  console.log(activePage);
   return (
     <>
       <Head>
@@ -103,7 +102,7 @@ export default function Contact() {
                   <input
                     type="hidden"
                     name="access_key"
-                    value="b017b888-4c49-4480-9be7-74b53a11c614"
+                    value="86f163f5-68d2-4f32-924d-59e0d54d1c75"
                   />
                   <input
                     type="hidden"
