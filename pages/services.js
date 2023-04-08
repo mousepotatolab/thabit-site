@@ -98,16 +98,18 @@ export default function Services() {
                     <strong> problem </strong> you want to solve or the
                     <strong> project </strong> that you are working on?
                   </p>
-                  <div className="flex absolute y-0 hover-transX pointer">
-                    <h5 className="uppercase text-md font-bold mr-2">
-                      I want to connect
-                    </h5>
-                    <Image
-                      src={arrowRight}
-                      alt="icon right arrow"
-                      className="arrow"
-                    ></Image>
-                  </div>
+                  <Link href="/contact">
+                    <div className="flex absolute y-0 hover-transX pointer">
+                      <h5 className="uppercase text-md font-bold mr-2">
+                        I want to connect
+                      </h5>
+                      <Image
+                        src={arrowRight}
+                        alt="icon right arrow"
+                        className="arrow"
+                      ></Image>
+                    </div>
+                  </Link>
                 </div>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -349,16 +351,18 @@ export default function Services() {
                     <strong> hiring </strong> us as your
                     <strong> team </strong> works!
                   </p>
-                  <div className="flex absolute y-0 hover-transX pointer">
-                    <h5 className="uppercase text-md font-bold mr-2">
-                      I want to connect
-                    </h5>
-                    <Image
-                      src={arrowRight}
-                      alt="illustration of woman with puzzle pieces"
-                      className="arrow"
-                    ></Image>
-                  </div>
+                  <Link href="/contact">
+                    <div className="flex absolute y-0 hover-transX pointer">
+                      <h5 className="uppercase text-md font-bold mr-2">
+                        I want to connect
+                      </h5>
+                      <Image
+                        src={arrowRight}
+                        alt="illustration of woman with puzzle pieces"
+                        className="arrow"
+                      ></Image>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
