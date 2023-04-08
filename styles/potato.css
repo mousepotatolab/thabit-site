@@ -881,6 +881,9 @@ form p button {
 
 /* Button Classes End */
 
+.center-footer {
+  display: none;
+}
 /* POTATO STYLES END */
 
 /* RESPONSIVE */
@@ -985,6 +988,10 @@ form p button {
 
   .container {
     max-width: 360px;
+  }
+
+  .mobile-full {
+    width: 100%;
   }
 
   .px-20 {

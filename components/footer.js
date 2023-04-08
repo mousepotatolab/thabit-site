@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full mobile-wrap flex justify-between container m-auto border-bottom-grey pb-10 mb-6">
-        <div className="left-footer flex col">
+        <div className="left-footer mobile-full flex col">
           <Image
             src={bit}
             alt="mouse potato logo 8bit"
