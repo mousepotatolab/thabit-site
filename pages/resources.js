@@ -112,7 +112,14 @@ export default function Resources() {
                   making their lives better... Never ask your users what to
                   build. Ask your users what they are trying to do...
                 </p>
-                <button className="button-resources pointer">read more</button>
+                <a
+                  href="https://uxdesign.cc/the-homer-simpson-car-is-a-great-lesson-in-building-products-597da30ba348"
+                  target="_blank"
+                >
+                  <button className="button-resources pointer">
+                    read more
+                  </button>
+                </a>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
@@ -137,9 +144,47 @@ export default function Resources() {
                   A/B test their site redesign because “Good design is in our
                   DNA!”
                 </p>
-                <button className="button-resources-white pointer">
-                  read more
-                </button>
+                <a
+                  href="https://traveltekker.com/2012/07/11/think-you-can-effectivelyjudge-effective-user-experience-design-think-again/"
+                  target="_blank"
+                >
+                  <button className="button-resources-white pointer">
+                    read more
+                  </button>
+                </a>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="w-full bg-secondary p-10 mb-10"
+              >
+                <h6 className="text-md font-regular text-primary uppercase mb-2">
+                  alex margot
+                </h6>
+                <h3 className="text-2xl mb-2 font-light text-primary mb-2">
+                  Cognitive psychology in UX design: Minimizing the cognitive
+                  load
+                </h3>
+                <p className="text-md font-light mb-10">
+                  Cognitive load refers to the amount of effort that is exerted
+                  or required while reasoning and thinking. Any mental process,
+                  from memory to perception to language, creates a cognitive
+                  load because it requires energy and effort. When cognitive
+                  load is high, thought processes are potentially interfered
+                  with. To the UX designer, a common goal when designing
+                  interfaces would be to keep users’ cognitive load to a
+                  minimum.
+                </p>
+                <a
+                  href="https://medium.com/@AlesioM/cognitive-psychology-in-ux-minimising-the-cognitive-load-d97ad8e3115b"
+                  target="_blank"
+                >
+                  <button className="button-resources pointer">
+                    read more
+                  </button>
+                </a>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
@@ -166,29 +211,16 @@ export default function Resources() {
                   knows better than user, the one in which users don’t know
                   what’s good for them...
                 </p>
-                <button className="button-resources pointer">read more</button>
+                <a
+                  href="https://52weeksofux.com/post/513417140/the-experience-belongs-to-the-user"
+                  target="_blank"
+                >
+                  <button className="button-resources pointer">
+                    read more
+                  </button>
+                </a>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="w-full bg-secondary p-10 mb-10"
-              >
-                <h6 className="text-md font-regular text-primary uppercase mb-2">
-                  Noah J. Goldstein, Robert B. Cialdini, Vladas Griskevicius
-                </h6>
-                <h3 className="text-2xl mb-2 font-light text-primary mb-2">
-                  The Homer Simpson car is a great lesson in building products
-                </h3>
-                <p className="text-md font-light mb-10">
-                  But good product design is not about letting your users design
-                  your products for you — it’s about solving users problems and
-                  making their lives better... Never ask your users what to
-                  build. Ask your users what they are trying to do...
-                </p>
-                <button className="button-resources pointer">read more</button>
-              </motion.div>
+
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -217,7 +249,14 @@ export default function Resources() {
                   than the current industry standard appeal. We tested this
                   hypothesis...
                 </p>
-                <button className="button-resources pointer">read more</button>
+                <a
+                  href="https://academic.oup.com/jcr/article/35/3/472/1856257"
+                  target="_blank"
+                >
+                  <button className="button-resources pointer">
+                    read more
+                  </button>
+                </a>
               </motion.div>
             </div>
             <div className="right-resources w-full pl flex col pl-5 mobile-p-0">
@@ -253,7 +292,7 @@ export default function Resources() {
                         <input
                           type="email"
                           name="EMAIL"
-                          // placeholder="e.g. dwight@dundermifflin.com"
+                          placeholder="e.g. dwight@dundermifflin.com"
                           className="required email w-full"
                           id="mce-EMAIL"
                           required
@@ -317,9 +356,14 @@ export default function Resources() {
                     shadowing core functions. Thus, the customers not being able
                     to figure out the core use case of it.
                   </p>
-                  <button className="button-resources pointer">
-                    read more
-                  </button>
+                  <a
+                    href="https://userguiding.com/blog/feature-bloat/"
+                    target="_blank"
+                  >
+                    <button className="button-resources pointer">
+                      read more
+                    </button>
+                  </a>
                 </div>
               </motion.div>
               <motion.div
@@ -343,7 +387,14 @@ export default function Resources() {
                   problem and solving it well, Embrace is poised to do more than
                   introduce a popular product; they will be saving lives.
                 </p>
-                <button className="button-resources pointer">read more</button>
+                <a
+                  href="https://blog.experiencepoint.com/2010/02/16/design-thinking-in-action-embrace-global/"
+                  target="_blank"
+                >
+                  <button className="button-resources pointer">
+                    read more
+                  </button>
+                </a>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 80 }}
@@ -365,7 +416,14 @@ export default function Resources() {
                   launch a revolution, time to insist on a people-centered
                   approach to technology
                 </p>
-                <button className="button-resources pointer">read more</button>
+                <a
+                  href="https://jnd.org/human-error-no-bad-design/"
+                  target="_blank"
+                >
+                  <button className="button-resources pointer">
+                    read more
+                  </button>
+                </a>
               </motion.div>
             </div>
           </div>

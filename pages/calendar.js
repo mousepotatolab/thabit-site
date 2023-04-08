@@ -169,7 +169,7 @@ export default function Calendar() {
                 <div className="current relative z-plus">
                   <Image
                     src={current}
-                    alt="illustration of woman with puzzle pieces"
+                    alt="lightning icon"
                     className="arrow relative z-plus100"
                   ></Image>
                 </div>
@@ -221,7 +221,7 @@ export default function Calendar() {
                 <div className="current relative z-plus">
                   <Image
                     src={current}
-                    alt="illustration of woman with puzzle pieces"
+                    alt="lightning icon"
                     className="arrow relative z-plus100"
                   ></Image>
                 </div>
