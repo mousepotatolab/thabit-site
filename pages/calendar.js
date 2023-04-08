@@ -14,6 +14,7 @@ import { setActivePage } from "../src/features/activePageSlice";
 //images
 import arrowRight from "../public/arrowRight.svg";
 import fourth from "../public/fourth.svg";
+import current from "../public/current.png";
 
 const normalizeSrc = (src) => {
   return src.startsWith("/") ? src.slice(1) : src;
@@ -165,7 +166,13 @@ export default function Calendar() {
                 transition={{ duration: 0.6 }}
                 // animate={{ x: 100, y: -100 }}
               >
-                <div className="bg-dark-grey p-6"></div>
+                <div className="current relative z-plus">
+                  <Image
+                    src={current}
+                    alt="illustration of woman with puzzle pieces"
+                    className="arrow relative z-plus100"
+                  ></Image>
+                </div>
               </motion.div>
             </div>
           </div>
@@ -211,7 +218,13 @@ export default function Calendar() {
                 transition={{ duration: 0.6 }}
                 // animate={{ x: 100, y: -100 }}
               >
-                <div className="bg-dark-grey p-6"></div>
+                <div className="current relative z-plus">
+                  <Image
+                    src={current}
+                    alt="illustration of woman with puzzle pieces"
+                    className="arrow relative z-plus100"
+                  ></Image>
+                </div>
               </motion.div>
             </div>
           </div>
