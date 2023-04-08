@@ -116,7 +116,7 @@ export default function Projects() {
                 </ul>
                 <div className="flex absolute y-0 hover-transX pointer mb-10">
                   <h5 className="uppercase text-md font-bold mr-2">
-                    Learn More
+                    Coming Soon
                   </h5>
                   <Image
                     src={arrowRight}
@@ -189,7 +189,7 @@ export default function Projects() {
                 </ul>
                 <div className="flex absolute y-0 hover-transX pointer mb-10">
                   <h5 className="uppercase text-md font-bold mr-2">
-                    Learn More
+                    Coming Soon
                   </h5>
                   <Image
                     src={arrowRight}
