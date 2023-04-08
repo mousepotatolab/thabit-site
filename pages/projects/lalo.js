@@ -233,7 +233,7 @@ export default function Lalo() {
           transition={{ duration: 0.6 }}
           className="w-full max-1000 m-auto mt-132 mb-10 relative z-plus flex"
         >
-          <div className="bg-white min-h-500 flex">
+          <div className="bg-white min-h-500 flex mobile-wrap">
             <div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -250,7 +250,7 @@ export default function Lalo() {
                 ></Image>
               </motion.div>
             </div>
-            <div className="p-20">
+            <div className="p-20 mobile-project">
               <h6 className="text-grey text-20 font-light mb-6">
                 Empathy Stage
               </h6>
@@ -274,7 +274,7 @@ export default function Lalo() {
           transition={{ duration: 0.6 }}
           className="w-full max-1000 m-auto mb-10 relative z-plus flex"
         >
-          <div className="bg-white min-h-500 flex">
+          <div className="bg-white min-h-500 flex mobile-wrap-reverse">
             <div className="p-20">
               <h6 className="text-grey text-20 font-light mb-6">
                 Empathy Stage
@@ -314,7 +314,7 @@ export default function Lalo() {
           transition={{ duration: 0.6 }}
           className="w-full max-1000 m-auto mb-10 relative z-plus flex"
         >
-          <div className="bg-white min-h-500 flex">
+          <div className="bg-white min-h-500 flex mobile-wrap">
             <div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -372,7 +372,7 @@ export default function Lalo() {
           transition={{ duration: 0.6 }}
           className="w-full max-1000 m-auto mb-10 relative z-plus flex"
         >
-          <div className="bg-white min-h-500 flex">
+          <div className="bg-white min-h-500 flex mobile-wrap">
             <div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -410,7 +410,7 @@ export default function Lalo() {
           transition={{ duration: 0.6 }}
           className="w-full max-1000 m-auto mb-10 relative z-plus flex"
         >
-          <div className="bg-white min-h-500 flex">
+          <div className="bg-white min-h-500 flex mobile-wrap-reverse">
             <div className="p-20">
               <h6 className="text-grey text-20 font-light mb-6">Prototype</h6>
               <h6 className="text-primary text-2xl font-light mb-6">
@@ -471,7 +471,7 @@ export default function Lalo() {
           transition={{ duration: 0.6 }}
           className="w-full max-1000 m-auto mt-132 mb-10 relative z-plus flex"
         >
-          <div className="bg-white min-h-500 flex">
+          <div className="bg-white min-h-500 flex mobile-wrap">
             <div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -510,7 +510,7 @@ export default function Lalo() {
           transition={{ duration: 0.6 }}
           className="w-full max-1000 m-auto pb-10 relative z-plus flex"
         >
-          <div className="bg-white min-h-500 flex">
+          <div className="bg-white min-h-500 flex mobile-wrap-reverse">
             <div className="p-20">
               <h6 className="text-grey text-20 font-light mb-6">Prototype</h6>
               <h6 className="text-primary text-2xl font-light mb-6">

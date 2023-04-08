@@ -904,9 +904,30 @@ form p button {
     animation: fade-in-mobile-nav 0.3s forwards;
   }
 
+  .p-20 {
+    padding: 2rem;
+  }
+
   .mobile-nav ul {
     display: flex;
     flex-direction: column;
+  }
+
+  .mobile-wrap {
+    flex-wrap: wrap;
+  }
+
+  .mobile-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .mobile-project {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .mt-132 {
+    margin-top: 10rem;
   }
 
   .mobile-nav .nav-item-active {
@@ -1085,6 +1106,21 @@ form p button {
   .verizon {
     width: 300px;
     height: 275px;
+  }
+
+  .project-item {
+    width: 300px;
+    height: 300px;
+  }
+
+  .lalo-hero {
+    width: 400px;
+    height: 300px;
+  }
+
+  .risen-hero {
+    width: 400px;
+    height: 268px;
   }
 
   @keyframes rotateTop {
