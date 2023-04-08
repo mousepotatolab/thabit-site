@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Layout from "@/components/layout";
+import Link from "next/link";
 
 import { useEffect } from "react";
 
@@ -259,16 +260,18 @@ export default function Calendar() {
                     <strong> hiring </strong> us as your
                     <strong> team </strong> works!
                   </p>
-                  <div className="flex absolute y-0 hover-transX pointer">
-                    <h5 className="uppercase text-md font-bold mr-2">
-                      I want to connect
-                    </h5>
-                    <Image
-                      src={arrowRight}
-                      alt="illustration of woman with puzzle pieces"
-                      className="arrow"
-                    ></Image>
-                  </div>
+                  <Link href="/contact">
+                    <div className="flex absolute y-0 hover-transX pointer">
+                      <h5 className="uppercase text-md font-bold mr-2">
+                        I want to connect
+                      </h5>
+                      <Image
+                        src={arrowRight}
+                        alt="illustration of woman with puzzle pieces"
+                        className="arrow"
+                      ></Image>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
