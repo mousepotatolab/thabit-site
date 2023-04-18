@@ -498,7 +498,8 @@ export default function Home() {
                   launching my business. We started with an idea and the team
                   took the time to really think through the best solution. Mouse
                   Potato Lab interviewed experts, designed the app and developed
-                  a great platform."
+                  a great platform. I plan to continue working with them going
+                  forward."
                 </p>
                 <h5 className="text-lg font-regular text-primary mb-2">
                   Mallory Delabar
@@ -517,14 +518,15 @@ export default function Home() {
                 className="bg-secondary z-0 w-full p-10 flex col items-start testimonial"
               >
                 <p className="text-lg font-light text-primary mb-6">
-                  "Mouse Potato Lab is a very talented team, they did an
-                  excellent job designing our app and landing page!"
+                  "Mouspotato Labs' customer-centric and empathetic design
+                  thinking process impressed me. We collaborated to deliver an
+                  effective, clean, and beautiful solution."
                 </p>
                 <h5 className="text-lg font-regular text-primary mb-2">
-                  Simon Li
+                  Jaclyn Tryon
                 </h5>
                 <h6 className="text-md font-light text-primary">
-                  Founder @ Globle
+                  Product Manager @ Pathfinder
                 </h6>
               </motion.div>
               <motion.div
@@ -535,17 +537,18 @@ export default function Home() {
                 className="bg-white w-full p-10 shadow-card flex col items-start testimonial absolute z-minus hover-trans-z"
               >
                 <p className="text-md font-light text-primary mb-6">
-                  "We came to Mouse Potato Lab for a redesign for our app as
-                  well as services to design our website. They are a very
-                  talented team, they did an excellent job designing our app and
-                  landing page! The updated site is a major improvement and we
-                  are happy with the final product."
+                  "As a product manager and UX/UI designer at an early startup,
+                  Mouspotato Labs' customer-centric and empathetic design
+                  thinking process impressed me. We collaborated to deliver an
+                  effective, clean, and beautiful solution. Their expertise and
+                  mentorship were invaluable, and I still reference the
+                  knowledge gained from our collaboration."
                 </p>
                 <h5 className="text-lg font-regular text-primary mb-2">
-                  Simon Li
+                  Jaclyn Tryon
                 </h5>
                 <h6 className="text-md font-light text-primary">
-                  Founder @ Globle
+                  Product Manager @ Pathfinder
                 </h6>
               </motion.div>
             </div>
@@ -595,7 +598,7 @@ export default function Home() {
                     <br /> process?
                   </h3>
                   <p className="text-lg font-light">
-                    Do you fell like <strong>talking </strong> to us? Do you
+                    Do you feel like <strong>talking </strong> to us? Do you
                     want to tell us about the
                     <strong> problem </strong> you want to solve or the
                     <strong> project </strong> that you are working on?

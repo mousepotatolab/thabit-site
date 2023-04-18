@@ -256,7 +256,7 @@ export default function Calendar() {
                     Ready to talk <br /> to us?
                   </h3>
                   <p className="text-lg font-light">
-                    Talk to use to<strong> learn </strong> more about how
+                    Talk to us to<strong> learn </strong> more about how
                     <strong> hiring </strong> us as your
                     <strong> team </strong> works!
                   </p>

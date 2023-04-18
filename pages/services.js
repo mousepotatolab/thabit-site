@@ -93,7 +93,7 @@ export default function Services() {
                     <br /> process?
                   </h3>
                   <p className="text-lg font-light">
-                    Do you fell like <strong>talking </strong> to us? Do you
+                    Do you feel like <strong>talking </strong> to us? Do you
                     want to tell us about the
                     <strong> problem </strong> you want to solve or the
                     <strong> project </strong> that you are working on?
@@ -347,7 +347,7 @@ export default function Services() {
                     Ready to talk <br /> to us?
                   </h3>
                   <p className="text-lg font-light">
-                    Talk to use to<strong> learn </strong> more about how
+                    Talk to us to<strong> learn </strong> more about how
                     <strong> hiring </strong> us as your
                     <strong> team </strong> works!
                   </p>

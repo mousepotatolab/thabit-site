@@ -89,7 +89,7 @@ export default function Navbar() {
               <li
                 className={`${
                   activePage === "contact" ? "nav-item-active" : "nav-item"
-                } uppercase font-regular mr-10`}
+                } uppercase font-regular`}
               >
                 Contact
               </li>
