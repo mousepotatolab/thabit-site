@@ -7,6 +7,9 @@ import Layout from "../components/layout";
 
 import Head from "next/head";
 import Image from "next/image";
+
+import { useSelector, useDispatch } from "react-redux";
+import { setActivePage } from "../src/features/activePageSlice";
 // import styles from "@/styles/Home.module.css";
 
 // Images
@@ -28,6 +31,14 @@ import club from "../public/clubfunders.svg";
 import risen from "../public/risen.svg";
 
 export default function Home() {
+  const dispatch = useDispatch();
+
+  let activePage = useSelector((state) => state.activePage.value);
+
+  useEffect(() => {
+    dispatch(setActivePage("home"));
+  });
+
   return (
     <>
       <Head>
@@ -135,7 +146,7 @@ export default function Home() {
               className="bg-secondary w-full p-10 flex items-end"
             >
               <h3 className="text-2xl font-light">
-                Helped raise over $400,000 in investment
+                Helped raise over $1.4MM in investment
               </h3>
             </motion.div>
             <motion.div
@@ -343,11 +354,11 @@ export default function Home() {
               A company run by a bunch of "big kids" <br /> with a dream bigger
               than the Great GRB Wall!
             </p>
-            {/* <Link> */}
-            <button className="button-primary pointer">
-              this button is here for no reason
-            </button>
-            {/* </Link> */}
+            <a href="/curiosity" target="_blank">
+              <button className="button-primary pointer">
+                this button is here for no reason
+              </button>
+            </a>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
