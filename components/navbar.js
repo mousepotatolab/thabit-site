@@ -94,7 +94,7 @@ export default function Navbar() {
                 Contact
               </li>
             </Link>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </ul>
         </nav>
         {!isOpenMobileNav && (
