@@ -63,19 +63,20 @@ export default function ThemeToggle() {
   }, [activeTheme]);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="" onClick={() => switchTheme()}>
-        <svg width="24" height="24">
-          <g transform=" scale(0.5)">
-            <motion.path fill={fill} d={path} />
-          </g>
-        </svg>
-      </div>
-    </motion.div>
+    <></>
+    // <motion.div
+    //   initial={{ opacity: 0 }}
+    //   whileInView={{ opacity: 1 }}
+    //   viewport={{ once: true }}
+    //   transition={{ duration: 0.6 }}
+    // >
+    //   <div className="" onClick={() => switchTheme()}>
+    //     <svg width="24" height="24">
+    //       <g transform=" scale(0.5)">
+    //         <motion.path fill={fill} d={path} />
+    //       </g>
+    //     </svg>
+    //   </div>
+    // </motion.div>
   );
 }
