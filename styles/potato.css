@@ -716,6 +716,10 @@ form p button {
 
 /* Button Classes */
 
+button {
+  font-family: "Ubuntu";
+}
+
 .button-primary {
   background-color: var(--color-bg-button);
   color: var(--color-text-button);
