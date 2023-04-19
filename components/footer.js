@@ -6,6 +6,16 @@ import soap from "../public/soapSocial.svg";
 import insta from "../public/instagramSocialB.svg";
 import twitter from "../public/twitterSocial.svg";
 
+import twitterB from "../public/TwittBlack.svg";
+import twitterW from "../public/TwittWhite.svg";
+
+import linkedB from "../public/LinkedBlack.svg";
+import linkedW from "../public/LinkedWhite.svg";
+
+import instaB from "../public/InstaBlack.svg";
+import instaW from "../public/InstaWhite.svg";
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer>
@@ -26,47 +36,115 @@ export default function Footer() {
           <div className="flex col mr-33 mobile-m-0">
             <h6 className="text-md font-regular lh-8 mb-8">Company</h6>
             <ul className="flex col">
-              <li className="text-sm text-light lh-10">About</li>
+              <Link href="/about-us">
+                <li className="text-sm text-light lh-10">About</li>
+              </Link>
               <li className="text-sm text-light lh-10">Careers</li>
-              <li className="text-sm text-light lh-10">Investors</li>
+              <Link href="/faq">
+                <li className="text-sm text-light lh-10">FAQ</li>
+              </Link>
             </ul>
           </div>
           <div className="flex col mr-33 mobile-m-0">
             <h6 className="text-md font-regular lh-8 mb-8">Resources</h6>
+
             <ul className="flex col">
-              <li className="text-sm text-light lh-10">Services</li>
-              <li className="text-sm text-light lh-10">Projects</li>
-              <li className="text-sm text-light lh-10">Resources</li>
+              <Link href="/services">
+                <li className="text-sm text-light lh-10">Services</li>
+              </Link>
+              <Link href="/projects">
+                <li className="text-sm text-light lh-10">Projects</li>
+              </Link>
+              <Link href="/resources">
+                <li className="text-sm text-light lh-10">Resources</li>
+              </Link>
             </ul>
           </div>
           <div className="flex col">
             <h6 className="text-md font-regular lh-8 mb-8">More</h6>
             <ul className="flex col">
-              <li className="text-sm text-light lh-10">Calendar</li>
-              <li className="text-sm text-light lh-10">Contact</li>
-              <li className="text-sm text-light lh-10">Schedule</li>
-              <li className="text-sm text-light lh-10">
+              <Link href="/calendar">
+                <li className="text-sm text-light lh-10">Calendar</li>
+              </Link>
+              <Link href="/contact">
+                <li className="text-sm text-light lh-10">Contact</li>
+              </Link>
+              <a
+                href="https://calendly.com/mousepotato"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li className="text-sm text-light lh-10">Schedule</li>
+              </a>
+              {/* <li className="text-sm text-light lh-10">
                 Inside Mouse Potato Lab
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
         <div className="right-footer flex col">
           <h6 className="text-md font-regular lh-8 mb-8">Social Media</h6>
           <div className="flex">
-            <Image
-              src={soap}
-              alt="soapbox logo"
-              width={50}
-              className="mr-7"
-            ></Image>
-            <Image
-              src={insta}
-              alt="soapbox logo"
-              width={50}
-              className="mr-7"
-            ></Image>
-            <Image src={twitter} alt="soapbox logo" width={50}></Image>
+            <a
+              href="https://www.linkedin.com/company/74333714/admin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative pointer">
+                <Image
+                  src={linkedW}
+                  alt="soapbox logo"
+                  width={50}
+                  className="mr-7 hover-icon"
+                ></Image>
+                <Image
+                  src={linkedB}
+                  alt="soapbox logo"
+                  width={50}
+                  className="mr-7 absolute x-0 z-zero"
+                ></Image>
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/mousepotatolab/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative pointer">
+                <Image
+                  src={instaW}
+                  alt="soapbox logo"
+                  width={50}
+                  className="mr-7 hover-icon"
+                ></Image>
+                <Image
+                  src={instaB}
+                  alt="soapbox logo"
+                  width={50}
+                  className="mr-7 absolute x-0 z-zero"
+                ></Image>
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/mousepotatolab"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative pointer">
+                <Image
+                  src={twitterW}
+                  alt="soapbox logo"
+                  width={50}
+                  className="hover-icon"
+                ></Image>
+                <Image
+                  src={twitterB}
+                  alt="soapbox logo"
+                  className="absolute x-0 z-zero"
+                  width={50}
+                ></Image>
+              </div>
+            </a>
           </div>
         </div>
       </div>

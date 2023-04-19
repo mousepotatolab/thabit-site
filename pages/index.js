@@ -518,7 +518,7 @@ export default function Home() {
                 className="bg-secondary z-0 w-full p-10 flex col items-start testimonial"
               >
                 <p className="text-lg font-light text-primary mb-6">
-                  "Mouspotato Labs' customer-centric and empathetic design
+                  "Mouse Potato Lab's customer-centric and empathetic design
                   thinking process impressed me. We collaborated to deliver an
                   effective, clean, and beautiful solution."
                 </p>
@@ -537,12 +537,13 @@ export default function Home() {
                 className="bg-white w-full p-10 shadow-card flex col items-start testimonial absolute z-minus hover-trans-z"
               >
                 <p className="text-md font-light text-primary mb-6">
-                  "As a product manager and UX/UI designer at an early startup,
-                  Mouspotato Labs' customer-centric and empathetic design
-                  thinking process impressed me. We collaborated to deliver an
-                  effective, clean, and beautiful solution. Their expertise and
-                  mentorship were invaluable, and I still reference the
-                  knowledge gained from our collaboration."
+                  "One thing that stood out to me was how patient they were with
+                  our CEO and stakeholders, taking the time to explain the
+                  reasoning behind design decisions thoroughly. They were not
+                  just accommodating requests but focusing on solving specific
+                  needs, and it was evident that they took pride in their
+                  research as much as in the final fit and finish of their
+                  work."
                 </p>
                 <h5 className="text-lg font-regular text-primary mb-2">
                   Jaclyn Tryon
