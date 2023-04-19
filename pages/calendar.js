@@ -140,13 +140,12 @@ export default function Calendar() {
                 </h6>
                 <h3 className="text-2xl font-light mb-6">Topio</h3>
                 <p className="text-md font-light mb-6">
-                  AIXR - The Academy of International Extended Reality is a
-                  thriving membership community for VR/AR, Realtime & Web3
-                  businesses internationally, where you can connect with other
-                  leaders, develop your skills, and be heard. At a time when
-                  great immersive companies have never been more important, the
-                  academy offers professional development, valuable connections,
-                  and influence.
+                  Topio is a platform that connects you to famous travel
+                  influencers who plan and outline customizable travel
+                  experiences based on what you like to do while adventuring.
+                  Users can explore destinations from all over the world, book
+                  unique travel plans and even customize all aspects of the trip
+                  with an intuative and modern UI.
                 </p>
                 <ul className="flex mobile-block">
                   <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
