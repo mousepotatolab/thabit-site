@@ -39,7 +39,9 @@ export default function Footer() {
               <Link href="/about-us">
                 <li className="text-sm text-light lh-10">About</li>
               </Link>
-              <li className="text-sm text-light lh-10">Careers</li>
+              <Link href="/careers">
+                <li className="text-sm text-light lh-10">Careers</li>
+              </Link>
               <Link href="/faq">
                 <li className="text-sm text-light lh-10">FAQ</li>
               </Link>
@@ -69,13 +71,9 @@ export default function Footer() {
               <Link href="/contact">
                 <li className="text-sm text-light lh-10">Contact</li>
               </Link>
-              <a
-                href="https://calendly.com/mousepotato"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="/schedule">
                 <li className="text-sm text-light lh-10">Schedule</li>
-              </a>
+              </Link>
               {/* <li className="text-sm text-light lh-10">
                 Inside Mouse Potato Lab
               </li> */}
