@@ -146,7 +146,7 @@ export default function Home() {
               className="bg-secondary w-full p-10 flex items-end"
             >
               <h3 className="text-2xl font-light">
-                Helped raise over $1.4MM in investment
+                Helped raise over $1.4M in investment
               </h3>
             </motion.div>
             <motion.div
@@ -194,43 +194,43 @@ export default function Home() {
             className="w-full bg-secondary flex mobile-wrap justify-between mobile-justify-center items-center px-13 py-20 mb-30"
           >
             <Image
-              className="opacity-60 hover-opacity-100 t-3 mobile-w-full mobile-mb-4"
+              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={verizon}
               alt="verizon logo"
               width={90}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
+              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={chain}
               alt="chainsmokers logo"
               width={132}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
+              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={aixr}
               alt="AIXR logo"
               width={74}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
+              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={globle}
               alt="Globle logo"
               width={74}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
+              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={lalo}
               alt="Lalo logo"
               width={65}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full mobile-mb-4"
+              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={club}
               alt="clubfunders logo"
               width={152}
             ></Image>
             <Image
-              className="opacity-60 hover-opacity-100 t-3 scale-up mobile-w-full"
+              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full"
               src={risen}
               alt="risen logo"
               width={102}

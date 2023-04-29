@@ -8,12 +8,17 @@ import ThemeToggle from "./themeToggle";
 
 import logo from "../public/logo.svg";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { useState } from "react";
 
+import { setBodyFixed } from "@/src/features/bodyScrollSlice";
+
 export default function Navbar() {
+  const dispatch = useDispatch();
   let activePage = useSelector((state) => state.activePage.value);
+
+  let bodyFixed = useSelector((state) => state.bodyFixed.value);
 
   console.log(activePage);
 
@@ -24,6 +29,8 @@ export default function Navbar() {
     setOpenMobileNav(!isOpenMobileNav);
 
     setCloseMobileNav(!isClosedMobileNav);
+    document.getElementsByTagName("html")[0].classList.toggle("no-scroll");
+    dispatch(setBodyFixed(!bodyFixed));
     setDisplay(false);
   }
 

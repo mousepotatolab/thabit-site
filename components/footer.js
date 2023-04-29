@@ -29,7 +29,7 @@ export default function Footer() {
           ></Image>
           <h6 className="text-md font-regular lh-8 mb-2">Mouse Potato Lab</h6>
           <p className="text-sm lh-7 text-grey">
-            A data drive design and <br /> development studio
+            A data driven design and <br /> development studio
           </p>
         </div>
         <div className="center-footer flex mobile-justify-between">
@@ -91,13 +91,13 @@ export default function Footer() {
               <div className="relative pointer">
                 <Image
                   src={linkedW}
-                  alt="soapbox logo"
+                  alt="linkedin logo"
                   width={50}
                   className="mr-7 hover-icon"
                 ></Image>
                 <Image
                   src={linkedB}
-                  alt="soapbox logo"
+                  alt="linkedin logo"
                   width={50}
                   className="mr-7 absolute x-0 z-zero"
                 ></Image>
@@ -111,13 +111,13 @@ export default function Footer() {
               <div className="relative pointer">
                 <Image
                   src={instaW}
-                  alt="soapbox logo"
+                  alt="instagram logo"
                   width={50}
                   className="mr-7 hover-icon"
                 ></Image>
                 <Image
                   src={instaB}
-                  alt="soapbox logo"
+                  alt="instagram logo"
                   width={50}
                   className="mr-7 absolute x-0 z-zero"
                 ></Image>
@@ -131,13 +131,13 @@ export default function Footer() {
               <div className="relative pointer">
                 <Image
                   src={twitterW}
-                  alt="soapbox logo"
+                  alt="twitter logo"
                   width={50}
                   className="hover-icon"
                 ></Image>
                 <Image
                   src={twitterB}
-                  alt="soapbox logo"
+                  alt="twitter logo"
                   className="absolute x-0 z-zero"
                   width={50}
                 ></Image>

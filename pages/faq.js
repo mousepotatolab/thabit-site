@@ -80,7 +80,8 @@ export default function Faq() {
               What does Mouse Potato mean? What’s with the name?
             </h2>
             <h3 className="text-xl font-light mb-10">
-              a person who spends large amounts of time operating a computer.
+              A person who spends large amounts of time operating a computer.
+              Like a couch potato but not as lazy!
             </h3>
 
             <p className="text-md font-normal mb-30 uppercase">FAQ ENDS HERE</p>

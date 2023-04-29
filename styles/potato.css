@@ -205,6 +205,31 @@ strong {
   position: absolute;
 }
 
+.fixed-i {
+  position: fixed !important;
+}
+
+.no-scroll {
+  position: fixed;
+  overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.sticky-i {
+  position: sticky !important;
+}
+
+.z-mobile-menu {
+  z-index: 10000000;
+}
+
 .y-0 {
   bottom: 0;
 }
@@ -523,6 +548,10 @@ strong {
   opacity: 0.6;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .hover-opacity-100:hover {
   opacity: 1;
 }
@@ -811,6 +840,7 @@ button {
   color: var(--color-text-primary);
   border: none;
   width: 173px;
+  font-weight: 700;
   height: 56px;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -883,6 +913,7 @@ button {
   height: 56px;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 700;
   transition: background-color 0.3s;
   cursor: pointer;
 }
@@ -908,6 +939,7 @@ button {
   height: 56px;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 700;
   transition: background-color 0.3s;
   cursor: pointer;
 }
