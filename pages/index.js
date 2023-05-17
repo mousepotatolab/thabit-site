@@ -191,46 +191,46 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="w-full bg-secondary flex mobile-wrap justify-between mobile-justify-center items-center px-13 py-20 mb-30"
+            className="w-full bg-secondary mobile-block flex mobile-wrap justify-between mobile-justify-center items-center px-13 py-20 mb-30"
           >
             <Image
-              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
+              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={verizon}
               alt="verizon logo"
               width={90}
             ></Image>
             <Image
-              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
+              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={chain}
               alt="chainsmokers logo"
               width={132}
             ></Image>
             <Image
-              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
+              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={aixr}
               alt="AIXR logo"
               width={74}
             ></Image>
             <Image
-              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
+              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={globle}
               alt="topip logo"
               width={74}
             ></Image>
             <Image
-              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
+              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={lalo}
               alt="Lalo logo"
               width={65}
             ></Image>
             <Image
-              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
+              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={club}
               alt="clubfunders logo"
               width={152}
             ></Image>
             <Image
-              className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full"
+              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full"
               src={risen}
               alt="risen logo"
               width={102}

@@ -1107,6 +1107,16 @@ button {
     width: 100%;
   }
 
+  .mobile-logo {
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .mobile-block {
+    display: block;
+  }
+
   .mobile-justify-center {
     justify-content: center;
   }
