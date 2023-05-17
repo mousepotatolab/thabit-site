@@ -181,7 +181,7 @@ export default function Projects() {
                     UX Research
                   </li>
                   <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
-                    Ui Design
+                    UI Design
                   </li>
                   <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Website Development
@@ -296,7 +296,7 @@ export default function Projects() {
                     UX Research
                   </li>
                   <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
-                    Ui Design
+                    UI Design
                   </li>
                   <li className="mobile-max-c mobile-mb-4 text-xs bg-light-grey p-tag br-2 font-bold text-black mr-4">
                     Web App Development

@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full mobile-wrap flex justify-between container m-auto border-bottom-grey pb-10 mb-6">
-        <div className="left-footer mobile-full flex col">
+        <div className="left-footer mobile-full flex col mobile-mb-med">
           <Image
             src={bit}
             alt="mouse potato logo 8bit"
@@ -28,7 +28,7 @@ export default function Footer() {
             className="mb-6"
           ></Image>
           <h6 className="text-md font-regular lh-8 mb-2">Mouse Potato Lab</h6>
-          <p className="text-sm lh-7 text-grey">
+          <p className="text-sm lh-7 text-grey ">
             A data driven design and <br /> development studio
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function Footer() {
               </Link>
             </ul>
           </div>
-          <div className="flex col mr-33 mobile-m-0">
+          <div className="flex col mr-33 mobile-m-0 mobile-mb-med">
             <h6 className="text-md font-regular lh-8 mb-8">Resources</h6>
 
             <ul className="flex col">
@@ -84,7 +84,7 @@ export default function Footer() {
           <h6 className="text-md font-regular lh-8 mb-8">Social Media</h6>
           <div className="flex">
             <a
-              href="https://www.linkedin.com/company/74333714/admin/"
+              href="https://www.linkedin.com/company/mousepotatolab/"
               target="_blank"
               rel="noopener noreferrer"
             >

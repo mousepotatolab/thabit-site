@@ -23,9 +23,9 @@ import sixth from "../public/sixth.svg";
 import arrowRight from "../public/arrowRight.svg";
 
 import verizon from "../public/verizon.svg";
-import chain from "../public/chainsmokers.svg";
-import aixr from "../public/aixr.svg";
-import globle from "../public/globle.svg";
+import chain from "../public/chain.png";
+import aixr from "../public/aixr.png";
+import globle from "../public/topioLogo.png";
 import lalo from "../public/lalo.svg";
 import club from "../public/clubfunders.svg";
 import risen from "../public/risen.svg";
@@ -214,7 +214,7 @@ export default function Home() {
             <Image
               className="opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
               src={globle}
-              alt="Globle logo"
+              alt="topip logo"
               width={74}
             ></Image>
             <Image
@@ -382,8 +382,8 @@ export default function Home() {
                 </motion.div>
                 <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
-                    What have we done?
-                    <br /> process?
+                    What have we <br />
+                    done?
                   </h3>
                   <p className="text-lg font-light">
                     We <strong>designed </strong> and
@@ -576,7 +576,7 @@ export default function Home() {
           >
             <p className="text-lg font-light text-center mb-10">
               You can hire us as your team and{" "}
-              <strong>save over $100,000 </strong>. A team of 7 <br />
+              <strong>save over $100,000</strong>. A team of 7 <br />
               designers and developers will work on your project!
             </p>
             <Link href="/services#your-team">
@@ -595,8 +595,7 @@ export default function Home() {
               <div className="flex justify-between mobile-wrap">
                 <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
-                    Ready to talk to us?
-                    <br /> process?
+                    Ready to talk <br /> to us?
                   </h3>
                   <p className="text-lg font-light">
                     Do you feel like <strong>talking </strong> to us? Do you

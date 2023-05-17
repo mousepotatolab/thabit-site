@@ -84,7 +84,7 @@ export default function Resources() {
             We have collected a few{" "}
             <strong> great articles and content </strong>
             online that will help<strong> shape your product better. </strong>
-            we will
+            We will
             <strong> keep on adding </strong>
             articles and content that we think are
             <strong> good resources! </strong>
@@ -349,7 +349,7 @@ export default function Resources() {
                     What is the Feature Bloat and how can you effectively get
                     rid of it{" "}
                   </h3>
-                  <p className="text-lg font-light mb-10">
+                  <p className="text-md font-light mb-10">
                     Feature bloat, also known as feature creep, feature fatigue,
                     or software bloat, is having more than necessary features in
                     your product. This situation ends up in a basic function

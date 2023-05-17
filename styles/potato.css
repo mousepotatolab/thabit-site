@@ -295,6 +295,8 @@ strong {
 
 .calendly {
   height: 1000px;
+  width: 80%;
+  margin: 0 10%;
 }
 /* Max Widths */
 
@@ -1087,6 +1089,10 @@ button {
 
   .mobile-p-0 {
     padding: 0;
+  }
+
+  .mobile-mb-med {
+    margin-bottom: 2rem;
   }
 
   .mobile-mb-20 {

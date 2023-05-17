@@ -89,8 +89,7 @@ export default function Services() {
               <div className="flex justify-between mobile-wrap">
                 <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
-                    Ready to talk to us?
-                    <br /> process?
+                    Ready to talk <br /> to us?
                   </h3>
                   <p className="text-lg font-light">
                     Do you feel like <strong>talking </strong> to us? Do you
@@ -200,7 +199,7 @@ export default function Services() {
                   UX/UI design team with one senior designer
                 </p>
                 <h6 className="text-md font-bold text-primary mb-2">
-                  Frontend Engineerr
+                  Frontend Engineer
                 </h6>
                 <p className="text-md font-light text-primary mb-4">
                   Frontend team with one senior frontend engineer
@@ -246,7 +245,7 @@ export default function Services() {
                   UX/UI design team with one senior designer
                 </p>
                 <h6 className="text-md font-bold text-primary mb-2">
-                  Frontend Engineerr
+                  Frontend Engineer
                 </h6>
                 <p className="text-md font-light text-primary mb-4">
                   Frontend team with one senior frontend engineer
@@ -292,7 +291,7 @@ export default function Services() {
                   UX/UI design team with one senior designer
                 </p>
                 <h6 className="text-md font-bold text-primary mb-2">
-                  Frontend Engineerr
+                  Frontend Engineer
                 </h6>
                 <p className="text-md font-light text-primary mb-4">
                   Frontend team with one senior frontend engineer

@@ -41,7 +41,7 @@ export default function Newsletter() {
             alt="illustration of a baseball player"
           ></Image>
         </motion.div>
-        <h1 className="text-xl mb-30 max-660">
+        <h1 className="text-lg text-center font-light mb-30 max-660">
           Thank you for joining our newsletter! Something special will arrive in
           your inbox every Friday. You can unsusbscribe any time
         </h1>
