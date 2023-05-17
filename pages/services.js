@@ -223,7 +223,9 @@ export default function Services() {
                 <p className="text-md font-light text-primary mb-10">
                   Dedicated project Manager
                 </p>
-                <button className="button-contact">contact us</button>
+                <Link href="/contact">
+                  <button className="button-contact">contact us</button>
+                </Link>
               </div>
               <div className="bg-secondary p-10 w-full mx-15 mobile-m-0 mobile-my-4">
                 <h5 className="text-lg font-bold text-primary mb-2">
@@ -269,7 +271,9 @@ export default function Services() {
                 <p className="text-md font-light text-primary mb-10">
                   Dedicated project Manager
                 </p>
-                <button className="button-contact">contact us</button>
+                <Link href="/contact">
+                  <button className="button-contact">contact us</button>
+                </Link>
               </div>
               <div className="bg-secondary p-10 w-full">
                 <h5 className="text-lg font-bold text-primary mb-2">
@@ -315,7 +319,9 @@ export default function Services() {
                 <p className="text-md font-light text-primary mb-10">
                   Dedicated project Manager
                 </p>
-                <button className="button-contact">contact us</button>
+                <Link href="/contact">
+                  <button className="button-contact">contact us</button>
+                </Link>
               </div>
             </div>
           </motion.div>
