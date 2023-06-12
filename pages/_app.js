@@ -42,6 +42,7 @@ export default function App({ Component, pageProps }) {
           })(window, document);
         }}
       />
+
       {/* </Layout> */}
     </Provider>
   );

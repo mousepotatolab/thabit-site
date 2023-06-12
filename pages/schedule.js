@@ -55,7 +55,17 @@ export default function Schedule() {
           content="https://i.ibb.co/1LvG4xh/ogImage.jpg"
         />
         <script src="https://assets.calendly.com/assets/external/widget.js"></script>
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "hitk43rj4w");
+            `,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `

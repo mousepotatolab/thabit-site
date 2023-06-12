@@ -52,6 +52,7 @@ export default function Home() {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-ZB4BX6WH03"
         />
+
         <meta
           property="og:title"
           content="Mouse Potato Lab | App Design and Development Studio"
@@ -66,7 +67,17 @@ export default function Home() {
           property="og:image"
           content="https://i.ibb.co/1LvG4xh/ogImage.jpg"
         />
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "hitk43rj4w");
+            `,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -191,7 +202,7 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="w-full bg-secondary mobile-block flex mobile-wrap justify-between mobile-justify-center items-center px-13 py-20 mb-30"
+            className="w-full bg-secondary mobile-bloc flex mobile-wrap justify-between mobile-justify-center items-center px-13 py-20 mb-30"
           >
             <Image
               className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
