@@ -5,6 +5,7 @@ import Layout from "@/components/layout";
 import Link from "next/link";
 
 import { useEffect } from "react";
+import { InlineWidget } from "react-calendly";
 
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -23,12 +24,12 @@ export default function Schedule() {
     dispatch(setActivePage("home"));
   });
 
-  useEffect(() => {
-    window.Calendly.initInlineWidget({
-      url: "https://calendly.com/mousepotato?hide_landing_page_details=1&hide_gdpr_banner=1",
-      parentElement: document.getElementById("calendly-inline-widget"),
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.Calendly.initInlineWidget({
+  //     url: "https://calendly.com/mousepotato?hide_landing_page_details=1&hide_gdpr_banner=1",
+  //     parentElement: document.getElementById("calendly-inline-widget"),
+  //   });
+  // }, []);
 
   return (
     <>
@@ -91,12 +92,13 @@ export default function Schedule() {
             </h1>
 
             <div className="text-lg font-light mb-6">
-              <div
+              {/* <div
                 id="calendly-inline-widget"
                 className="calendly"
                 // data-url="https://calendly.com/mousepotato?hide_landing_page_details=1&hide_gdpr_banner=1"
                 data-auto-load="false"
-              ></div>
+              ></div> */}
+              <InlineWidget url="https://calendly.com/mousepotato?hide_landing_page_details=1&hide_gdpr_banner=1" />
             </div>
           </motion.div>
         </main>
