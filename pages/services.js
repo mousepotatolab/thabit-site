@@ -15,6 +15,7 @@ import { setActivePage } from "../src/features/activePageSlice";
 import puzzle from "../public/puzzle.svg";
 import aliens from "../public/aliens.svg";
 import fourth from "../public/fourth.svg";
+import third from "../public/third.svg";
 
 import arrowRight from "../public/arrowRight.svg";
 
@@ -189,7 +190,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <div className="flex w-full justify-between mb-20 mobile-wrap">
-              <div className="bg-secondary p-10 w-full">
+              {/* <div className="bg-secondary p-10 w-full">
                 <h5 className="text-lg font-bold text-primary mb-2">
                   Yearly Contract
                 </h5>
@@ -284,54 +285,85 @@ export default function Services() {
                 <Link href="/contact">
                   <button className="button-contact">contact us</button>
                 </Link>
-              </div>
+              </div> */}
               <div className="bg-secondary p-10 w-full">
-                <h5 className="text-lg font-bold text-primary mb-2">
-                  Monthly Contract
-                </h5>
-                <p className="text-sm font-light text-primary mb-10">
-                  Paid monthly
-                </p>
-                <div className="flex items-center mb-10">
-                  <h6 className="text-2xl font-bold text-primary mr-1">
-                    $15,000
-                  </h6>
-                  <p className="text-xs text-grey">/per month</p>
+                <div className="flex justify-between mobile-wrap">
+                  <div className="w-full">
+                    <h5 className="text-lg font-bold text-primary mb-2">
+                      Monthly Plan
+                    </h5>
+
+                    <div className="flex items-center mb-10">
+                      <h6 className="text-2xl font-bold text-primary mr-1">
+                        $15,000
+                      </h6>
+                      <p className="text-xs text-grey">/per month</p>
+                    </div>
+                    <div className="flex w-full mobile-wrap">
+                      <div>
+                        <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                          Product Designer
+                        </h6>
+                        <p className="text-md font-light text-primary mb-4 mw-280">
+                          UX/UI design team with one senior designer
+                        </p>
+                      </div>
+                      <div className="ml-10 mobile-m-0">
+                        <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                          Project Manager
+                        </h6>
+                        <p className="text-md font-light text-primary mb-4 mw-280">
+                          Dedicated project Manager
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex w-full mobile-wrap">
+                      <div className="w-full">
+                        <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                          Front-end Engineer
+                        </h6>
+                        <p className="text-md font-light text-primary mb-4 mw-280">
+                          Frontend team with one senior front-end engineer
+                        </p>
+                      </div>
+                      <div className="w-full">
+                        <h6 className="text-md font-bold text-primary mb-2 mw-280 mobile-ml-0 ml-10">
+                          Graphics Designer
+                        </h6>
+                        <p className="text-md font-light text-primary mb-4 mw-280 mobile-ml-0 ml-10">
+                          Dedicated graphics designers for custom logo and
+                          illustrations
+                        </p>
+                      </div>
+                    </div>
+
+                    <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                      Back-end Engineer
+                    </h6>
+                    <p className="text-md font-light text-primary mb-10 mw-280">
+                      Backend team with one senior back-end engineer
+                    </p>
+
+                    <Link href="/contact">
+                      <button className="button-contact mobile-mb-20">
+                        contact us
+                      </button>
+                    </Link>
+                  </div>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    // animate={{ x: 100, y: -100 }}
+                    className="flex w-full justify-center items-center"
+                  >
+                    <Image
+                      src={third}
+                      alt="illustration of scientist with beakers"
+                    ></Image>
+                  </motion.div>
                 </div>
-                <h6 className="text-md font-bold text-primary mb-2">
-                  Product Designer
-                </h6>
-                <p className="text-md font-light text-primary mb-4">
-                  UX/UI design team with one senior designer
-                </p>
-                <h6 className="text-md font-bold text-primary mb-2">
-                  Frontend Engineer
-                </h6>
-                <p className="text-md font-light text-primary mb-4">
-                  Frontend team with one senior frontend engineer
-                </p>
-                <h6 className="text-md font-bold text-primary mb-2">
-                  Backend Engineer
-                </h6>
-                <p className="text-md font-light text-primary mb-4">
-                  Backend team with one senior backend engineer
-                </p>
-                <h6 className="text-md font-bold text-primary mb-2">
-                  Graphics Designer
-                </h6>
-                <p className="text-md font-light text-primary mb-4">
-                  Dedicated graphics designers for custom illustrations, logos
-                  and graphics
-                </p>
-                <h6 className="text-md font-bold text-primary mb-2">
-                  Project Manager
-                </h6>
-                <p className="text-md font-light text-primary mb-10">
-                  Dedicated project Manager
-                </p>
-                <Link href="/contact">
-                  <button className="button-contact">contact us</button>
-                </Link>
               </div>
             </div>
           </motion.div>

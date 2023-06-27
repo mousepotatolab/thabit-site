@@ -450,6 +450,11 @@ strong {
 .mr-10 {
   margin-right: 2.5rem;
 }
+
+.mr-12 {
+  margin-right: 2.5rem;
+}
+
 .mr-30 {
   margin-right: 7.5rem;
 }
@@ -696,6 +701,10 @@ strong {
 
 .potato-employee {
   max-width: 222px;
+}
+
+.mw-280 {
+  max-width: 280px;
 }
 
 /* Images End */
@@ -1085,6 +1094,10 @@ button {
 
   .mobile-m-0 {
     margin: 0;
+  }
+
+  .mobile-ml-0 {
+    margin-left: 0;
   }
 
   .mobile-p-0 {
