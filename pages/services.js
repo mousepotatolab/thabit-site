@@ -96,7 +96,99 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-full bg-secondary pt-12 mobile-p-8 px-20 mb-20">
+            <div className="bg-secondary p-10 w-full mb-20">
+              <div className="flex justify-between mobile-wrap">
+                <div className="w-full">
+                  <h5 className="text-lg font-bold text-primary mb-2">
+                    Price Based On Project Type
+                  </h5>
+
+                  <div className="flex items-center mb-10">
+                    <h6 className="text-xs font-light">
+                      Initial deposit to start, and then payments after each
+                      milestone is complete
+                    </h6>
+                  </div>
+                  <div className="flex w-full mobile-wrap">
+                    <div className="w-full">
+                      <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                        Web App
+                      </h6>
+                      <p className="text-md font-light text-primary mb-4 mw-280">
+                        Full Stack web app development with Node.js, Next.js
+                      </p>
+                    </div>
+                    <div className="ml-10 mobile-m-0 w-full">
+                      <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                        Landing Page
+                      </h6>
+                      <p className="text-md font-light text-primary mb-4 mw-280">
+                        Landing Page design and development
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex w-full mobile-wrap">
+                    <div className="w-full">
+                      <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                        Mobile App
+                      </h6>
+                      <p className="text-md font-light text-primary mb-4 mw-280">
+                        Full stack hybrid mobile app development using React
+                        Native{" "}
+                      </p>
+                    </div>
+                    <div className="w-full">
+                      <h6 className="text-md font-bold text-primary mb-2 mw-280 mobile-ml-0 ml-10">
+                        Logo Design
+                      </h6>
+                      <p className="text-md font-light text-primary mb-4 mw-280 mobile-ml-0 ml-10">
+                        In House logo designer will create a custom logo
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex w-full mobile-wrap mb-10">
+                    <div className="w-full">
+                      <h6 className="text-md font-bold text-primary mb-2 mw-280">
+                        Website
+                      </h6>
+                      <p className="text-md font-light text-primary mb-4 mw-280">
+                        Multiple page website for your business. Strapi for CMS
+                        as well as Static site development
+                      </p>
+                    </div>
+                    <div className="w-full">
+                      <h6 className="text-md font-bold text-primary mb-2 mw-280 mobile-ml-0 ml-10">
+                        Branding
+                      </h6>
+                      <p className="text-md font-light text-primary mb-4 mw-280 mobile-ml-0 ml-10">
+                        Brand Identity guides, logo design and custom
+                        illustrations for marketing
+                      </p>
+                    </div>
+                  </div>
+
+                  <Link href="/contact">
+                    <button className="button-startup mobile-mb-20">
+                      tell us about your project
+                    </button>
+                  </Link>
+                </div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  // animate={{ x: 100, y: -100 }}
+                  className="flex w-full justify-center items-center"
+                >
+                  <Image
+                    src={puzzle}
+                    alt="illustration of scientist with beakers"
+                  ></Image>
+                </motion.div>
+              </div>
+            </div>
+            {/* <div className="w-full bg-secondary pt-12 mobile-p-8 px-20 mb-20">
               <div className="flex justify-between mobile-wrap">
                 <div className="max-500 relative mb-10 mobile-mb-20">
                   <h3 className="text-2xl font-light mb-6">
@@ -134,7 +226,7 @@ export default function Services() {
                   ></Image>
                 </motion.div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </section>
         <section id="your-team">

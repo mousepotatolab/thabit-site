@@ -25,7 +25,7 @@ export default function Success() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <ThemeToggle></ThemeToggle>
+      {/* <ThemeToggle></ThemeToggle> */}
       <div className="w-full mt-10 flex items-center col justify-center container m-auto">
         <motion.div
           initial={{ opacity: 0 }}
