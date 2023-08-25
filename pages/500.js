@@ -25,7 +25,6 @@ export default function InternalError() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <ThemeToggle></ThemeToggle>
       <div className="w-full mt-10 flex items-center col justify-center container m-auto">
         <motion.div
           initial={{ opacity: 0 }}
@@ -34,9 +33,7 @@ export default function InternalError() {
           transition={{ duration: 0.6 }}
           className="mb-20"
           // animate={{ x: 100, y: -100 }}
-        >
-          <Image src={lab} alt="illustration of a scientist"></Image>
-        </motion.div>
+        ></motion.div>
         <h1 className="text-xl mb-30 max-660">
           500
           <br />
