@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import bit from "../public/8bitLogoBlack.svg";
+import logo from "../public/logo.svg";
 
-import soap from "../public/soapSocial.svg";
-import insta from "../public/instagramSocialB.svg";
-import twitter from "../public/twitterSocial.svg";
+import youtube from "../public/YouTube.svg";
+import insta from "../public/Instagram.svg";
+import tele from "../public/telegram.svg";
 
 import twitterB from "../public/TwittBlack.svg";
 import twitterW from "../public/TwittWhite.svg";
@@ -19,137 +19,83 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <div className="w-full mobile-wrap flex justify-between container m-auto border-bottom-grey pb-10 mb-6">
+      <div className="w-full mobile-wrap flex justify-between container m-auto  pb-10 ">
         <div className="left-footer mobile-full flex col mobile-mb-med">
           <Image
-            src={bit}
+            src={logo}
             alt="mouse potato logo 8bit"
             width={92}
             className="mb-6"
           ></Image>
-          <h6 className="text-md font-regular lh-8 mb-2">Mouse Potato Lab</h6>
-          <p className="text-sm lh-7 text-grey ">
-            A data driven design and <br /> development studio
-          </p>
         </div>
-        <div className="center-footer flex mobile-justify-between">
-          <div className="flex col mr-33 mobile-m-0">
-            <h6 className="text-md font-regular lh-8 mb-8">Company</h6>
-            <ul className="flex col">
-              <Link href="/about-us">
-                <li className="text-sm text-light lh-10">About</li>
-              </Link>
-              <Link href="/careers">
-                <li className="text-sm text-light lh-10">Careers</li>
-              </Link>
-              <Link href="/faq">
-                <li className="text-sm text-light lh-10">FAQ</li>
-              </Link>
-            </ul>
+        <div className="center-footer w-full flex justify-between mw-618 mobile-justify-between">
+          <div className="flex col mobile-m-0">
+            <h6 className="text-md font-regular lh-8 mb-8">Blog</h6>
           </div>
-          <div className="flex col mr-33 mobile-m-0 mobile-mb-med">
-            <h6 className="text-md font-regular lh-8 mb-8">Resources</h6>
-
-            <ul className="flex col">
-              <Link href="/services">
-                <li className="text-sm text-light lh-10">Services</li>
-              </Link>
-              <Link href="/projects">
-                <li className="text-sm text-light lh-10">Projects</li>
-              </Link>
-              <Link href="/resources">
-                <li className="text-sm text-light lh-10">Resources</li>
-              </Link>
-            </ul>
+          <div className="flex col mobile-m-0 mobile-mb-med">
+            <h6 className="text-md font-regular lh-8 mb-8">Career</h6>
           </div>
           <div className="flex col">
-            <h6 className="text-md font-regular lh-8 mb-8">More</h6>
-            <ul className="flex col">
-              <Link href="/calendar">
-                <li className="text-sm text-light lh-10">Calendar</li>
-              </Link>
-              <Link href="/contact">
-                <li className="text-sm text-light lh-10">Contact</li>
-              </Link>
-              <Link href="/schedule">
-                <li className="text-sm text-light lh-10">Schedule</li>
-              </Link>
-              {/* <li className="text-sm text-light lh-10">
-                Inside Mouse Potato Lab
-              </li> */}
-            </ul>
+            <h6 className="text-md font-regular lh-8 mb-8">Advisors</h6>
+          </div>
+          <div className="flex col mobile-m-0">
+            <h6 className="text-md font-regular lh-8 mb-8">Invest</h6>
+          </div>
+          <div className="flex col mobile-m-0 mobile-mb-med">
+            <h6 className="text-md font-regular lh-8 mb-8">Privacy Policy</h6>
+          </div>
+          <div className="flex col">
+            <h6 className="text-md font-regular lh-8 mb-8">
+              Terms and Conditions
+            </h6>
           </div>
         </div>
         <div className="right-footer flex col">
-          <h6 className="text-md font-regular lh-8 mb-8">Social Media</h6>
-          <div className="flex">
+          <div className="flex items-center">
             <a
-              href="https://www.linkedin.com/company/mousepotatolab/"
+              href="https://www.youtube.com/@thabitapp"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="relative pointer">
                 <Image
-                  src={linkedW}
+                  src={youtube}
                   alt="linkedin logo"
-                  width={50}
-                  className="mr-7 hover-icon"
-                ></Image>
-                <Image
-                  src={linkedB}
-                  alt="linkedin logo"
-                  width={50}
-                  className="mr-7 absolute x-0 z-zero"
+                  width={24}
+                  className="mr-7 "
                 ></Image>
               </div>
             </a>
             <a
-              href="https://www.instagram.com/mousepotatolab/"
+              href="https://www.instagram.com/thabitapp/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="relative pointer">
                 <Image
-                  src={instaW}
+                  src={insta}
                   alt="instagram logo"
-                  width={50}
-                  className="mr-7 hover-icon"
-                ></Image>
-                <Image
-                  src={instaB}
-                  alt="instagram logo"
-                  width={50}
-                  className="mr-7 absolute x-0 z-zero"
+                  width={24}
+                  className="mr-7 "
                 ></Image>
               </div>
             </a>
             <a
-              href="https://twitter.com/mousepotatolab"
+              href="https://t.me/thabitapp"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="relative pointer">
                 <Image
-                  src={twitterW}
+                  src={tele}
                   alt="twitter logo"
-                  width={50}
-                  className="hover-icon"
-                ></Image>
-                <Image
-                  src={twitterB}
-                  alt="twitter logo"
-                  className="absolute x-0 z-zero"
-                  width={50}
+                  width={18}
+                  className=""
                 ></Image>
               </div>
             </a>
           </div>
         </div>
-      </div>
-      <div className="w-full mb-11">
-        <h5 className="text-sm font-regular uppercase text-center">
-          COPYRIGHT © 2023 BY MOUSE POTATO LAB, CALIFORNIA
-        </h5>
       </div>
     </footer>
   );

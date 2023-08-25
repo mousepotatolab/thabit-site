@@ -8,61 +8,38 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import Image from "next/image";
 
-import { useSelector, useDispatch } from "react-redux";
-import { setActivePage } from "../src/features/activePageSlice";
 // import styles from "@/styles/Home.module.css";
 
 // Images
-import first from "../public/first.svg";
-import second from "../public/second.svg";
-import third from "../public/third.svg";
-import fourth from "../public/fourth.svg";
-import fifth from "../public/fifth.svg";
-import sixth from "../public/sixth.svg";
 
-import arrowRight from "../public/arrowRight.svg";
-
-import verizon from "../public/verizon.svg";
-import chain from "../public/chain.png";
-import aixr from "../public/aixr.png";
-import globle from "../public/topioLogo.png";
-import lalo from "../public/lalo.svg";
-import club from "../public/clubfunders.svg";
-import risen from "../public/risen.svg";
+import telegram from "../public/join-telegram.png";
+import phone from "../public/thabit-phone.png";
+import grocery from "../public/grocery-store.png";
+import gas from "../public/gas-station.png";
+import coffee from "../public/cofee-shop.png";
 
 export default function Home() {
-  const dispatch = useDispatch();
-
-  let activePage = useSelector((state) => state.activePage.value);
-
-  useEffect(() => {
-    dispatch(setActivePage("home"));
-  });
-
   return (
     <>
       <Head>
-        <title>Mouse Potato Lab | App Design and Development Studio</title>
+        <title>Thabit App | Donate Spare Change</title>
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZB4BX6WH03"
+          src="https://www.googletagmanager.com/gtag/js?id=G-7R5MPQY7KM"
         />
 
-        <meta
-          property="og:title"
-          content="Mouse Potato Lab | App Design and Development Studio"
-        />
+        <meta property="og:title" content="Thabit App | Donate Spare Change" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Mouse Potato Lab is a minimalistic, early-stage startup-friendly design and development studio run by a bunch of big kids with a love for design and coding! We love to solve complex problems. We design, and develop, human-centered, modern, and beautiful products!"
+          content="We created Thabit to help local Masjids and Islamic Organizations and allow our community to engage in sadaqah. Thabit works by connecting users' bank accounts, rounding up their purchases to the nearest dollar, and donating the difference to the Masjid or Islamic Organization of their choice."
         />
-        <meta property="og:url" content="https://www.mousepotato.co/projects" />
+        <meta property="og:url" content="https://www.thabit.app" />
         <meta
           property="og:image"
           content="https://i.ibb.co/1LvG4xh/ogImage.jpg"
@@ -74,7 +51,7 @@ export default function Home() {
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "hitk43rj4w");
+              })(window, document, "clarity", "script", "hith533g22");
             `,
           }}
         />
@@ -84,7 +61,7 @@ export default function Home() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-ZB4BX6WH03', { page_path: window.location.pathname });
+              gtag('config', 'G-7R5MPQY7KM', { page_path: window.location.pathname });
             `,
           }}
         />
@@ -96,10 +73,166 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-title font-bold uppercase text-primary mb-20">
-            Run by big kids,
-            <br /> but no kidding!
+          <h1 className="text-title text-center font-bold m-auto text-primary mb-6">
+            Sadaqah Jariyah <br></br>
+            <span className="text-green-gradient animate-text-gradient">
+              On Everyday Spending.
+            </span>
           </h1>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h6 className="text-lg text-primary font-semibold text-center mb-12">
+            A cup of tea for $2.75 becomes a $0.25 Sadaqah.
+          </h6>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mw-280 m-auto mb-4"
+        >
+          <a href="https://t.me/thabitapp" target="_blank">
+            <Image
+              src={telegram}
+              alt="join thabit telegram"
+              width={271}
+            ></Image>
+          </a>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h6 className="text-xs text-grey-light font-light text-center mb-30">
+            Telegram Channel keeps your info private
+          </h6>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mw-300 m-auto mb-30 relative"
+        >
+          <div className="overlay"></div>
+          <Image src={phone} alt="join thabit telegram" width={300}></Image>
+          <Image
+            src={coffee}
+            alt="join thabit telegram"
+            className="absolute coffee"
+            width={300}
+          ></Image>
+          <Image
+            src={gas}
+            alt="join thabit telegram"
+            className="absolute gas"
+            width={300}
+          ></Image>
+          <Image
+            src={grocery}
+            alt="join thabit telegram"
+            className="absolute groceries "
+            width={300}
+          ></Image>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
+            Donate <br></br>
+            <span className="text-red-gradient animate-text-gradient">
+              Spare Change.
+            </span>
+          </h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h6 className="text-lg text-primary font-semibold text-center mb-30">
+            Small contributions add up to make a big impact.
+          </h6>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mw-300 m-auto mb-30 relative"
+        >
+          <div className="overlay"></div>
+          <Image src={phone} alt="join thabit telegram" width={300}></Image>
+          <Image
+            src={coffee}
+            alt="join thabit telegram"
+            className="absolute coffee"
+            width={300}
+          ></Image>
+          <Image
+            src={gas}
+            alt="join thabit telegram"
+            className="absolute gas"
+            width={300}
+          ></Image>
+          <Image
+            src={grocery}
+            alt="join thabit telegram"
+            className="absolute groceries "
+            width={300}
+          ></Image>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
+            Allah Loves <br></br>
+            <span className="text-yellow-gradient animate-text-gradient">
+              Small But Consistent Deeds.
+            </span>
+          </h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h6 className="text-lg text-primary font-semibold text-center mb-30 m-auto mw-618">
+            “The most beloved of deeds to Allah are those{" "}
+            <br className="mobile-none" /> that are most consistent, even if it
+            is small.” (Bukhari)
+          </h6>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
+            How It
+            <span className="text-green-gradient animate-text-gradient">
+              {" "}
+              Works
+            </span>
+          </h2>
         </motion.div>
         <section id="about-us">
           <motion.div
@@ -108,44 +241,241 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-full bg-secondary pt-12 px-20 mb-30">
+            <div className="w-full pt-12 ">
               <div className="flex justify-between mobile-wrap">
-                <div className="max-500">
-                  <h3 className="text-2xl font-light mb-6">
-                    What is Mouse <br /> Potato Lab?
-                  </h3>
+                <div className="mw-618">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                    Securely
+                    <span className="text-green-blue-gradient animate-text-gradient">
+                      {" "}
+                      Connect <br></br> Bank Account
+                    </span>
+                  </h2>
                   <p className="text-lg font-light">
-                    We are a minimalist <strong>data driven design </strong> and{" "}
-                    <strong>development </strong> studio with a love for{" "}
-                    <strong>design, coding </strong>and technology!
+                    Securely connect bank account using Plaid. Plaid is trusted
+                    by companies such as Acorns, Venmo, Chime, Wise, Betterment,
+                    and many others.
                   </p>
                 </div>
                 <motion.div
                   initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  // animate={{ x: 100, y: -100 }}
+                  className=" mb-30 relative"
                 >
+                  <div className="overlay"></div>
                   <Image
-                    src={first}
-                    alt="illustration of woman with puzzle pieces"
+                    src={phone}
+                    alt="join thabit telegram"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={coffee}
+                    alt="join thabit telegram"
+                    className="absolute coffee"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={gas}
+                    alt="join thabit telegram"
+                    className="absolute gas"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={grocery}
+                    alt="join thabit telegram"
+                    className="absolute groceries "
+                    width={300}
                   ></Image>
                 </motion.div>
               </div>
             </div>
           </motion.div>
-        </section>
-        <section id="how-we-helped-clients">
           <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="w-full"
           >
-            <h2 className="text-xl font-regular uppercase text-center mb-10">
-              How Have We Helped Our Clients
+            <div className="w-full pt-12">
+              <div className="flex justify-between mobile-wrap-reverse">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className=" mb-30 relative"
+                >
+                  <div className="overlay"></div>
+                  <Image
+                    src={phone}
+                    alt="join thabit telegram"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={coffee}
+                    alt="join thabit telegram"
+                    className="absolute coffee"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={gas}
+                    alt="join thabit telegram"
+                    className="absolute gas"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={grocery}
+                    alt="join thabit telegram"
+                    className="absolute groceries "
+                    width={300}
+                  ></Image>
+                </motion.div>
+                <div className="mw-618">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                    Choose An
+                    <span className="text-green-blue-gradient animate-text-gradient">
+                      {" "}
+                      Islamic <br></br> Organization
+                    </span>
+                  </h2>
+                  <p className="text-lg font-light">
+                    From our list of charity organizations, select an
+                    organization or your local Masjid that you want to support.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="w-full pt-12 ">
+              <div className="flex justify-between mobile-wrap">
+                <div className="mw-618">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                    Keep <br></br>
+                    <span className="text-green-blue-gradient animate-text-gradient">
+                      {" "}
+                      Spending<br></br> Normally
+                    </span>
+                  </h2>
+                  <p className="text-lg font-light">
+                    Keep using the bank account or the debit card associated
+                    with the account normally like you usually do in your day to
+                    day life.
+                  </p>
+                </div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className=" mb-30 relative"
+                >
+                  <div className="overlay"></div>
+                  <Image
+                    src={phone}
+                    alt="join thabit telegram"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={coffee}
+                    alt="join thabit telegram"
+                    className="absolute coffee"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={gas}
+                    alt="join thabit telegram"
+                    className="absolute gas"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={grocery}
+                    alt="join thabit telegram"
+                    className="absolute groceries "
+                    width={300}
+                  ></Image>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="w-full pt-12">
+              <div className="flex justify-between mobile-wrap-reverse">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="mb-20 relative"
+                >
+                  <div className="overlay"></div>
+                  <Image
+                    src={phone}
+                    alt="join thabit telegram"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={coffee}
+                    alt="join thabit telegram"
+                    className="absolute coffee"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={gas}
+                    alt="join thabit telegram"
+                    className="absolute gas"
+                    width={300}
+                  ></Image>
+                  <Image
+                    src={grocery}
+                    alt="join thabit telegram"
+                    className="absolute groceries "
+                    width={300}
+                  ></Image>
+                </motion.div>
+                <div className="mw-618">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                    Donate <br></br>
+                    <span className="text-green-blue-gradient animate-text-gradient">
+                      {" "}
+                      Spare Change <br></br> Automatically
+                    </span>
+                  </h2>
+                  <p className="text-lg font-light">
+                    Once a week we'll round up your day to day purchases to the
+                    next dollar and collect spare change to donate to your
+                    selected organization or Masjid.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+        <section id="example">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-title text-center font-bold m-auto text-primary mb-20">
+              Here Is An
+              <span className="text-red-gradient animate-text-gradient">
+                {" "}
+                Example
+              </span>
             </h2>
           </motion.div>
           <div className="w-full flex mb-30 mobile-wrap">
@@ -154,146 +484,92 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex items-end"
+              className="bg-secondary w-full p-10 flex col mr-4"
             >
-              <h3 className="text-2xl font-light">
-                Helped raise over $1.4M in investment
-              </h3>
+              <h2 className="text-title font-bold text-primary mb-6">
+                <span className="text-green-gradient animate-text-gradient">
+                  1.
+                </span>
+              </h2>
+              <h5 className="text-2xl mb-6">Connect</h5>
+              <p className="text-grey-light text-lg mw-200">
+                <span className="text-red">Musa</span> <br /> downloaded Thabit
+                app and securely connected his bank account to support his local
+                Masjid.
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-tertiary text-secondary w-full p-10 mx-6 mobile-m-0 flex items-end"
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-secondary w-full p-10 flex col mr-4"
             >
-              <h3 className="text-2xl font-light mb-8">
-                Interview with VCs like Y-Combinator, though they said try again
-                next year!
-              </h3>
+              <h2 className="text-title font-bold text-primary mb-6">
+                <span className="text-yellow-gradient animate-text-gradient">
+                  2.
+                </span>
+              </h2>
+              <h5 className="text-2xl mb-6">Spend</h5>
+              <p className="text-grey-light text-lg mw-200">
+                This week he made two purchases. He bought coffee for{" "}
+                <span className="text-red">$5.75</span> and groceries for{" "}
+                <span className="text-red">$150.95</span>.
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="bg-secondary w-full p-10 flex items-end"
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-secondary w-full p-10 flex col mr-4"
             >
-              <h3 className="text-2xl font-light">
-                Products used by hundreds of thousands of users globally
-              </h3>
+              <h2 className="text-title font-bold text-primary mb-6">
+                <span className="text-green-blue-gradient animate-text-gradient">
+                  3.
+                </span>
+              </h2>
+              <h5 className="text-2xl mb-6">Round Up</h5>
+              <p className="text-grey-light text-lg mw-200">
+                On friday Thabit rounded up those two transactions and collected{" "}
+                <span className="text-red">$0.25</span> from $5.75 and{" "}
+                <span className="text-red">$0.05</span> from $150.95.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-secondary w-full p-10 flex col "
+            >
+              <h2 className="text-title font-bold text-primary mb-6">
+                <span className="text-red-gradient animate-text-gradient">
+                  4.
+                </span>
+              </h2>
+              <h5 className="text-2xl mb-6">Donate</h5>
+              <p className="text-grey-light text-lg mw-200">
+                Once the total collection of spare change reaches minimum of{" "}
+                <span className="text-red">$5</span>, Thabit will automatically
+                donate to Musa’s local Masjid.
+              </p>
             </motion.div>
           </div>
         </section>
-        <section id="we-worked-with">
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="w-full"
-          >
-            <h2 className="text-xl font-regular uppercase text-center mb-10">
-              Companies we have worked with
-            </h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 0, x: 80 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
-            className="w-full bg-secondary mobile-bloc flex mobile-wrap justify-between mobile-justify-center items-center px-13 py-20 mb-30"
-          >
-            <Image
-              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
-              src={verizon}
-              alt="verizon logo"
-              width={90}
-            ></Image>
-            <Image
-              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
-              src={chain}
-              alt="chainsmokers logo"
-              width={132}
-            ></Image>
-            <Image
-              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
-              src={aixr}
-              alt="AIXR logo"
-              width={74}
-            ></Image>
-            <Image
-              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
-              src={globle}
-              alt="topip logo"
-              width={74}
-            ></Image>
-            <Image
-              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
-              src={lalo}
-              alt="Lalo logo"
-              width={65}
-            ></Image>
-            <Image
-              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full mobile-mb-4"
-              src={club}
-              alt="clubfunders logo"
-              width={152}
-            ></Image>
-            <Image
-              className=" mobile-logo opacity-6 hover-opacity-100 t-3 scale-u mobile-w-full"
-              src={risen}
-              alt="risen logo"
-              width={102}
-            ></Image>
-          </motion.div>
-        </section>
-        <section id="about-us-section">
+        <section id="automate">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between mobile-wrap-reverse">
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  // animate={{ x: 100, y: -100 }}
-                >
-                  <Image
-                    src={second}
-                    alt="illustration of person with a globe"
-                  ></Image>
-                </motion.div>
-                <div className="max-500 relative mb-10 mobile-mb-20">
-                  <h3 className="text-2xl font-light mb-6">
-                    What do we <br /> do actually?
-                  </h3>
-                  <p className="text-lg font-light">
-                    Our family thinks we just play games and hack things, but we{" "}
-                    <strong>design </strong> and{" "}
-                    <strong>develop mobile apps, web apps, </strong> websites
-                    and landing pages!{" "}
-                  </p>
-                  <Link href="/contact">
-                    <div className="flex absolute y-0 hover-transX pointer">
-                      <h5 className="uppercase text-md font-bold mr-2">
-                        I have an idea to share
-                      </h5>
-                      <Image
-                        src={arrowRight}
-                        alt="illustration of woman with puzzle pieces"
-                        className="arrow"
-                      ></Image>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
+              Automate <br></br>
+              <span className="text-green-gradient animate-text-gradient">
+                Small But Continuous Charity
+              </span>
+            </h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -301,74 +577,79 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between mobile-wrap">
-                <div className="max-500 relative mb-10 mobile-mb-20">
-                  <h3 className="text-2xl font-light mb-6">
-                    What is our work
-                    <br /> process?
-                  </h3>
-                  <p className="text-lg font-light">
-                    We are an <strong>agile team </strong> and we use
-                    <strong> design thinking </strong> process to come up with a
-                    design solution
-                  </p>
-                  <Link href="/contact">
-                    <div className="flex absolute y-0 hover-transX pointer">
-                      <h5 className="uppercase text-md font-bold mr-2">
-                        I want to learn more
-                      </h5>
-                      <Image
-                        src={arrowRight}
-                        alt="illustration of woman with puzzle pieces"
-                        className="arrow"
-                      ></Image>
-                    </div>
-                  </Link>
-                </div>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  // animate={{ x: 100, y: -100 }}
-                >
-                  <Image
-                    src={sixth}
-                    alt="illustration of scientist with beakers"
-                  ></Image>
-                </motion.div>
-              </div>
-            </div>
+            <h6 className="text-lg text-primary font-semibold text-center mb-30 mw-730 m-auto">
+              In Islamic history, we never had the opportunity to do sadaqah
+              even while we grab a cup of coffee or buy groceries.
+            </h6>
           </motion.div>
-        </section>
-        <section id="we-are-section">
           <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="w-full"
+            className="mw-300 m-auto mb-30 relative"
           >
-            <h2 className="text-xl font-regular uppercase text-center mb-6">
-              We Are
+            <div className="overlay"></div>
+            <Image src={phone} alt="join thabit telegram" width={300}></Image>
+            <Image
+              src={coffee}
+              alt="join thabit telegram"
+              className="absolute coffee"
+              width={300}
+            ></Image>
+            <Image
+              src={gas}
+              alt="join thabit telegram"
+              className="absolute gas"
+              width={300}
+            ></Image>
+            <Image
+              src={grocery}
+              alt="join thabit telegram"
+              className="absolute groceries "
+              width={300}
+            ></Image>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
+              Invest In <br></br>
+              <span className="text-pink-gradient animate-text-gradient">
+                Your Akhira
+              </span>
             </h2>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, y: 0, x: 0 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-full flex col justify-between items-center mb-30"
+            transition={{ duration: 0.6 }}
           >
-            <p className="text-lg font-light text-center max-500 mb-10">
-              A company run by a bunch of "big kids" <br /> with a dream bigger
-              than the Great GRB Wall!
-            </p>
-            <a href="/curiosity" target="_blank">
-              <button className="button-primary pointer">
-                this button is here for no reason
-              </button>
+            <h6 className="text-lg text-primary font-semibold text-center mb-6 mw-525 m-auto">
+              “You will never attain righteousness until you spend in charity
+              from that what you love.”
+            </h6>
+            <h6 className="text-lg text-primary font-semibold text-center mb-12 mw-525 m-auto">
+              Quaran 3:92
+            </h6>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mw-280 m-auto mb-4"
+          >
+            <a href="https://t.me/thabitapp" target="_blank">
+              <Image
+                src={telegram}
+                alt="join thabit telegram"
+                width={271}
+              ></Image>
             </a>
           </motion.div>
           <motion.div
@@ -377,325 +658,9 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between mobile-wrap-reverse">
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  // animate={{ x: 100, y: -100 }}
-                >
-                  <Image
-                    src={third}
-                    alt="illustration of scientist with beakers"
-                  ></Image>
-                </motion.div>
-                <div className="max-500 relative mb-10 mobile-mb-20">
-                  <h3 className="text-2xl font-light mb-6">
-                    What have we <br />
-                    done?
-                  </h3>
-                  <p className="text-lg font-light">
-                    We <strong>designed </strong> and
-                    <strong> developed </strong> mobile and web{" "}
-                    <strong> apps </strong> that helped solve{" "}
-                    <strong>complex problems, </strong> and improved lives!
-                  </p>
-                  <Link href="/projects">
-                    <div className="flex absolute y-0 hover-transX pointer">
-                      <h5 className="uppercase text-md font-bold mr-2">
-                        Our Projects
-                      </h5>
-                      <Image
-                        src={arrowRight}
-                        alt="illustration of woman with puzzle pieces"
-                        className="arrow"
-                      ></Image>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </section>
-        <section id="testimonials-section">
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="w-full"
-          >
-            <h2 className="text-xl font-regular uppercase text-center mb-10">
-              What our clients say about us
-            </h2>
-          </motion.div>
-          <div className="w-full flex mb-30 relative mobile-wrap">
-            <div className="relative flex w-full hover-revealTest">
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-secondary w-full p-10 flex col items-start testimonial"
-              >
-                <p className="text-lg font-light text-primary mb-6">
-                  "We highly recommend Mouse Potato for any design project and
-                  continue to work with them now and in the future."
-                </p>
-                <h5 className="text-lg font-regular text-primary mb-2">
-                  Blake Lawrence
-                </h5>
-                <h6 className="text-md font-light text-primary">
-                  Founder @ Clubfunders
-                </h6>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white w-full p-10 shadow-card flex col items-start testimonial absolute z-minus hover-trans-z"
-              >
-                <p className="text-md font-light text-primary mb-6">
-                  "We had the pleasure of working with the geniuses at Mouse
-                  Potato on the design of our products. From the start, the team
-                  was professional, responsive, and easy to communicate with.
-                  They took the time to understand our business goals and
-                  created our products that look great and effectively showcase
-                  our services and products. We highly recommend Mouse Potato
-                  for any design project and continue to work with them now and
-                  in the future."
-                </p>
-                <h5 className="text-lg font-regular text-primary mb-2">
-                  Blake Lawrence
-                </h5>
-                <h6 className="text-md font-light text-primary">
-                  Founder @ Clubfunders
-                </h6>
-              </motion.div>
-            </div>
-            <div className="relative flex w-full hover-revealTest mx-6 mobile-m-0">
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="bg-tertiary text-secondary w-full p-10 flex col items-start testimonial"
-              >
-                <p className="text-lg font-light text-secondary mb-6">
-                  "The entire team at Mouse Potato Lab was incredibly supportive
-                  and amazing to work with. They were pivotal when it came to
-                  launching my business."
-                </p>
-                <h5 className="text-lg font-regular text-secondary mb-2">
-                  Mallory Delabar
-                </h5>
-                <h6 className="text-md font-light text-secondary">
-                  Founder @ Risen Devices
-                </h6>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="bg-white w-full p-10 shadow-card flex col items-start testimonial absolute z-minus hover-trans-z"
-              >
-                <p className="text-md font-light text-primary mb-6">
-                  "The entire team at Mouse Potato Lab was incredibly supportive
-                  and amazing to work with. They were pivotal when it came to
-                  launching my business. We started with an idea and the team
-                  took the time to really think through the best solution. Mouse
-                  Potato Lab interviewed experts, designed the app and developed
-                  a great platform. I plan to continue working with them going
-                  forward."
-                </p>
-                <h5 className="text-lg font-regular text-primary mb-2">
-                  Mallory Delabar
-                </h5>
-                <h6 className="text-md font-light text-primary">
-                  Founder @ Risen Devices
-                </h6>
-              </motion.div>
-            </div>
-            <div className="relative flex w-full hover-revealTest">
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-secondary z-0 w-full p-10 flex col items-start testimonial"
-              >
-                <p className="text-lg font-light text-primary mb-6">
-                  "Mouse Potato Lab's customer-centric and empathetic design
-                  thinking process impressed me. We collaborated to deliver an
-                  effective, clean, and beautiful solution."
-                </p>
-                <h5 className="text-lg font-regular text-primary mb-2">
-                  Jaclyn Tryon
-                </h5>
-                <h6 className="text-md font-light text-primary">
-                  Product Manager @ Pathfinder
-                </h6>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white w-full p-10 shadow-card flex col items-start testimonial absolute z-minus hover-trans-z"
-              >
-                <p className="text-md font-light text-primary mb-6">
-                  "One thing that stood out to me was how patient they were with
-                  our CEO and stakeholders, taking the time to explain the
-                  reasoning behind design decisions thoroughly. They were not
-                  just accommodating requests but focusing on solving specific
-                  needs, and it was evident that they took pride in their
-                  research as much as in the final fit and finish of their
-                  work."
-                </p>
-                <h5 className="text-lg font-regular text-primary mb-2">
-                  Jaclyn Tryon
-                </h5>
-                <h6 className="text-md font-light text-primary">
-                  Product Manager @ Pathfinder
-                </h6>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-        <section id="hire-us-section">
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="w-full"
-          >
-            <h2 className="text-xl font-regular uppercase text-center mb-6">
-              Hire us as your tech team
-            </h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 0, x: 0 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-full flex col justify-between items-center mb-30"
-          >
-            <p className="text-lg font-light text-center mb-10">
-              You can hire us as your team and{" "}
-              <strong>save over $100,000</strong>. A team of 7 <br />
-              designers and developers will work on your project!
-            </p>
-            <Link href="/services#your-team">
-              <button className="button-primary pointer">
-                how am i saving $100,000?
-              </button>
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="w-full bg-secondary pt-12 px-20 mb-30">
-              <div className="flex justify-between mobile-wrap">
-                <div className="max-500 relative mb-10 mobile-mb-20">
-                  <h3 className="text-2xl font-light mb-6">
-                    Ready to talk <br /> to us?
-                  </h3>
-                  <p className="text-lg font-light">
-                    Do you feel like <strong>talking </strong> to us? Do you
-                    want to tell us about the
-                    <strong> problem </strong> you want to solve or the
-                    <strong> project </strong> that you are working on?
-                  </p>
-                  <Link href="/contact">
-                    <div className="flex absolute y-0 hover-transX pointer">
-                      <h5 className="uppercase text-md font-bold mr-2">
-                        I want to connect
-                      </h5>
-                      <Image
-                        src={arrowRight}
-                        alt="illustration of woman with puzzle pieces"
-                        className="arrow"
-                      ></Image>
-                    </div>
-                  </Link>
-                </div>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  // animate={{ x: 100, y: -100 }}
-                >
-                  <Image
-                    src={fourth}
-                    alt="illustration of scientist with beakers"
-                  ></Image>
-                </motion.div>
-              </div>
-            </div>
-          </motion.div>
-        </section>
-        <section id="ready-to-connect">
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="w-full"
-          >
-            <h2 className="text-xl font-regular uppercase text-center mb-6">
-              Why Us Though?
-            </h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 0, x: 0 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-full flex col justify-between items-center mb-30"
-          >
-            <p className="text-lg font-light text-center mb-10">
-              You can hire us as your team and{" "}
-              <strong>save over $100,000 </strong>. A team of 7 <br />
-              designers and developers will work on your project!
-            </p>
-            <Link href="/contact">
-              <button className="button-primary pointer">
-                now ready to connect?
-              </button>
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="w-full  pt-12 px-20 mb-30">
-              <div className="flex justify-center items-center">
-                <motion.div
-                  initial={{ opacity: 0, x: -80, y: 0 }}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  // animate={{ x: 100, y: -100 }}
-                >
-                  <Image
-                    src={fifth}
-                    alt="illustration of a baseball player"
-                    width={440}
-                  ></Image>
-                </motion.div>
-              </div>
-            </div>
+            <h6 className="text-xs text-grey-light font-light text-center mb-30">
+              Telegram Channel keeps your info private
+            </h6>
           </motion.div>
         </section>
       </main>

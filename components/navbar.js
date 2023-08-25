@@ -35,7 +35,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="flex w-full m-auto justify-between container mt-10">
+    <div className="flex w-full m-auto items-center justify-between container mt-6 mb-20">
       <Link href="/">
         <motion.div
           initial={{ opacity: 0 }}
@@ -43,8 +43,8 @@ export default function Navbar() {
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
         >
-          <div className="logo-main mb-20 relative">
-            <Image src={logo} alt="Mouse Potato Lab Logo" fill></Image>
+          <div className="logo-main  relative">
+            <Image src={logo} alt="thabit white logo" fill></Image>
           </div>
         </motion.div>
       </Link>
@@ -56,52 +56,52 @@ export default function Navbar() {
       >
         <nav className="desktop-nav">
           <ul className="flex items-center">
-            <Link href="/projects">
+            <Link href="">
               <li
                 className={`${
                   activePage === "projects" ? "nav-item-active" : "nav-item"
-                } uppercase font-regular mr-10`}
+                } font-regular mr-10`}
               >
-                Projects
+                About
               </li>
             </Link>
-            <Link href="/services">
+            <Link href="">
               <li
                 className={`${
                   activePage === "services" ? "nav-item-active" : "nav-item"
-                } uppercase font-regular mr-10`}
+                } font-regular mr-10`}
               >
-                Services
+                Advisors
               </li>
             </Link>
-            <Link href="/calendar">
+            <Link href="">
               <li
                 className={`${
                   activePage === "calendar" ? "nav-item-active" : "nav-item"
-                } uppercase font-regular mr-10`}
+                } font-regular mr-10`}
               >
-                Calendar
+                Team
               </li>
             </Link>
-            <Link href="/resources">
+            <Link href="">
               <li
                 className={`${
                   activePage === "resources" ? "nav-item-active" : "nav-item"
-                } uppercase font-regular mr-10`}
+                } font-regular mr-10`}
               >
-                Resources
+                FAQ
               </li>
             </Link>
-            <Link href="/contact">
+            <Link href="https://org.thabit.app" target="_blank">
               <li
                 className={`${
                   activePage === "contact" ? "nav-item-active" : "nav-item"
-                } uppercase font-regular`}
+                } font-regular org-link`}
               >
-                Contact
+                List Your Organization
               </li>
             </Link>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </ul>
         </nav>
         {!isOpenMobileNav && (
@@ -169,7 +169,7 @@ export default function Navbar() {
                   Contact
                 </li>
               </Link>
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
             </ul>
           </nav>
         )}
