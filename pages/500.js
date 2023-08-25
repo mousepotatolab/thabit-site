@@ -6,8 +6,6 @@ import lab from "../public/sixth.svg";
 
 import SuccessLayout from "@/components/successLayout";
 
-import ThemeToggle from "@/components/themeToggle";
-
 import { useAnimation, motion } from "framer-motion";
 
 import { useRouter } from "next/router";
