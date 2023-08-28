@@ -14,34 +14,7 @@ export default function App({ Component, pageProps }) {
     <Provider store={store}>
       {/* <Layout> */}
       <Component {...pageProps} />
-      <Script
-        id="google-maps"
-        src="https://maps.googleapis.com/maps/api/js"
-        onReady={() => {
-          (function (w, d, v3) {
-            w.chaportConfig = {
-              appId: "63c8b0ffdff47c90c3dcb94a",
-            };
-            if (w.chaport) return;
-            v3 = w.chaport = {};
-            v3._q = [];
-            v3._l = {};
-            v3.q = function () {
-              v3._q.push(arguments);
-            };
-            v3.on = function (e, fn) {
-              if (!v3._l[e]) v3._l[e] = [];
-              v3._l[e].push(fn);
-            };
-            var s = d.createElement("script");
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://app.chaport.com/javascripts/insert.js";
-            var ss = d.getElementsByTagName("script")[0];
-            ss.parentNode.insertBefore(s, ss);
-          })(window, document);
-        }}
-      />
+      <Script id="google-maps" src="https://maps.googleapis.com/maps/api/js" />
 
       {/* </Layout> */}
     </Provider>

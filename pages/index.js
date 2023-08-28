@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useInView } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 
 import Layout from "../components/layout";
 
@@ -14,11 +15,18 @@ import Image from "next/image";
 
 import telegram from "../public/join-telegram.png";
 import phone from "../public/thabit-phone.png";
+import group from "../public/group-thabit.png";
 import grocery from "../public/grocery-store.png";
 import gas from "../public/gas-station.png";
 import coffee from "../public/cofee-shop.png";
+import contribution from "../public/contribution.png";
+import plaid from "../public/plaid-connect.png";
+import organization from "../public/organization.png";
 
 export default function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <>
       <Head>
@@ -66,12 +74,16 @@ export default function Home() {
           }}
         />
       </Head>
-      <main className="container m-auto">
+      <main className="container m-auto" ref={ref}>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <h1 className="text-title text-center font-bold m-auto text-primary mb-6">
             Sadaqah Jariyah <br></br>
@@ -81,21 +93,29 @@ export default function Home() {
           </h1>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <h6 className="text-lg text-primary font-semibold text-center mb-12">
             A cup of tea for $2.75 becomes a $0.25 Sadaqah.
           </h6>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="mw-280 m-auto mb-4"
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <a href="https://t.me/thabitapp" target="_blank">
             <Image
@@ -106,10 +126,14 @@ export default function Home() {
           </a>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <h6 className="text-xs text-grey-light font-light text-center mb-30">
             Telegram Channel keeps your info private
@@ -117,11 +141,15 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="mw-300 m-auto mb-30 relative"
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <div className="overlay"></div>
           <Image src={phone} alt="join thabit telegram" width={300}></Image>
@@ -145,61 +173,66 @@ export default function Home() {
           ></Image>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
-            Donate <br></br>
+            A Coin Jar for <br></br>
             <span className="text-red-gradient animate-text-gradient">
-              Spare Change.
+              The Entire Ummah.
             </span>
           </h2>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
-          <h6 className="text-lg text-primary font-semibold text-center mb-30">
-            Small contributions add up to make a big impact.
+          <h6 className="text-lg text-primary font-semibold text-center mb-30 mw-525 m-auto">
+            Donate spare change. Small contributions add up to make a big
+            impact.
           </h6>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="mw-300 m-auto mb-30 relative"
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <div className="overlay"></div>
           <Image src={phone} alt="join thabit telegram" width={300}></Image>
           <Image
-            src={coffee}
+            src={contribution}
             alt="join thabit telegram"
             className="absolute coffee"
             width={300}
           ></Image>
-          <Image
-            src={gas}
-            alt="join thabit telegram"
-            className="absolute gas"
-            width={300}
-          ></Image>
-          <Image
-            src={grocery}
-            alt="join thabit telegram"
-            className="absolute groceries "
-            width={300}
-          ></Image>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
             Allah Loves <br></br>
@@ -209,10 +242,14 @@ export default function Home() {
           </h2>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <h6 className="text-lg text-primary font-semibold text-center mb-30 m-auto mw-618">
             “The most beloved of deeds to Allah are those{" "}
@@ -221,10 +258,14 @@ export default function Home() {
           </h6>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
         >
           <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
             How It
@@ -236,33 +277,38 @@ export default function Home() {
         </motion.div>
         <section id="about-us">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <div className="w-full pt-12 ">
               <div className="flex justify-between mobile-wrap">
                 <div className="mw-618">
-                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6 mt-10">
                     Securely
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
-                      Connect <br></br> Bank Account
+                      Connect <br></br> Bank <br className="mobile-block" />{" "}
+                      Account
                     </span>
                   </h2>
-                  <p className="text-lg font-light">
+                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
                     Securely connect bank account using Plaid. Plaid is trusted
                     by companies such as Acorns, Venmo, Chime, Wise, Betterment,
                     and many others.
                   </p>
                 </div>
                 <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
+                  initial="hidden"
+                  whileInView="visible"
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className=" mb-30 relative"
+                  className=" mb-30 relative mobile-works mobile-m-0"
                 >
                   <div className="overlay"></div>
                   <Image
@@ -271,32 +317,24 @@ export default function Home() {
                     width={300}
                   ></Image>
                   <Image
-                    src={coffee}
+                    src={plaid}
                     alt="join thabit telegram"
-                    className="absolute coffee"
-                    width={300}
-                  ></Image>
-                  <Image
-                    src={gas}
-                    alt="join thabit telegram"
-                    className="absolute gas"
-                    width={300}
-                  ></Image>
-                  <Image
-                    src={grocery}
-                    alt="join thabit telegram"
-                    className="absolute groceries "
-                    width={300}
+                    className="absolute plaid-connect"
+                    width={290}
                   ></Image>
                 </motion.div>
               </div>
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <div className="w-full pt-12">
               <div className="flex justify-between mobile-wrap-reverse">
@@ -305,7 +343,7 @@ export default function Home() {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className=" mb-30 relative"
+                  className=" mb-30 relative mobile-works mobile-m-0"
                 >
                   <div className="overlay"></div>
                   <Image
@@ -314,33 +352,21 @@ export default function Home() {
                     width={300}
                   ></Image>
                   <Image
-                    src={coffee}
+                    src={organization}
                     alt="join thabit telegram"
-                    className="absolute coffee"
-                    width={300}
-                  ></Image>
-                  <Image
-                    src={gas}
-                    alt="join thabit telegram"
-                    className="absolute gas"
-                    width={300}
-                  ></Image>
-                  <Image
-                    src={grocery}
-                    alt="join thabit telegram"
-                    className="absolute groceries "
-                    width={300}
+                    className="absolute organization"
+                    width={360}
                   ></Image>
                 </motion.div>
                 <div className="mw-618">
-                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6 mt-10">
                     Choose An
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
                       Islamic <br></br> Organization
                     </span>
                   </h2>
-                  <p className="text-lg font-light">
+                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
                     From our list of charity organizations, select an
                     organization or your local Masjid that you want to support.
                   </p>
@@ -349,33 +375,37 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <div className="w-full pt-12 ">
               <div className="flex justify-between mobile-wrap">
                 <div className="mw-618">
-                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6 mt-10">
                     Keep <br></br>
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
                       Spending<br></br> Normally
                     </span>
                   </h2>
-                  <p className="text-lg font-light">
+                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
                     Keep using the bank account or the debit card associated
                     with the account normally like you usually do in your day to
                     day life.
                   </p>
                 </div>
                 <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
+                  initial="hidden"
+                  whileInView="visible"
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className=" mb-30 relative"
+                  className=" mb-30 relative mobile-works mobile-m-0"
                 >
                   <div className="overlay"></div>
                   <Image
@@ -386,19 +416,19 @@ export default function Home() {
                   <Image
                     src={coffee}
                     alt="join thabit telegram"
-                    className="absolute coffee"
+                    className="absolute coffee coffee-two"
                     width={300}
                   ></Image>
                   <Image
                     src={gas}
                     alt="join thabit telegram"
-                    className="absolute gas"
+                    className="absolute gas coffee-two"
                     width={300}
                   ></Image>
                   <Image
                     src={grocery}
                     alt="join thabit telegram"
-                    className="absolute groceries "
+                    className="absolute groceries  coffee-two"
                     width={300}
                   ></Image>
                 </motion.div>
@@ -406,10 +436,14 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <div className="w-full pt-12">
               <div className="flex justify-between mobile-wrap-reverse">
@@ -418,7 +452,7 @@ export default function Home() {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="mb-20 relative"
+                  className="mb-20 relative mobile-works mobile-m-0"
                 >
                   <div className="overlay"></div>
                   <Image
@@ -427,33 +461,21 @@ export default function Home() {
                     width={300}
                   ></Image>
                   <Image
-                    src={coffee}
+                    src={contribution}
                     alt="join thabit telegram"
-                    className="absolute coffee"
-                    width={300}
-                  ></Image>
-                  <Image
-                    src={gas}
-                    alt="join thabit telegram"
-                    className="absolute gas"
-                    width={300}
-                  ></Image>
-                  <Image
-                    src={grocery}
-                    alt="join thabit telegram"
-                    className="absolute groceries "
+                    className="absolute coffee coffee-two"
                     width={300}
                   ></Image>
                 </motion.div>
                 <div className="mw-618">
-                  <h2 className="text-title-secondary font-bold  text-primary mb-6">
+                  <h2 className="text-title-secondary font-bold  text-primary mb-6 mt-10">
                     Donate <br></br>
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
                       Spare Change <br></br> Automatically
                     </span>
                   </h2>
-                  <p className="text-lg font-light">
+                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
                     Once a week we'll round up your day to day purchases to the
                     next dollar and collect spare change to donate to your
                     selected organization or Masjid.
@@ -465,10 +487,14 @@ export default function Home() {
         </section>
         <section id="example">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <h2 className="text-title text-center font-bold m-auto text-primary mb-20">
               Here Is An
@@ -480,11 +506,15 @@ export default function Home() {
           </motion.div>
           <div className="w-full flex mb-30 mobile-wrap">
             <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex col mr-4"
+              className="bg-secondary w-full p-10 flex col mr-4 mobile-mb-med"
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 80 },
+              }}
             >
               <h2 className="text-title font-bold text-primary mb-6">
                 <span className="text-green-gradient animate-text-gradient">
@@ -499,11 +529,15 @@ export default function Home() {
               </p>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex col mr-4"
+              className="bg-secondary w-full p-10 flex col mr-4 mobile-mb-med"
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 80 },
+              }}
             >
               <h2 className="text-title font-bold text-primary mb-6">
                 <span className="text-yellow-gradient animate-text-gradient">
@@ -518,11 +552,15 @@ export default function Home() {
               </p>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex col mr-4"
+              className="bg-secondary w-full p-10 flex col mr-4 mobile-mb-med"
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 80 },
+              }}
             >
               <h2 className="text-title font-bold text-primary mb-6">
                 <span className="text-green-blue-gradient animate-text-gradient">
@@ -537,11 +575,15 @@ export default function Home() {
               </p>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-secondary w-full p-10 flex col "
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 80 },
+              }}
             >
               <h2 className="text-title font-bold text-primary mb-6">
                 <span className="text-red-gradient animate-text-gradient">
@@ -559,23 +601,31 @@ export default function Home() {
         </section>
         <section id="automate">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
               Automate <br></br>
               <span className="text-green-gradient animate-text-gradient">
-                Small But Continuous Charity
+                Small But Continuous Charity.
               </span>
             </h2>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <h6 className="text-lg text-primary font-semibold text-center mb-30 mw-730 m-auto">
               In Islamic history, we never had the opportunity to do sadaqah
@@ -583,15 +633,24 @@ export default function Home() {
             </h6>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mw-300 m-auto mb-30 relative"
+            className="mw-730 m-auto group-height mb-30 relative"
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
-            <div className="overlay"></div>
-            <Image src={phone} alt="join thabit telegram" width={300}></Image>
             <Image
+              src={group}
+              alt="join thabit telegram"
+              objectFit="cover"
+              fill
+              className="w-full h-auto"
+            ></Image>
+            {/* <Image
               src={coffee}
               alt="join thabit telegram"
               className="absolute coffee"
@@ -608,26 +667,34 @@ export default function Home() {
               alt="join thabit telegram"
               className="absolute groceries "
               width={300}
-            ></Image>
+            ></Image> */}
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
               Invest In <br></br>
               <span className="text-pink-gradient animate-text-gradient">
-                Your Akhira
+                Your <br className="mobile-block" /> Akhira
               </span>
             </h2>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <h6 className="text-lg text-primary font-semibold text-center mb-6 mw-525 m-auto">
               “You will never attain righteousness until you spend in charity
@@ -638,11 +705,15 @@ export default function Home() {
             </h6>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="mw-280 m-auto mb-4"
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <a href="https://t.me/thabitapp" target="_blank">
               <Image
@@ -653,10 +724,14 @@ export default function Home() {
             </a>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            variants={{
+              visible: { opacity: 1 },
+              hidden: { opacity: 0 },
+            }}
           >
             <h6 className="text-xs text-grey-light font-light text-center mb-30">
               Telegram Channel keeps your info private

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import logo from "../public/logo.svg";
+import mobileLogo from "../public/mobile-logo.svg";
 
 import youtube from "../public/YouTube.svg";
 import insta from "../public/Instagram.svg";
@@ -20,7 +21,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full mobile-wrap flex justify-between container m-auto  pb-10 ">
-        <div className="left-footer mobile-full flex col mobile-mb-med">
+        <div className="left-footer mobile-full flex col mobile-mb-med mobile-none">
           <Image
             src={logo}
             alt="mouse potato logo 8bit"
@@ -28,11 +29,11 @@ export default function Footer() {
             className="mb-6"
           ></Image>
         </div>
-        <div className="center-footer w-full flex justify-between mw-618 mobile-justify-between">
+        <div className="center-footer w-full flex justify-between mw-618 mobile-justify-between mobile-col mobile-center">
           <div className="flex col mobile-m-0">
             <h6 className="text-md font-regular lh-8 mb-8">Blog</h6>
           </div>
-          <div className="flex col mobile-m-0 mobile-mb-med">
+          <div className="flex col mobile-m-0 ">
             <h6 className="text-md font-regular lh-8 mb-8">Career</h6>
           </div>
           <div className="flex col">
@@ -41,7 +42,7 @@ export default function Footer() {
           <div className="flex col mobile-m-0">
             <h6 className="text-md font-regular lh-8 mb-8">Invest</h6>
           </div>
-          <div className="flex col mobile-m-0 mobile-mb-med">
+          <div className="flex col mobile-m-0">
             <h6 className="text-md font-regular lh-8 mb-8">Privacy Policy</h6>
           </div>
           <div className="flex col">
@@ -50,8 +51,8 @@ export default function Footer() {
             </h6>
           </div>
         </div>
-        <div className="right-footer flex col">
-          <div className="flex items-center">
+        <div className="right-footer flex col mobile-full">
+          <div className="flex items-center mobile-center mobile-full">
             <a
               href="https://www.youtube.com/@thabitapp"
               target="_blank"
@@ -96,6 +97,14 @@ export default function Footer() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="flex mobile-center w-full mobile-flex">
+        <Image
+          src={mobileLogo}
+          alt="mouse potato logo 8bit"
+          width={92}
+          className="mb-6"
+        ></Image>
       </div>
     </footer>
   );

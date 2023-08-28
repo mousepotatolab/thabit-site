@@ -38,8 +38,8 @@ export default function Navbar() {
     <div className="flex w-full m-auto items-center justify-between container mt-6 mb-20">
       <Link href="/">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
         >
@@ -107,6 +107,7 @@ export default function Navbar() {
         {!isOpenMobileNav && (
           <div onClick={toggleMobileNav} className="mobile-nav-toggle">
             <div className="top-line"></div>
+            <div className="middle-line"></div>
             <div className="bottom-line"></div>
           </div>
         )}
@@ -119,54 +120,49 @@ export default function Navbar() {
         {isOpenMobileNav && (
           <nav className="mobile-nav">
             <ul className="flex items-center mobile-nav">
-              <Link href="/projects">
+              <Link href="">
                 <li
-                  onClick={toggleMobileNav}
                   className={`${
                     activePage === "projects" ? "nav-item-active" : "nav-item"
-                  } uppercase font-regular mb-4`}
+                  } font-regular  mobile-mb-med`}
                 >
-                  Projects
+                  About
                 </li>
               </Link>
-              <Link href="/services">
+              <Link href="">
                 <li
-                  onClick={toggleMobileNav}
                   className={`${
                     activePage === "services" ? "nav-item-active" : "nav-item"
-                  } uppercase font-regular mb-4`}
+                  } font-regular  mobile-mb-med`}
                 >
-                  Services
+                  Advisors
                 </li>
               </Link>
-              <Link href="/calendar">
+              <Link href="">
                 <li
-                  onClick={toggleMobileNav}
                   className={`${
                     activePage === "calendar" ? "nav-item-active" : "nav-item"
-                  } uppercase font-regular mb-4`}
+                  } font-regular  mobile-mb-med`}
                 >
-                  Calendar
+                  Team
                 </li>
               </Link>
-              <Link href="/resources">
+              <Link href="">
                 <li
-                  onClick={toggleMobileNav}
                   className={`${
                     activePage === "resources" ? "nav-item-active" : "nav-item"
-                  } uppercase font-regular mb-4`}
+                  } font-regular  mobile-mb-med`}
                 >
-                  Resources
+                  FAQ
                 </li>
               </Link>
-              <Link href="/contact">
+              <Link href="https://org.thabit.app" target="_blank">
                 <li
-                  onClick={toggleMobileNav}
                   className={`${
                     activePage === "contact" ? "nav-item-active" : "nav-item"
-                  } uppercase font-regular mb-4`}
+                  } font-regular org-link`}
                 >
-                  Contact
+                  List Your Organization
                 </li>
               </Link>
               {/* <ThemeToggle /> */}
