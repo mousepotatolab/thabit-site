@@ -183,7 +183,7 @@ export default function Home() {
           }}
         >
           <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
-            A Coin Jar for <br></br>
+            A Coin Jar For <br></br>
             <span className="text-red-gradient animate-text-gradient">
               The Entire Ummah.
             </span>
