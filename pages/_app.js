@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import Layout from "../components/layout";
 
 export default function App({ Component, pageProps }) {
-  const getLayout = Component.getLayout ?? defaultPageLayout;
+  const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);
 
   return getLayout(
     <Provider store={store}>
