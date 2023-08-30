@@ -96,7 +96,7 @@ export default function Home() {
               Policy
             </span>
           </h2>
-          <p className="text-md mb-6">Privacy Policy for Thabit App</p>
+          <p className="text-md mb-6">Privacy Policy for Thabit App.</p>
           <p className="text-md mb-6">Last Updated: August 08, 2023</p>
           <p className="text-md mb-6">
             Welcome to Thabit! This Privacy Policy outlines how we collect, use,
