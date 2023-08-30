@@ -15,6 +15,7 @@ import Image from "next/image";
 
 import telegram from "../public/join-telegram.png";
 import phone from "../public/thabit-phone.png";
+import phoneGif from "../public/sign-in.gif";
 import group from "../public/group-thabit.png";
 import grocery from "../public/grocery-store.png";
 import gas from "../public/gas-station.png";
@@ -135,7 +136,7 @@ export default function Home() {
             hidden: { opacity: 0 },
           }}
         >
-          <h6 className="text-xs text-grey-light font-light text-center mb-30">
+          <h6 className="text-xs text-grey-light font-light text-center ">
             Telegram Channel keeps your info private
           </h6>
         </motion.div>
@@ -145,15 +146,15 @@ export default function Home() {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mw-300 m-auto mb-30 relative"
+          className="mw-300 m-auto relative"
           variants={{
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
         >
-          <div className="overlay"></div>
-          <Image src={phone} alt="join thabit telegram" width={300}></Image>
-          <Image
+          {/* <div className="overlay"></div> */}
+          <Image src={phoneGif} alt="join thabit telegram" width={300}></Image>
+          {/* <Image
             src={coffee}
             alt="join thabit telegram"
             className="absolute coffee"
@@ -170,7 +171,7 @@ export default function Home() {
             alt="join thabit telegram"
             className="absolute groceries "
             width={300}
-          ></Image>
+          ></Image> */}
         </motion.div>
         <motion.div
           initial="hidden"
