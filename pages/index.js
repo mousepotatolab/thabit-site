@@ -152,9 +152,9 @@ export default function Home() {
             hidden: { opacity: 0 },
           }}
         >
-          {/* <div className="overlay"></div> */}
-          <Image src={phoneGif} alt="join thabit telegram" width={300}></Image>
-          {/* <Image
+          <div className="overlay"></div>
+          <Image src={phone} alt="join thabit telegram" width={300}></Image>
+          <Image
             src={coffee}
             alt="join thabit telegram"
             className="absolute coffee"
@@ -171,7 +171,7 @@ export default function Home() {
             alt="join thabit telegram"
             className="absolute groceries "
             width={300}
-          ></Image> */}
+          ></Image>
         </motion.div>
         <motion.div
           initial="hidden"
@@ -638,38 +638,18 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mw-730 m-auto group-height mb-30 relative"
-            variants={{
-              visible: { opacity: 1 },
-              hidden: { opacity: 0 },
-            }}
+            className=" mb-30 relative mw-300 m-auto mobile-works mobile-m-0"
           >
+            <div className="overlay"></div>
+            <Image src={phone} alt="join thabit telegram" width={300}></Image>
             <Image
               src={group}
               alt="join thabit telegram"
-              objectFit="cover"
-              fill
-              className="w-full h-auto"
-            ></Image>
-            {/* <Image
-              src={coffee}
-              alt="join thabit telegram"
-              className="absolute coffee"
+              className="absolute coffee coffee-two"
               width={300}
             ></Image>
-            <Image
-              src={gas}
-              alt="join thabit telegram"
-              className="absolute gas"
-              width={300}
-            ></Image>
-            <Image
-              src={grocery}
-              alt="join thabit telegram"
-              className="absolute groceries "
-              width={300}
-            ></Image> */}
           </motion.div>
+
           <motion.div
             initial="hidden"
             whileInView="visible"
