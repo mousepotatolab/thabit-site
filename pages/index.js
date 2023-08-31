@@ -146,7 +146,7 @@ export default function Home() {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mw-300 m-auto relative"
+          className="mw-300 m-auto relative mb-30"
           variants={{
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
