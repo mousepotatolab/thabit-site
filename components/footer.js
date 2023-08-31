@@ -41,7 +41,9 @@ export default function Footer() {
           </div> */}
           <Link href={"/privacy-policy"}>
             <div className="flex col mobile-m-0">
-              <h6 className="text-md font-regular lh-8">Privacy Policy</h6>
+              <h6 className="text-md font-regular lh-8 mobile-mb-med">
+                Privacy Policy
+              </h6>
             </div>
           </Link>
           {/* <div className="flex col">
