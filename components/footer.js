@@ -22,12 +22,9 @@ export default function Footer() {
     <footer>
       <div className="w-full mobile-wrap flex justify-between container m-auto  pb-10 ">
         <div className="left-footer mobile-full flex col mobile-mb-med mobile-none">
-          <Image
-            src={logo}
-            alt="mouse potato logo 8bit"
-            width={92}
-            className="mb-6"
-          ></Image>
+          <div className="logo-main  relative">
+            <Image src={logo} alt="thabit white logo" fill></Image>
+          </div>
         </div>
         <div className="center-footer w-full flex justify-between mw-618 mobile-justify-between mobile-col mobile-center">
           <div className="flex col mobile-m-0">
