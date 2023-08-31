@@ -136,7 +136,7 @@ export default function Home() {
             hidden: { opacity: 0 },
           }}
         >
-          <h6 className="text-xs text-grey-light font-light text-center ">
+          <h6 className="text-xs text-grey-light font-light text-center mb-30">
             Telegram Channel keeps your info private
           </h6>
         </motion.div>
