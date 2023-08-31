@@ -637,14 +637,14 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className=" mb-30 relative mw-300 m-auto mobile-works mobile-m-0"
+            className=" mb-30 relative mw-300 m-auto mobile-works"
           >
             <div className="overlay"></div>
             <Image src={phone} alt="join thabit telegram" width={300}></Image>
             <Image
               src={group}
               alt="join thabit telegram"
-              className="absolute coffee coffee-two"
+              className="absolute coffee coffee-three"
               width={300}
             ></Image>
           </motion.div>
