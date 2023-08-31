@@ -16,7 +16,7 @@ import Image from "next/image";
 import telegram from "../public/join-telegram.png";
 import phone from "../public/thabit-phone.png";
 import phoneGif from "../public/sign-in.gif";
-import group from "../public/group-thabit.png";
+import group from "../public/automate.svg";
 import grocery from "../public/grocery-store.png";
 import gas from "../public/gas-station.png";
 import coffee from "../public/cofee-shop.png";
@@ -321,7 +321,7 @@ export default function Home() {
                     src={plaid}
                     alt="join thabit telegram"
                     className="absolute plaid-connect"
-                    width={290}
+                    width={360}
                   ></Image>
                 </motion.div>
               </div>
@@ -453,7 +453,7 @@ export default function Home() {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="mb-20 relative mobile-works mobile-m-0"
+                  className="mb-20 relative mobile-works"
                 >
                   <div className="overlay"></div>
                   <Image

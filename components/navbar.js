@@ -107,7 +107,6 @@ export default function Navbar() {
         {!isOpenMobileNav && (
           <div onClick={toggleMobileNav} className="mobile-nav-toggle">
             <div className="top-line"></div>
-            <div className="middle-line"></div>
             <div className="bottom-line"></div>
           </div>
         )}

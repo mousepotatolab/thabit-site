@@ -913,7 +913,7 @@ strong {
 
 .plaid-connect {
   top: 90px;
-  left: 5px;
+  left: -30px;
   z-index: 100;
   animation: scale-in-phone 0.3s forwards ease-in-out;
   animation-delay: 1s;
@@ -1372,29 +1372,29 @@ button {
 
   .top-line {
     width: 24px;
-    height: 2px;
+    height: 3px;
     background-color: #ffffff;
   }
   .middle-line {
     width: 24px;
     position: relative;
     top: 5px;
-    height: 2px;
+    height: 3px;
     background-color: #ffffff;
   }
   .bottom-line {
     position: relative;
-    top: 10px;
+    top: 5px;
     width: 24px;
-    height: 2px;
+    height: 3px;
     background-color: #ffffff;
   }
   .top-line-white {
     position: relative;
     z-index: 300000;
     width: 24px;
-    height: 2px;
-    background-color: #fefefe;
+    height: 3px;
+    background-color: #fff;
     animation: rotateTop 0.3s ease-in-out forwards;
   }
   .bottom-line-white {
@@ -1402,8 +1402,8 @@ button {
     z-index: 300000;
     top: 5px;
     width: 24px;
-    height: 2px;
-    background-color: #fefefe;
+    height: 3px;
+    background-color: #fff;
     animation: rotateBottom 0.3s ease-in-out forwards;
   }
 
@@ -1471,7 +1471,7 @@ button {
   }
 
   .plaid-connect {
-    left: 25px;
+    left: -8px;
   }
 
   .organization {
@@ -1643,7 +1643,7 @@ button {
     }
 
     to {
-      transform: rotate(-45deg) translate(-5px, 10px);
+      transform: rotate(45deg) translate(5px);
     }
   }
   @keyframes rotateBottom {
@@ -1652,7 +1652,7 @@ button {
     }
 
     to {
-      transform: rotate(45deg) translate(5px, 0px);
+      transform: rotate(-45deg) translate(5px, -5px);
     }
   }
   @keyframes fade-in-mobile-nav {
