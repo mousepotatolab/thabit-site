@@ -16,7 +16,7 @@ import Image from "next/image";
 import telegram from "../public/join-telegram.png";
 import phone from "../public/thabit-phone.png";
 import phoneGif from "../public/sign-in.gif";
-import group from "../public/automate.svg";
+import group from "../public/automate.png";
 import grocery from "../public/grocery-store.png";
 import gas from "../public/gas-station.png";
 import coffee from "../public/cofee-shop.png";
