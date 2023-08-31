@@ -22,7 +22,7 @@ export default function Footer() {
     <footer>
       <div className="w-full mobile-wrap flex justify-between container m-auto  pb-10 ">
         <div className="left-footer mobile-full flex col mobile-mb-med mobile-none">
-          <div className="logo-main  relative">
+          <div className="logo-main  relative logo-footer">
             <Image src={logo} alt="thabit white logo" fill></Image>
           </div>
         </div>

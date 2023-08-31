@@ -800,6 +800,10 @@ strong {
   height: 40px;
 }
 
+.logo-footer {
+  top: -5px;
+}
+
 .club {
   width: 465px;
   height: 454px;
