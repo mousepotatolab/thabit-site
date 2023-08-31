@@ -295,13 +295,13 @@ export default function Home() {
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
                       Connect <br></br> Bank <br className="mobile-block" />{" "}
-                      Account
+                      Account.
                     </span>
                   </h2>
                   <p className="text-lg font-light mobile-text-center mobile-mb-med">
-                    Securely connect bank account using Plaid. Plaid is trusted
-                    by companies such as Acorns, Venmo, Chime, Wise, Betterment,
-                    and many others.
+                    12,000+ financial institutions use Plaid®. In the US, 1 in 4
+                    US adults has connected a financial account to an app or
+                    service powered by Plaid®.
                   </p>
                 </div>
                 <motion.div
@@ -364,7 +364,7 @@ export default function Home() {
                     Choose An
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
-                      Islamic <br></br> Organization
+                      Islamic <br></br> Organization.
                     </span>
                   </h2>
                   <p className="text-lg font-light mobile-text-center mobile-mb-med">
@@ -392,13 +392,12 @@ export default function Home() {
                     Keep <br></br>
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
-                      Spending<br></br> Normally
+                      Spending<br></br> Normally.
                     </span>
                   </h2>
                   <p className="text-lg font-light mobile-text-center mobile-mb-med">
-                    Keep using the bank account or the debit card associated
-                    with the account normally like you usually do in your day to
-                    day life.
+                    Continue using the bank account or the debit card associated
+                    with the account like you usually do in your daily life.
                   </p>
                 </div>
                 <motion.div
@@ -473,7 +472,7 @@ export default function Home() {
                     Donate <br></br>
                     <span className="text-green-blue-gradient animate-text-gradient">
                       {" "}
-                      Spare Change <br></br> Automatically
+                      Spare Change <br></br> Automatically.
                     </span>
                   </h2>
                   <p className="text-lg font-light mobile-text-center mobile-mb-med">
@@ -501,7 +500,7 @@ export default function Home() {
               Here Is An
               <span className="text-red-gradient animate-text-gradient">
                 {" "}
-                Example
+                Example.
               </span>
             </h2>
           </motion.div>
@@ -663,7 +662,7 @@ export default function Home() {
             <h2 className="text-title text-center font-bold m-auto text-primary mb-6">
               Invest In <br></br>
               <span className="text-pink-gradient animate-text-gradient">
-                Your <br className="mobile-block" /> Akhira
+                Your <br className="mobile-block" /> Akhira.
               </span>
             </h2>
           </motion.div>
@@ -682,7 +681,7 @@ export default function Home() {
               from that what you love.”
             </h6>
             <h6 className="text-lg text-primary font-semibold text-center mb-12 mw-525 m-auto">
-              Quaran 3:92
+              Quran 3:92
             </h6>
           </motion.div>
           <motion.div
