@@ -325,7 +325,6 @@ strong {
 }
 
 .no-scroll {
-  position: fixed;
   overflow: hidden;
 }
 
@@ -1305,7 +1304,7 @@ button {
     z-index: 10000;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #141416;
     position: fixed;
     left: 0;
     top: 0;
