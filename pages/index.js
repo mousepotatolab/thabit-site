@@ -569,8 +569,8 @@ export default function Home() {
               </h2>
               <h5 className="text-2xl mb-6">Round Up</h5>
               <p className="text-grey-light text-lg mw-200">
-                On friday Thabit rounded up those two transactions and collected{" "}
-                <span className="text-red">$0.25</span> from $5.75 and{" "}
+                On Friday, Thabit rounded up those two transactions and
+                collected <span className="text-red">$0.25</span> from $5.75 and{" "}
                 <span className="text-red">$0.05</span> from $150.95.
               </p>
             </motion.div>
