@@ -298,7 +298,7 @@ export default function Home() {
                       Account.
                     </span>
                   </h2>
-                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
+                  <p className="text-lg font-semibold mobile-text-center mobile-mb-med">
                     12,000+ financial institutions use Plaid®. In the US, 1 in 4
                     US adults has connected a financial account to an app or
                     service powered by Plaid®.
@@ -367,7 +367,7 @@ export default function Home() {
                       Islamic <br></br> Organization.
                     </span>
                   </h2>
-                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
+                  <p className="text-lg font-semibold mobile-text-center mobile-mb-med">
                     From our list of charity organizations, select an
                     organization or your local Masjid that you want to support.
                   </p>
@@ -395,7 +395,7 @@ export default function Home() {
                       Spending<br></br> Normally.
                     </span>
                   </h2>
-                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
+                  <p className="text-lg font-semibold mobile-text-center mobile-mb-med">
                     Continue using the bank account or the debit card associated
                     with the account like you usually do in your daily life.
                   </p>
@@ -475,7 +475,7 @@ export default function Home() {
                       Spare Change <br></br> Automatically.
                     </span>
                   </h2>
-                  <p className="text-lg font-light mobile-text-center mobile-mb-med">
+                  <p className="text-lg font-semibold mobile-text-center mobile-mb-med">
                     Once a week we'll round up your day to day purchases to the
                     next dollar and collect spare change to donate to your
                     selected organization or Masjid.
