@@ -56,7 +56,7 @@ export default function Navbar() {
       >
         <nav className="desktop-nav">
           <ul className="flex items-center">
-            <Link href="">
+            {/* <Link href="">
               <li
                 className={`${
                   activePage === "projects" ? "nav-item-active" : "nav-item"
@@ -91,7 +91,7 @@ export default function Navbar() {
               >
                 FAQ
               </li>
-            </Link>
+            </Link> */}
             <Link href="https://org.thabit.app" target="_blank">
               <li
                 className={`${
@@ -119,7 +119,7 @@ export default function Navbar() {
         {isOpenMobileNav && (
           <nav className="mobile-nav">
             <ul className="flex items-center mobile-nav">
-              <Link href="">
+              {/* <Link href="">
                 <li
                   className={`${
                     activePage === "projects" ? "nav-item-active" : "nav-item"
@@ -154,7 +154,7 @@ export default function Navbar() {
                 >
                   FAQ
                 </li>
-              </Link>
+              </Link> */}
               <Link href="https://org.thabit.app" target="_blank">
                 <li
                   className={`${

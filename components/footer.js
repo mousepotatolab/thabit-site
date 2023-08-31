@@ -20,14 +20,14 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <div className="w-full mobile-wrap flex justify-between container m-auto  pb-10 ">
+      <div className="w-full mobile-wrap flex justify-between container m-auto items-center  pb-10 ">
         <div className="left-footer mobile-full flex col mobile-mb-med mobile-none">
           <div className="logo-main  relative logo-footer">
             <Image src={logo} alt="thabit white logo" fill></Image>
           </div>
         </div>
-        <div className="center-footer w-full flex justify-between mw-618 mobile-justify-between mobile-col mobile-center">
-          <div className="flex col mobile-m-0">
+        <div className="center-footer w-full flex justify-center mw-618 mobile-justify-between mobile-col mobile-center">
+          {/* <div className="flex col mobile-m-0">
             <h6 className="text-md font-regular lh-8 mb-8">Blog</h6>
           </div>
           <div className="flex col mobile-m-0 ">
@@ -38,17 +38,17 @@ export default function Footer() {
           </div>
           <div className="flex col mobile-m-0">
             <h6 className="text-md font-regular lh-8 mb-8">Invest</h6>
-          </div>
+          </div> */}
           <Link href={"/privacy-policy"}>
             <div className="flex col mobile-m-0">
-              <h6 className="text-md font-regular lh-8 mb-8">Privacy Policy</h6>
+              <h6 className="text-md font-regular lh-8">Privacy Policy</h6>
             </div>
           </Link>
-          <div className="flex col">
+          {/* <div className="flex col">
             <h6 className="text-md font-regular lh-8 mb-8">
               Terms and Conditions
             </h6>
-          </div>
+          </div> */}
         </div>
         <div className="right-footer flex col mobile-full">
           <div className="flex items-center mobile-center mobile-full">
