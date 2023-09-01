@@ -4,7 +4,10 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "framer-motion";
 // import { useInView } from "react-intersection-observer";
 
+import Modal from "react-modal";
+
 import Layout from "../components/layout";
+import CookiePolicy from "../components/cookie";
 
 import Head from "next/head";
 import Image from "next/image";
@@ -27,6 +30,43 @@ import organization from "../public/organization.png";
 export default function Home() {
   const ref = useRef(null);
   const isInView = useInView(ref);
+
+  const [cookieIsOpen, setCookieIsOpen] = React.useState(true);
+
+  useEffect(() => {
+    const userHasConsented = localStorage.getItem("acceptedCookies");
+    if (userHasConsented) {
+      setCookieIsOpen(false);
+    }
+  }, []);
+
+  function consentCookies() {
+    window.clarity("consent");
+    localStorage.setItem("acceptedCookies", "true");
+    setCookieIsOpen(false);
+  }
+
+  function declineCookies() {
+    localStorage.setItem("acceptedCookies", "true");
+    setCookieIsOpen(false);
+  }
+
+  const customStyles = {
+    content: {
+      position: "absolute",
+      bottom: "0",
+      height: "0px",
+      padding: "0",
+      border: "none",
+      overflow: "visible",
+      width: "100%",
+      inset: "0",
+    },
+    overlay: {
+      backgroundColor: "transparent",
+      zIndex: "1000",
+    },
+  };
 
   return (
     <>
@@ -75,6 +115,13 @@ export default function Home() {
           }}
         />
       </Head>
+      <Modal isOpen={cookieIsOpen} style={customStyles}>
+        <CookiePolicy
+          consentCookies={consentCookies}
+          declineCookies={declineCookies}
+        ></CookiePolicy>
+      </Modal>
+
       <main className="container m-auto" ref={ref}>
         <motion.div
           initial="hidden"
