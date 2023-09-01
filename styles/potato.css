@@ -1083,6 +1083,7 @@ form p button {
 .accordion__item {
   background-color: #20232a;
   margin-bottom: 24px;
+  padding-bottom: 16px;
 }
 
 .accordion__button {
@@ -1093,7 +1094,7 @@ form p button {
 }
 
 .accordion__panel {
-  padding: 0 40px 40px;
+  padding: 0 40px 24px;
 }
 
 .accordion__panel p {
