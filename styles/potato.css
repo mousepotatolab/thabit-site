@@ -1341,6 +1341,7 @@ button {
   border: 2px solid #ea6362;
   color: #ea6362;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .accept-button {
@@ -1352,6 +1353,7 @@ button {
   border-radius: 4px;
   border: 2px solid #ea6362;
   background: #ea6362;
+  cursor: pointer;
 }
 
 /* Button Classes End */
