@@ -33,18 +33,11 @@ export default function Home() {
 
   const [cookieIsOpen, setCookieIsOpen] = React.useState(false);
 
-  const userHasConsented =
-    typeof window !== "undefined"
-      ? localStorage.getItem("acceptedCookies")
-      : null;
-  if (!userHasConsented) {
-    setCookieIsOpen(true);
-  }
-
   useEffect(() => {
+    // Check local storage once on component mount
     const userHasConsented = localStorage.getItem("acceptedCookies");
-    if (userHasConsented) {
-      setCookieIsOpen(false);
+    if (!userHasConsented) {
+      setCookieIsOpen(true);
     }
   }, []);
 
