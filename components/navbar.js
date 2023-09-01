@@ -56,7 +56,7 @@ export default function Navbar() {
       >
         <nav className="desktop-nav">
           <ul className="flex items-center">
-            <Link href="/about-us">
+            {/* <Link href="/about-us">
               <li
                 className={`${
                   activePage === "projects" ? "nav-item-active" : "nav-item"
@@ -64,7 +64,7 @@ export default function Navbar() {
               >
                 About
               </li>
-            </Link>
+            </Link> */}
             {/* <Link href="">
               <li
                 className={`${
@@ -83,7 +83,7 @@ export default function Navbar() {
                 Team
               </li>
             </Link> */}
-            <Link href="/faq">
+            {/* <Link href="/faq">
               <li
                 className={`${
                   activePage === "resources" ? "nav-item-active" : "nav-item"
@@ -91,7 +91,7 @@ export default function Navbar() {
               >
                 FAQ
               </li>
-            </Link>
+            </Link> */}
             <Link href="https://org.thabit.app" target="_blank">
               <li
                 className={`${
@@ -119,7 +119,7 @@ export default function Navbar() {
         {isOpenMobileNav && (
           <nav className="mobile-nav">
             <ul className="flex items-center mobile-nav">
-              <Link href="/about-us">
+              {/* <Link href="/about-us">
                 <li
                   className={`${
                     activePage === "projects" ? "nav-item-active" : "nav-item"
@@ -127,7 +127,7 @@ export default function Navbar() {
                 >
                   About
                 </li>
-              </Link>
+              </Link> */}
               {/* <Link href="">
                 <li
                   className={`${
@@ -146,7 +146,7 @@ export default function Navbar() {
                   Team
                 </li>
               </Link> */}
-              <Link href="/faq">
+              {/* <Link href="/faq">
                 <li
                   className={`${
                     activePage === "resources" ? "nav-item-active" : "nav-item"
@@ -154,7 +154,7 @@ export default function Navbar() {
                 >
                   FAQ
                 </li>
-              </Link>
+              </Link> */}
               <Link href="https://org.thabit.app" target="_blank">
                 <li
                   className={`${
