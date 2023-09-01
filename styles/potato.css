@@ -1443,7 +1443,7 @@ button {
 
   .mobile-nav-toggle {
     position: absolute;
-    top: 2.25rem;
+    top: 1.75rem;
     right: 1.5rem;
   }
 
@@ -1665,8 +1665,8 @@ button {
   }
 
   .logo-main {
-    width: 132px;
-    height: 40px;
+    width: 120px;
+    height: 32px;
   }
 
   .max-h-500 {
