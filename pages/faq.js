@@ -38,7 +38,7 @@ export default function Faq() {
   return (
     <>
       <Head>
-        <title>Thabit App | Donate Spare Change</title>
+        <title>Thabit App | Frequently Asked Questions</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
@@ -49,16 +49,16 @@ export default function Faq() {
           src="https://www.googletagmanager.com/gtag/js?id=G-7R5MPQY7KM"
         />
 
-        <meta property="og:title" content="Thabit App | Privacy Policy" />
+        <meta
+          property="og:title"
+          content="Thabit App | Frequently Asked Questions"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="We created Thabit to help local Masjids and Islamic Organizations and allow our community to engage in sadaqah. Thabit works by connecting users' bank accounts, rounding up their purchases to the nearest dollar, and donating the difference to the Masjid or Islamic Organization of their choice."
         />
-        <meta
-          property="og:url"
-          content="https://www.thabit.app/privacy-policy"
-        />
+        <meta property="og:url" content="https://www.thabit.app/faq" />
         <meta
           property="og:image"
           content="https://i.ibb.co/1LvG4xh/ogImage.jpg"
