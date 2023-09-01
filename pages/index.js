@@ -31,7 +31,15 @@ export default function Home() {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  const [cookieIsOpen, setCookieIsOpen] = React.useState(true);
+  const [cookieIsOpen, setCookieIsOpen] = React.useState(false);
+
+  const userHasConsented =
+    typeof window !== "undefined"
+      ? localStorage.getItem("acceptedCookies")
+      : null;
+  if (!userHasConsented) {
+    setCookieIsOpen(true);
+  }
 
   useEffect(() => {
     const userHasConsented = localStorage.getItem("acceptedCookies");
