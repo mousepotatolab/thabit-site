@@ -283,21 +283,22 @@ export default function Faq() {
                       )}
                     </AccordionItemState>
                   </div>
-                  My Masjid/charity is not on Thabit?
+                  Does 100% of my donation go to the charity?
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  If you are the authorized person, please visit{" "}
-                  <a
-                    href="https://org.thabit.app"
-                    target="_blank"
-                    className="text-red"
-                  >
-                    this link
-                  </a>{" "}
-                  and sign up your Masjid. If not then please share Thabit with
-                  the Imam of your Masjid.
+                  We utilize Plaid® and Stripe® for payment processing, and it's
+                  important to note that a processing fee is applied to each
+                  transfer made through their platform. Let's consider an
+                  example: if you are donating $0.50, the processing fee is
+                  $0.01 (2.9% of the donation amount). As a result, the charity
+                  will receive $0.49 after deducting the processing fee.
+                  However, if you choose to opt-in and pay for the transaction
+                  fee yourself, the entire donation amount will go directly to
+                  the charity without any deductions. This way, if you cover the
+                  transaction fee, the charity will receive 100% of your
+                  intended donation.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -323,25 +324,25 @@ export default function Faq() {
                       )}
                     </AccordionItemState>
                   </div>
-                  Does 100% of my donation go to the charity?
+                  My Masjid/Charity is not on Thabit
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  We utilize Plaid® and Stripe® for payment processing, and it's
-                  important to note that a processing fee is applied to each
-                  transfer made through their platform. Let's consider an
-                  example: if you are donating $0.50, the processing fee is
-                  $0.01 (2.9% of the donation amount). As a result, the charity
-                  will receive $0.49 after deducting the processing fee.
-                  However, if you choose to opt-in and pay for the transaction
-                  fee yourself, the entire donation amount will go directly to
-                  the charity without any deductions. This way, if you cover the
-                  transaction fee, the charity will receive 100% of your
-                  intended donation.
+                  If you are the authorized person, please visit{" "}
+                  <a
+                    href="https://org.thabit.app"
+                    target="_blank"
+                    className="text-red"
+                  >
+                    this link
+                  </a>{" "}
+                  and sign up your Masjid. If not then please share Thabit with
+                  the Imam of your Masjid.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
+
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>
