@@ -1084,6 +1084,7 @@ form p button {
   background-color: #20232a;
   margin-bottom: 24px;
   padding-bottom: 16px;
+  border-radius: 4px;
 }
 
 .accordion__button {
