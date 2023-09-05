@@ -329,16 +329,22 @@ export default function Faq() {
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  If you are the authorized person, please visit{" "}
+                  If you are the authorized person, we kindly request you to
+                  visit{" "}
                   <a
                     href="https://org.thabit.app"
                     target="_blank"
                     className="text-red"
                   >
-                    this link
+                    org.thabit.app
                   </a>{" "}
-                  and sign up your Masjid. If not then please share Thabit with
-                  the Imam of your Masjid.
+                  and sign up your Masjid/charity. This will allow you to
+                  register and provide necessary information for your
+                  organization's participation. If you are not the authorized
+                  person, we encourage you to share information about Thabit
+                  with the Imam or the responsible individual at your
+                  organization, so they can explore the opportunity and sign up
+                  accordingly.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>

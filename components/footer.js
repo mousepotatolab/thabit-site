@@ -6,6 +6,7 @@ import mobileLogo from "../public/mobile-logo.svg";
 import youtube from "../public/YouTube.svg";
 import insta from "../public/Instagram.svg";
 import tele from "../public/telegram.svg";
+import linked from "../public/linkedIn.svg";
 
 import twitterB from "../public/TwittBlack.svg";
 import twitterW from "../public/TwittWhite.svg";
@@ -100,6 +101,20 @@ export default function Footer() {
                 <Image
                   src={insta}
                   alt="instagram logo"
+                  width={24}
+                  className="mr-7 "
+                ></Image>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/thabit/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative pointer">
+                <Image
+                  src={linked}
+                  alt="linkedIn logo"
                   width={24}
                   className="mr-7 "
                 ></Image>
