@@ -33,7 +33,9 @@ export default function Footer() {
             className="link"
           >
             <div className="flex col mobile-m-0">
-              <h6 className="text-md font-regular lh-8 mr-10">Blog</h6>
+              <h6 className="text-md font-regular lh-8 mr-10 mobile-m-0">
+                Blog
+              </h6>
             </div>
           </a>
           <a
@@ -42,7 +44,9 @@ export default function Footer() {
             className="link"
           >
             <div className="flex col mobile-m-0 ">
-              <h6 className="text-md font-regular lh-8 mr-10">Career</h6>
+              <h6 className="text-md font-regular lh-8 mr-10 mobile-m-0">
+                Career
+              </h6>
             </div>
           </a>
           {/* <div className="flex col">
