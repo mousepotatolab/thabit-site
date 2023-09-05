@@ -135,16 +135,17 @@ export default function Faq() {
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  Islamic Organizations’ and all contributors’ information are
-                  private and secure. Thabit uses Plaid® for payment processing.
-                  Plaid® is used by popular companies like Venmo®, Chime®,
-                  Wise®, Betterment®. 12,000+ financial institutions (USA,
-                  Canada, Europe) use Plaid®. In the US, 1 in 4 US adults has
-                  connected a financial account to an app or service powered by
-                  Plaid®. If you would like to learn more about Plaid® and their
-                  robust security measures, we encourage you to explore their
-                  website for detailed information. Learn more about Plaid®
-                  here.
+                  At Thabit, we prioritize the privacy and security of both
+                  charities' and contributors' information. To ensure a reliable
+                  payment processing system, we have partnered with Plaid®.
+                  Plaid® is a trusted and widely used platform, utilized by
+                  renowned companies such as Acorns®, Venmo®, Chime®, Wise®,
+                  Betterment®. 12,000+ financial institutions (USA, Canada,
+                  Europe) use Plaid®. In the US, 1 in 4 US adults has connected
+                  a financial account to an app or service powered by Plaid®. If
+                  you would like to learn more about Plaid® and their robust
+                  security measures, we encourage you to explore their website
+                  for detailed information.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -175,13 +176,15 @@ export default function Faq() {
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  Every purchase your make with you connected bank account,
-                  we'll round up your purchases to the next dollar and donate
-                  your spare change. For example, if you buy a cup of coffee for
-                  $4.75, we will round up the transaction to $5 and donate $0.25
-                  to your selected Masjid. Or if you buy groceries for $78.10,
-                  we will round up the transaction to $79 and donate $0.90 to
-                  your selected Masjid.
+                  With your connected bank account, every purchase you make will
+                  have its total rounded up to the next dollar. The spare change
+                  resulting from this rounding will be donated to your selected
+                  Islamic charitable cause. For instance, if you purchase a cup
+                  of coffee for $4.75, we will round up the transaction to $5
+                  and donate the spare change of $0.25. Similarly, if you buy
+                  groceries for $78.10, we will round up the transaction to $79
+                  and donate the spare change of $0.90. This way, your everyday
+                  purchases contribute to your chosen Islamic charitable causes.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -212,15 +215,15 @@ export default function Faq() {
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  All your transactions will be rounded up once a week and
-                  donated to your selected Masjid. For example, if you made 3
-                  transactions of $4.60, $150.93 and $71.95. We will collect
-                  $0.40 from the $4.60 transaction, $0.07 from the $150.93
-                  transaction, and $0.05 from the $71.95 transaction. So the
-                  total of $0.52 will be collected from that week’s transactions
-                  and donated to the Masjid. This process will continue each
-                  week. If you don’t have enough balance the transaction will
-                  decline.
+                  All your transactions will be rounded up on a weekly basis and
+                  donated to your selected charity. Let's consider an example
+                  with three transactions: $4.60, $150.93, and $71.95. From the
+                  $4.60 transaction, we will collect $0.40; from the $150.93
+                  transaction, we will collect $0.07, and from the $71.95
+                  transaction, we will collect $0.05. Therefore, a total of
+                  $0.52 will be collected from the transactions made during that
+                  week, which will be donated to the charity. This process will
+                  be repeated every week.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -246,17 +249,15 @@ export default function Faq() {
                       )}
                     </AccordionItemState>
                   </div>
-                  Does 100% of my donation go to the charity?
+                  What happens to an exact change transaction?
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  We use Plaid for payment processing. For each transfer payment
-                  processing fee is applied by Plaid. For example, if you are
-                  donating $0.50 then the processing fee is $0.01 (2.9%). So the
-                  Masjid will get $0.49. If you opt-in to pay for the
-                  transaction fee then 100% of your donation will go to the
-                  Masjid.
+                  For exact change transactions, we implement rounding up to the
+                  next full dollar amount. For instance, if your transaction
+                  amounts to $5, we will round it up to $6 and collect an
+                  additional $1 as a donation.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -282,7 +283,7 @@ export default function Faq() {
                       )}
                     </AccordionItemState>
                   </div>
-                  My local Masjid is not on Thabit
+                  My Masjid/charity is not on Thabit?
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
@@ -322,13 +323,22 @@ export default function Faq() {
                       )}
                     </AccordionItemState>
                   </div>
-                  Can I support more than one Masjid?
+                  Does 100% of my donation go to the charity?
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  Right now you can only support one Masjid. In the future we
-                  will add the option to support multiple Islamic Organizations.
+                  We utilize Plaid® and Stripe® for payment processing, and it's
+                  important to note that a processing fee is applied to each
+                  transfer made through their platform. Let's consider an
+                  example: if you are donating $0.50, the processing fee is
+                  $0.01 (2.9% of the donation amount). As a result, the charity
+                  will receive $0.49 after deducting the processing fee.
+                  However, if you choose to opt-in and pay for the transaction
+                  fee yourself, the entire donation amount will go directly to
+                  the charity without any deductions. This way, if you cover the
+                  transaction fee, the charity will receive 100% of your
+                  intended donation.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -354,15 +364,13 @@ export default function Faq() {
                       )}
                     </AccordionItemState>
                   </div>
-                  Can I support other Islamic institutes like charity
-                  organization?
+                  Can I support more than one Masjid?
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  Right now you can only support Islamic Organizations. But in
-                  the future we will add other Islamic organizations that can
-                  benefit from our platform.
+                  Right now you can only support one Masjid. In the future we
+                  will add the option to support multiple Islamic Organizations.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>

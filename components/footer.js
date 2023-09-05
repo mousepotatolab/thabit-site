@@ -27,13 +27,25 @@ export default function Footer() {
           </div>
         </div>
         <div className="center-footer w-full flex justify-center mw-618 mobile-justify-between mobile-col mobile-center">
-          {/* <div className="flex col mobile-m-0">
-            <h6 className="text-md font-regular lh-8 mb-8">Blog</h6>
-          </div>
-          <div className="flex col mobile-m-0 ">
-            <h6 className="text-md font-regular lh-8 mb-8">Career</h6>
-          </div>
-          <div className="flex col">
+          <a
+            href="https://thabit.substack.com/"
+            target="_blank"
+            className="link"
+          >
+            <div className="flex col mobile-m-0">
+              <h6 className="text-md font-regular lh-8 mr-10">Blog</h6>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/thabit/jobs/"
+            target="_blank"
+            className="link"
+          >
+            <div className="flex col mobile-m-0 ">
+              <h6 className="text-md font-regular lh-8 mr-10">Career</h6>
+            </div>
+          </a>
+          {/* <div className="flex col">
             <h6 className="text-md font-regular lh-8 mb-8">Advisors</h6>
           </div>
           <div className="flex col mobile-m-0">

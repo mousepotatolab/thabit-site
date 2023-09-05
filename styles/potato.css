@@ -1089,6 +1089,7 @@ form p button {
 .accordion__button {
   padding: 40px 40px 24px 40px;
   font-size: 24px;
+  line-height: 32px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -1099,6 +1100,7 @@ form p button {
 
 .accordion__panel p {
   font-size: 24px;
+  line-height: 32px;
   font-weight: 500;
   color: #c4c8d4;
 }
@@ -1588,6 +1590,10 @@ button {
 
   .mobile-mb-med {
     margin-bottom: 2rem;
+  }
+
+  .mobile-mb-lg {
+    margin-bottom: 5rem;
   }
 
   .mobile-mb-20 {
