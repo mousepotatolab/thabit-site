@@ -364,13 +364,14 @@ export default function Faq() {
                       )}
                     </AccordionItemState>
                   </div>
-                  Can I support more than one Masjid?
+                  Can I support more than one Organization?
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  Right now you can only support one Masjid. In the future we
-                  will add the option to support multiple Islamic Organizations.
+                  Right now you can only support one Masjid or Charity. In the
+                  future we will add the option to support multiple Islamic
+                  Organizations.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
