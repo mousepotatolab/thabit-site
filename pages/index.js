@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -28,8 +28,42 @@ import plaid from "../public/plaid-connect.png";
 import organization from "../public/organization.png";
 
 export default function Home() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  const useOnScreen = (ref, id, setActiveId) => {
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveId(id);
+          }
+        },
+        {
+          threshold: 0.7,
+        }
+      );
+
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+
+      return () => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      };
+    }, [ref, id, setActiveId]);
+  };
+
+  const [activeId, setActiveId] = useState(null);
+
+  const refOne = React.useRef(null);
+  const refTwo = React.useRef(null);
+  const refThree = React.useRef(null);
+  const refFour = React.useRef(null);
+
+  useOnScreen(refOne, "Connect", setActiveId);
+  useOnScreen(refTwo, "Choose Charity", setActiveId);
+  useOnScreen(refThree, "Spend Normally", setActiveId);
+  useOnScreen(refFour, "Start Sadaqah", setActiveId);
 
   const [cookieIsOpen, setCookieIsOpen] = React.useState(false);
 
@@ -123,7 +157,7 @@ export default function Home() {
         ></CookiePolicy>
       </Modal>
 
-      <main className="container m-auto" ref={ref}>
+      <main className="container m-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -324,8 +358,49 @@ export default function Home() {
             </span>
           </h2>
         </motion.div>
-        <section id="about-us">
+        <section id="about-us" className="relative">
+          <div className="works-buttons">
+            <ul className="flex works w-full justify-between mobile-wrap mobile-center">
+              <a href="#works-one">
+                <li
+                  className={`work ${activeId === "Connect" ? "active" : ""}`}
+                >
+                  Connect
+                </li>
+              </a>
+              <a href="#works-two">
+                <li
+                  className={`work ${
+                    activeId === "Choose Charity" ? "active" : ""
+                  }`}
+                >
+                  Choose Charity
+                </li>
+              </a>
+              <a href="#works-three">
+                <li
+                  className={`work ${
+                    activeId === "Spend Normally" ? "active" : ""
+                  }`}
+                >
+                  Spend Normally
+                </li>
+              </a>
+              <a href="#works-four">
+                <li
+                  className={`work ${
+                    activeId === "Start Sadaqah" ? "active" : ""
+                  }`}
+                >
+                  Start Sadaqah
+                </li>
+              </a>
+            </ul>
+          </div>
           <motion.div
+            ref={refOne}
+            id="works-one"
+            className="work-item"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -376,6 +451,9 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
+            ref={refTwo}
+            id="works-two"
+            className="work-item"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -424,6 +502,9 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
+            id="works-three"
+            ref={refThree}
+            className="work-item"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -484,6 +565,9 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
+            id="works-four"
+            ref={refFour}
+            className="work-item"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -558,7 +642,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex col mr-4 mobile-mb-med"
+              className="bg-secondary w-full p-10 flex col mr-4 mobile-mr-0 mobile-mb-med"
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 80 },
@@ -581,7 +665,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex col mr-4 mobile-mb-med"
+              className="bg-secondary w-full p-10 flex col mr-4 mobile-mr-0 mobile-mb-med"
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 80 },
@@ -604,7 +688,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex col mr-4 mobile-mb-med"
+              className="bg-secondary w-full p-10 flex col mr-4 mobile-mr-0 mobile-mb-med"
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 80 },
@@ -627,7 +711,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-secondary w-full p-10 flex col "
+              className="bg-secondary w-full p-10 mobile-mr-0 flex col "
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 80 },
