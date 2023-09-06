@@ -34,7 +34,7 @@ export default function Footer() {
             className="link"
           >
             <div className="flex col mobile-m-0">
-              <h6 className="text-md font-regular lh-8 mr-10 mobile-m-0">
+              <h6 className="text-md font-regular lh-8 mr-10 mobile-m-0 mobile-mb-sm">
                 Blog
               </h6>
             </div>
@@ -45,7 +45,7 @@ export default function Footer() {
             className="link"
           >
             <div className="flex col mobile-m-0 ">
-              <h6 className="text-md font-regular lh-8 mr-10 mobile-m-0">
+              <h6 className="text-md font-regular lh-8 mr-10 mobile-m-0 mobile-mb-sm">
                 Career
               </h6>
             </div>
@@ -58,7 +58,7 @@ export default function Footer() {
           </div> */}
           <Link href={"/privacy-policy"}>
             <div className="flex col mobile-m-0">
-              <h6 className="text-md font-regular mr-10 lh-8 mobile-m-0">
+              <h6 className="text-md font-regular mr-10 lh-8 mobile-m-0 mobile-mb-sm">
                 Privacy Policy
               </h6>
             </div>

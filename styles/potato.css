@@ -1665,6 +1665,10 @@ button {
     margin-left: 1rem;
   }
 
+  .mobile-mb-sm {
+    margin-bottom: 1.5rem;
+  }
+
   .mobile-mb-med {
     margin-bottom: 2rem;
   }
