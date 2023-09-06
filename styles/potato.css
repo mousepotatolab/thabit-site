@@ -1665,6 +1665,10 @@ button {
     margin-left: 1rem;
   }
 
+  .mobile-pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
   .mobile-mb-sm {
     margin-bottom: 1.5rem;
   }

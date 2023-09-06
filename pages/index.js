@@ -361,7 +361,7 @@ export default function Home() {
         <section id="about-us" className="relative">
           <div className="works-buttons">
             <ul className="flex works w-full justify-between mobile-wrap mobile-center">
-              <a href="#works-one">
+              <a href="#works-one" className="mobile-pb-2">
                 <li
                   className={`work ${activeId === "Connect" ? "active" : ""}`}
                 >
@@ -377,7 +377,7 @@ export default function Home() {
                   Choose Charity
                 </li>
               </a>
-              <a href="#works-three">
+              <a href="#works-three" className="mobile-pb-2">
                 <li
                   className={`work ${
                     activeId === "Spend Normally" ? "active" : ""
