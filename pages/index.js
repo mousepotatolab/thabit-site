@@ -126,7 +126,7 @@ export default function Home() {
         <meta property="og:url" content="https://www.thabit.app" />
         <meta
           property="og:image"
-          content="https://i.ibb.co/1LvG4xh/ogImage.jpg"
+          content="https://imagedelivery.net/reln_0zNmr7GUlRvuYhFXw/a076aa93-3fdc-4086-3169-8376e5725000/public"
         />
         <script
           dangerouslySetInnerHTML={{
