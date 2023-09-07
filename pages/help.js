@@ -50,16 +50,13 @@ export default function Faq() {
           src="https://www.googletagmanager.com/gtag/js?id=G-7R5MPQY7KM"
         />
 
-        <meta
-          property="og:title"
-          content="Thabit App | Frequently Asked Questions"
-        />
+        <meta property="og:title" content="Thabit App | Help Page" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="We created Thabit to help local Masjids and Islamic Organizations and allow our community to engage in sadaqah. Thabit works by connecting users' bank accounts, rounding up their purchases to the nearest dollar, and donating the difference to the Masjid or Islamic Organization of their choice."
         />
-        <meta property="og:url" content="https://www.thabit.app/faq" />
+        <meta property="og:url" content="https://www.thabit.app/help" />
         <meta
           property="og:image"
           content="https://imagedelivery.net/reln_0zNmr7GUlRvuYhFXw/a076aa93-3fdc-4086-3169-8376e5725000/public"
