@@ -807,6 +807,11 @@ strong {
   font-size: 14px;
 }
 
+.help-card {
+  max-width: 380px;
+  height: 100%;
+}
+
 /* Images */
 
 .logo-main {
