@@ -291,14 +291,13 @@ export default function Faq() {
                   We utilize Plaid® and Stripe® for payment processing, and it's
                   important to note that a processing fee is applied to each
                   transfer made through their platform. Let's consider an
-                  example: if you are donating $0.50, the processing fee is
-                  $0.01 (2.9% of the donation amount). As a result, the charity
-                  will receive $0.49 after deducting the processing fee.
-                  However, if you choose to opt-in and pay for the transaction
-                  fee yourself, the entire donation amount will go directly to
-                  the charity without any deductions. This way, if you cover the
-                  transaction fee, the charity will receive 100% of your
-                  intended donation.
+                  example: if you are donating $5, the processing fee is $0.14
+                  (2.9% of the donation amount). As a result, the charity will
+                  receive $4.86 after deducting the processing fee. However, if
+                  you choose to opt-in and pay for the transaction fee yourself,
+                  the entire donation amount will go directly to the charity
+                  without any deductions. This way, if you cover the transaction
+                  fee, the charity will receive 100% of your intended donation.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
