@@ -935,7 +935,7 @@ strong {
 
 .plaid-connect {
   top: 90px;
-  left: -30px;
+  left: 0px;
   z-index: 100;
   animation: scale-in-phone 0.3s forwards ease-in-out;
   animation-delay: 1s;
@@ -1632,7 +1632,7 @@ button {
   }
 
   .plaid-connect {
-    left: -8px;
+    left: 0px;
   }
 
   .organization {

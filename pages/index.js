@@ -444,7 +444,7 @@ export default function Home() {
                     src={plaid}
                     alt="join thabit telegram"
                     className="absolute plaid-connect"
-                    width={360}
+                    width={300}
                   ></Image>
                 </motion.div>
               </div>
