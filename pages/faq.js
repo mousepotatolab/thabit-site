@@ -98,7 +98,7 @@ export default function Faq() {
         >
           <h2 className="text-title font-bold text-center text-primary mb-20 max-844 m-auto">
             Frequently Asked
-            <span className="text-red-gradient animate-text-gradient">
+            <span className="text-redtwo-gradient animate-text-gradient">
               {" "}
               Questions
             </span>
@@ -113,7 +113,7 @@ export default function Faq() {
                 <AccordionItemButton>
                   <div className="flex justify-between">
                     <h2 className="text-2xl font-bold text-primary mb-6">
-                      <span className="text-red-gradient animate-text-gradient">
+                      <span className="text-redtwo-gradient animate-text-gradient">
                         1.
                       </span>
                     </h2>
@@ -154,7 +154,7 @@ export default function Faq() {
                 <AccordionItemButton>
                   <div className="flex justify-between">
                     <h2 className="text-2xl font-bold text-primary mb-6">
-                      <span className="text-red-gradient animate-text-gradient">
+                      <span className="text-redtwo-gradient animate-text-gradient">
                         2.
                       </span>
                     </h2>
@@ -193,7 +193,7 @@ export default function Faq() {
                 <AccordionItemButton>
                   <div className="flex justify-between">
                     <h2 className="text-2xl font-bold text-primary mb-6">
-                      <span className="text-red-gradient animate-text-gradient">
+                      <span className="text-redtwo-gradient animate-text-gradient">
                         3.
                       </span>
                     </h2>
@@ -232,7 +232,7 @@ export default function Faq() {
                 <AccordionItemButton>
                   <div className="flex justify-between">
                     <h2 className="text-2xl font-bold text-primary mb-6">
-                      <span className="text-red-gradient animate-text-gradient">
+                      <span className="text-redtwo-gradient animate-text-gradient">
                         4.
                       </span>
                     </h2>
@@ -266,7 +266,7 @@ export default function Faq() {
                 <AccordionItemButton>
                   <div className="flex justify-between">
                     <h2 className="text-2xl font-bold text-primary mb-6">
-                      <span className="text-red-gradient animate-text-gradient">
+                      <span className="text-redtwo-gradient animate-text-gradient">
                         5.
                       </span>
                     </h2>
@@ -306,7 +306,7 @@ export default function Faq() {
                 <AccordionItemButton>
                   <div className="flex justify-between">
                     <h2 className="text-2xl font-bold text-primary mb-6">
-                      <span className="text-red-gradient animate-text-gradient">
+                      <span className="text-redtwo-gradient animate-text-gradient">
                         6.
                       </span>
                     </h2>
@@ -353,7 +353,7 @@ export default function Faq() {
                 <AccordionItemButton>
                   <div className="flex justify-between">
                     <h2 className="text-2xl font-bold text-primary mb-6">
-                      <span className="text-red-gradient animate-text-gradient">
+                      <span className="text-redtwo-gradient animate-text-gradient">
                         7.
                       </span>
                     </h2>

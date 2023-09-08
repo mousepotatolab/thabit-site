@@ -132,6 +132,17 @@ strong {
   /* background-size: 100% auto; */
 }
 
+.text-redtwo-gradient {
+  background: linear-gradient(315deg, #ff7676 0%, #f54ea2 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  position: relative;
+  /* background-size: 100% auto; */
+}
+
 .text-pink-gradient {
   background: linear-gradient(315deg, #ff7676 0%, #f54ea2 100%);
 
