@@ -140,6 +140,10 @@ export default function PrivacyPolicy() {
           </p>
           <p className="text-lg mb-6">How We Use Your Information:</p>
           <p className="text-lg mb-6">
+            Thabit does not sell, rent or lease its customer lists to third
+            parties.
+          </p>
+          <p className="text-lg mb-6">
             1. Donations: We use your financial information and the Plaid and
             Stripe API to process spare change donations and transfer the
             aggregated amount to the charity organizations you've chosen.

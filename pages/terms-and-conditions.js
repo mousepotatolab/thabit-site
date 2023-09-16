@@ -143,24 +143,26 @@ export default function PrivacyPolicy() {
             6. You agree not to use the App for any unlawful or fraudulent
             activity. You also agree not to:
           </p>
-          <ul className="terms-list">
-            <li>Use the App to harass, abuse, or harm another person; </li>
-            <li>
+          <ul className="terms-list mb-6">
+            <li className="text-lg mb-4">
+              Use the App to harass, abuse, or harm another person; 
+            </li>
+            <li className="text-lg mb-4">
               Use the App to collect or store personal information about other
               users without their consent; 
             </li>
-            <li>
+            <li className="text-lg mb-4">
               Use the App to transmit any viruses, malware, or other harmful
               code; 
             </li>
-            <li>
+            <li className="text-lg mb-4">
               Attempt to gain unauthorized access to the App or its systems; 
             </li>
-            <li>
+            <li className="text-lg mb-4">
               Interfere with or disrupt the App or its systems, servers, or
               networks; 
             </li>
-            <li>
+            <li className="text-lg">
               Use the App to engage in any activity that could damage, disable,
               overburden, or impair our servers or networks. 
             </li>

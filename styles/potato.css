@@ -1086,6 +1086,12 @@ strong {
   scroll-margin-top: 100px;
 }
 
+.terms-list {
+  list-style-type: disc;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
 /* Custom End */
 
 /* Contact Form Classes */
