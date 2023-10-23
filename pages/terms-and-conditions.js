@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Thabit App | Donate Spare Change</title>
+        <title>Thabit App | Terms and Conditions</title>
         <link rel="shortcut icon" href="/image/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
           src="https://www.googletagmanager.com/gtag/js?id=G-7R5MPQY7KM"
         />
 
-        <meta property="og:title" content="Thabit App | Privacy Policy" />
+        <meta property="og:title" content="Thabit App | Terms and Conditions" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
         />
         <meta
           property="og:url"
-          content="https://www.thabit.app/privacy-policy"
+          content="https://www.thabit.app/terms-and-conditions"
         />
         <meta
           property="og:image"

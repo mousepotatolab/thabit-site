@@ -39,7 +39,7 @@ export default function Faq() {
   return (
     <>
       <Head>
-        <title>Thabit App | Frequently Asked Questions</title>
+        <title>Thabit App | Help Page</title>
         <link rel="shortcut icon" href="/image/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"

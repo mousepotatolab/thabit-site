@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Thabit App | Donate Spare Change</title>
+        <title>Thabit App | Privacy Policy</title>
         <link rel="shortcut icon" href="/image/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
