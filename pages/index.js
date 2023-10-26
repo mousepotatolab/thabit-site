@@ -18,7 +18,7 @@ import Image from "next/image";
 
 import telegram from "../public/join-telegram.png";
 import phone from "../public/thabit-phone.png";
-import phoneGif from "../public/sign-in.gif";
+import children from "../public/children.png";
 import group from "../public/automate.svg";
 import grocery from "../public/grocery-store.png";
 import gas from "../public/gas-station.png";
@@ -479,7 +479,7 @@ export default function Home() {
                     width={300}
                   ></Image>
                   <Image
-                    src={organization}
+                    src={children}
                     alt="join thabit telegram"
                     className="absolute organization"
                     width={360}
